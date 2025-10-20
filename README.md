@@ -1,1 +1,0 @@
-# ShariaFi.github.io
