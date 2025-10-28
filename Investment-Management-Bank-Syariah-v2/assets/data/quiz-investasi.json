@@ -1,0 +1,68 @@
+[
+  {
+    "question": "Manakah dari berikut ini yang merupakan contoh Riba Fadhl?",
+    "answers": [
+      {
+        "text": "Pinjaman bank dengan bunga 5% per tahun.",
+        "correct": false,
+        "feedback": "Kurang tepat. Ini adalah Riba Nasi'ah, yaitu tambahan yang disyaratkan karena penundaan waktu.",
+        "learn_more_tab": "batasan"
+      },
+      {
+        "text": "Menukar 10 gram emas 24 karat dengan 12 gram emas 24 karat secara tunai.",
+        "correct": true,
+        "feedback": "Tepat! Riba Fadhl adalah kelebihan (perbedaan kuantitas) dalam pertukaran barang ribawi yang sejenis secara tunai."
+      },
+      {
+        "text": "Membeli Sukuk Negara (SBSN).",
+        "correct": false,
+        "feedback": "Bukan. Sukuk adalah instrumen investasi berbasis aset (akad Ijarah/Wakalah) yang memberikan imbal hasil, bukan pinjaman.",
+        "learn_more_tab": "instrumen"
+      }
+    ]
+  },
+  {
+    "question": "Strategi investasi di mana Manajer Investasi secara aktif mencoba mengalahkan kinerja pasar (indeks) disebut...",
+    "answers": [
+      {
+        "text": "Strategi Aktif",
+        "correct": true,
+        "feedback": "Benar! Strategi Aktif melibatkan riset dan jual-beli yang intensif untuk mencari keuntungan di atas rata-rata pasar."
+      },
+      {
+        "text": "Strategi Pasif",
+        "correct": false,
+        "feedback": "Kurang tepat. Strategi Pasif justru bertujuan untuk *meniru* kinerja pasar (indeks), bukan mengalahkannya.",
+        "learn_more_tab": "strategi"
+      },
+      {
+        "text": "Strategi Mudharabah",
+        "correct": false,
+        "feedback": "Kurang tepat. Mudharabah adalah akad bagi hasil, bukan nama strategi portofolio (aktif vs. pasif).",
+        "learn_more_tab": "instrumen"
+      }
+    ]
+  },
+  {
+    "question": "Apa akad utama yang digunakan dalam Deposito Syariah?",
+    "answers": [
+      {
+        "text": "Ijarah (Sewa)",
+        "correct": false,
+        "feedback": "Bukan. Ijarah digunakan untuk aset fisik, seperti pada Sukuk Ijarah atau pembiayaan alat berat.",
+        "learn_more_tab": "instrumen"
+      },
+      {
+        "text": "Musyarakah (Kemitraan)",
+        "correct": false,
+        "feedback": "Kurang tepat. Musyarakah (kemitraan modal) lebih umum pada pembiayaan proyek atau Saham Syariah.",
+        "learn_more_tab": "instrumen"
+      },
+      {
+        "text": "Mudharabah (Bagi Hasil)",
+        "correct": true,
+        "feedback": "Tepat! Nasabah sebagai penyedia modal (Shahibul Mal) dan Bank sebagai pengelola (Mudharib)."
+      }
+    ]
+  }
+]
