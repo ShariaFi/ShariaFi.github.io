@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prinsip & Praktik Keuangan Syariah</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Menggunakan font Inter sebagai default */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* bg-gray-50 */
+        }
+
+        /* ----- GAYA TAB KUSTOM ----- */
+
+        /* 1. Tombol Mega-Tab (Pill/Segmented Control) */
+        .mega-tab-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem; /* rounded-lg */
+            font-weight: 600; /* font-semibold */
+            transition: all 0.2s ease-in-out;
+            border: 1px solid transparent;
+        }
+        .mega-tab-btn.active {
+            background-color: #0c4a6e; /* bg-sky-800 (mengganti brand) */
+            color: white;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* shadow-sm */
+        }
+        .mega-tab-btn.inactive {
+            color: #4b5563; /* text-gray-600 */
+            background-color: #f3f4f6; /* bg-gray-100 */
+            border-color: #e5e7eb; /* border-gray-200 */
+        }
+        .mega-tab-btn.inactive:hover {
+            background-color: #e5e7eb; /* hover:bg-gray-200 */
+        }
+
+        /* 2. Tombol Sub-Navigasi (Underline) */
+        .sub-nav-btn {
+            padding: 0.75rem 0.5rem;
+            font-weight: 500; /* font-medium */
+            color: #6b7280; /* text-gray-500 */
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease-in-out;
+            white-space: nowrap; /* Mencegah teks terlipat di mobile */
+        }
+        .sub-nav-btn.active {
+            color: #0369a1; /* text-sky-700 */
+            border-bottom-color: #0369a1; /* border-sky-700 */
+        }
+        .sub-nav-btn.inactive:hover {
+            color: #111827; /* text-gray-900 */
+            border-bottom-color: #d1d5db; /* border-gray-300 */
+        }
+
+        /* 3. Tombol Navigasi Vertikal (List Style) */
+        .vertical-tab-btn {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 0.75rem 1rem;
+            font-weight: 500; /* font-medium */
+            border-radius: 0.375rem; /* rounded-md */
+            transition: all 0.15s ease-in-out;
+            color: #374151; /* text-gray-700 */
+        }
+        .vertical-tab-btn.active {
+            background-color: #e0f2fe; /* bg-sky-100 */
+            color: #0369a1; /* text-sky-700 */
+        }
+        .vertical-tab-btn.inactive:hover {
+            background-color: #f3f4f6; /* hover:bg-gray-100 */
+        }
+
+        /* Animasi fade-in untuk konten */
+        .content-fade-in {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div id="app-container" class="max-w-6xl mx-auto p-4 md:p-8">
+
+        <!-- HEADER & NAVIGASI MEGA-TAB -->
+        <header class="bg-white shadow-sm rounded-lg p-4 md:p-6 mb-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <h1 class="text-2xl font-bold text-gray-800">
+                    Prinsip & Praktik Keuangan Syariah
+                </h1>
+                <nav id="main-nav" class="flex space-x-2 mt-4 md:mt-0 p-1 bg-gray-100 rounded-lg">
+                    <!-- Tombol Mega-Tab akan di-render oleh JS -->
+                </nav>
+            </div>
+        </header>
+
+        <!-- KONTEN UTAMA (BERUBAH BERDASARKAN MEGA-TAB) -->
+        <main>
+
+            <!-- ====== BAGIAN E: HALAMAN PRINSIP LARANGAN ====== -->
+            <section id="page-larangan" class="page-section">
+
+                <!-- HEADER & NAVIGASI SUB-HALAMAN (Pilar, Industri, dll) -->
+                <header class="bg-white shadow-sm rounded-lg mb-8">
+                    <div class="px-4 md:px-6 py-4 border-b border-gray-200">
+                        <h2 id="sub-nav-title" class="text-xl font-bold text-gray-800">
+                            <!-- Judul Sub-Nav diisi oleh JS -->
+                        </h2>
+                    </div>
+                    <!-- Navigasi Horizontal-Scrolling untuk Sub-Halaman -->
+                    <nav id="sub-nav-e" class="flex overflow-x-auto px-2 md:px-4">
+                        <!-- Tombol Sub-Nav akan di-render oleh JS -->
+                    </nav>
+                </header>
+
+                <!-- Area Konten Dinamis untuk Sub-Halaman -->
+                <div id="sub-content-e" class="content-fade-in">
+                    <!-- Konten (Pilar, Industri, dll.) akan di-render oleh JS -->
+                </div>
+
+            </section>
+
+            <!-- ====== BAGIAN F: HALAMAN PRAKTIK REGULASI ====== -->
+            <section id="page-regulasi" class="page-section" style="display: none;">
+                <!-- Konten untuk Halaman Regulasi akan di-render oleh JS -->
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        // --- 1. DATA (KONTEN) ---
+        // "Single Source of Truth" dari file JS Anda.
+        const contentData = {
+            pageTitle: "Prinsip & Praktik Keuangan Syariah",
+            megaTabs: [
+                { id: 'larangan', title: 'Prinsip Larangan (Bagian E)', icon: '⚖️' },
+                { id: 'regulasi', title: 'Praktik Regulasi (Bagian F)', icon: '🏛️' }
+            ],
+            larangan: {
+                title: "Eksplorasi Larangan Investasi Syariah",
+                nav: [
+                    { id: 'pilar', title: 'Pilar Fundamental' },
+                    { id: 'industri', title: 'Industri Terlarang' },
+                    { id: 'praktik', title: 'Praktik Pasar Terlarang' },
+                    { id: 'filosofi', title: 'Fungsi & Filosofi' }
+                ],
+                pilar: {
+                    title: "Tiga Pilar Larangan Fundamental",
+                    subtitle: "Pahami tiga pilar fundamental yang menjadi dasar seluruh larangan dalam keuangan syariah. Pilih pilar di sebelah kiri untuk melihat detail.",
+                    tabs: [
+                        { id: 'pilar-riba', title: 'Riba (Bunga)' },
+                        { id: 'pilar-gharar', title: 'Gharar (Ketidakpastian)' },
+                        { id: 'pilar-maysir', title: 'Maysir (Perjudian)' }
+                    ],
+                    content: {
+                        "pilar-riba": {
+                            title: "Riba (Bunga/Tambahan)",
+                            content: `<p class="text-lg text-gray-700/90 mb-4"><strong>Definisi:</strong> Setiap tambahan, peningkatan, atau kelebihan yang telah ditentukan sebelumnya dan dijamin atas jumlah pokok pinjaman atau utang, terlepas dari kinerjanya. Ini adalah larangan mutlak terhadap bunga.</p><h4 class="text-lg font-semibold text-gray-800 mb-2">Mengapa Dilarang?</h4><p class="text-gray-700/90 mb-4">Dianggap sebagai praktik eksploitatif yang tidak adil (QS. Al-Baqarah: 275). Riba memungkinkan pemberi pinjaman menghasilkan kekayaan hanya dari waktu, tanpa mengambil risiko wirausaha atau berkontribusi pada aktivitas ekonomi riil yang produktif.</p><h4 class="text-lg font-semibold text-gray-800 mb-2">Implikasi Investasi:</h4><p class="text-gray-700/90">Secara langsung mengecualikan investasi pada obligasi konvensional, T-bills, rekening tabungan berbunga, dan saham bank konvensional atau perusahaan pembiayaan konvensional.</p>`
+                        },
+                        "pilar-gharar": {
+                            title: "Gharar (Ketidakpastian/Ambiguitas Berlebihan)",
+                            content: `<p class="text-lg text-gray-700/90 mb-4"><strong>Definisi:</strong> Ketidakjelasan, ketidakpastian, ambiguitas, atau penipuan yang berlebihan dalam suatu kontrak. Terjadi jika elemen kunci (objek, harga, pengiriman) tidak diketahui atau tidak pasti.</p><h4 class="text-lg font-semibold text-gray-800 mb-2">Mengapa Dilarang?</h4><p class="text-gray-700/90 mb-4">Bertujuan untuk menjamin transparansi, pengungkapan penuh (full disclosure), dan keadilan. Ini memitigasi potensi perselisihan atau eksploitasi. Penting: Risiko komersial yang wajar (risiko bisnis) diizinkan, yang dilarang adalah ketidakpastian yang berlebihan dan dapat dihindari.</p><h4 class="text-lg font-semibold text-gray-800 mb-2">Implikasi Investasi:</h4><p class="text-gray-700/90">Menjadi dasar pelarangan banyak derivatif keuangan konvensional yang kompleks (seperti futures dan options) dan praktik short selling, di mana subjek dan hasilnya sangat tidak jelas dan spekulatif.</p>`
+                        },
+                        "pilar-maysir": {
+                            title: "Maysir & Qimar (Perjudian/Spekulasi)",
+                            content: `<p class="text-lg text-gray-700/90 mb-4"><strong>Definisi:</strong> Setiap transaksi di mana perolehan kekayaan terjadi murni secara kebetulan, keberuntungan, atau spekulasi, bukan melalui usaha produktif atau pengambilan risiko komersial yang sah.</p><h4 class="text-lg font-semibold text-gray-800 mb-2">Mengapa Dilarang?</h4><p class="text-gray-700/90 mb-4">Ini adalah 'zero-sum game' di mana keuntungan satu pihak berasal langsung dari kerugian pihak lain, tanpa ada penciptaan nilai ekonomi riil. Ini tidak mendorong kerja produktif (QS. Al-Maidah: 90).</p><h4 class="text-lg font-semibold text-gray-800 mb-2">Implikasi Investasi:</h4><p class="text-gray-700/90">Melarang skema investasi yang berfungsi seperti lotre atau skema Ponzi. Praktik manipulasi pasar seperti 'pump and dump' juga dianggap Maysir karena menciptakan keuntungan buatan atas kerugian investor lain.</p>`
+                        }
+                    }
+                },
+                industri: {
+                    title: "Larangan Objek Investasi (Industri Haram)",
+                    subtitle: "Investasi syariah secara tegas menghindari pendanaan pada perusahaan yang pendapatan utamanya berasal dari industri yang bertentangan dengan prinsip syariah.",
+                    items: [
+                        { icon: '🏦', title: 'Jasa Keuangan Konvensional', text: 'Perbankan berbasis riba, asuransi konvensional, dan perusahaan pembiayaan konvensional.' },
+                        { icon: '🍷', title: 'Alkohol dan Produk Haram', text: 'Produksi, distribusi, atau perdagangan minuman keras dan produk terkait babi.' },
+                        { icon: '🎲', title: 'Perjudian dan Kasino', text: 'Segala bentuk aktivitas yang mengandung unsur maysir atau untung-untungan.' },
+                        { icon: '🔞', title: 'Hiburan Tidak Etis', text: 'Hiburan dewasa, pornografi, dan media yang dianggap tidak sesuai dengan nilai etika.' },
+                        { icon: '🚬', title: 'Tembakau', text: 'Produksi dan perdagangan produk tembakau dan rokok.' },
+                        { icon: '💣', title: 'Manufaktur Senjata', text: 'Manufaktur senjata dan pertahanan (tergantung yurisdiksi dan aplikasinya).' }
+                    ]
+                },
+                praktik: {
+                    title: "Praktik Transaksi Terlarang di Pasar Modal",
+                    subtitle: "Lebih dari sekadar industri, metode transaksi di pasar modal juga diatur. Pilih praktik di sebelah kiri untuk melihat detail.",
+                    tabs: [
+                        { id: 'praktik-bai-madum', title: 'Short Selling' },
+                        { id: 'praktik-margin', title: 'Margin Trading' },
+                        { id: 'praktik-insider', title: 'Insider Trading' },
+                        { id: 'praktik-manipulasi', title: 'Manipulasi Pasar' },
+                        { id: 'praktik-risywah', title: 'Risywah (Suap)' }
+                    ],
+                    content: {
+                        "praktik-bai-madum": {
+                            title: "Ba'i al-Ma'dum (Short Selling)",
+                            content: `<p class="text-lg text-gray-700/90 mb-4"><strong>Definisi:</strong> Dikenal sebagai <strong>short selling</strong>. Seorang investor menjual efek (saham) yang tidak ia miliki saat transaksi, dengan harapan membelinya kembali nanti dengan harga lebih rendah.</p><p class="text-gray-700/90"><strong>Dasar Larangan:</strong> Dilarang karena mengandung unsur <strong>Gharar</strong> yang ekstrem (menjual sesuatu yang berada di luar kepemilikan dan kendalinya).</p>`
+                        },
+                        "praktik-margin": {
+                            title: "Transaksi Margin Berbasis Bunga",
+                            content: `<p class="text-lg text-gray-700/90 mb-4"><strong>Definisi:</strong> Fasilitas di mana investor meminjam uang dari broker untuk membeli saham, dan broker tersebut mengenakan bunga (riba) atas pinjaman tersebut.</p><p class="text-gray-700/90"><strong>Dasar Larangan:</strong> Mengandung unsur <strong>Riba</strong> yang jelas.</p>`
+                        },
+                        "praktik-insider": {
+                            title: "Insider Trading",
+                            content: `<p class="text-lg text-gray-700/90 mb-4"><strong>Definisi:</strong> Memanfaatkan informasi material dan relevan yang belum diungkapkan kepada publik (informasi non-publik) untuk melakukan transaksi demi keuntungan pribadi.</p><p class="text-gray-700/90"><strong>Dasar Larangan:</strong> Diharamkan karena menciptakan asimetri informasi yang ekstrem dan merugikan investor lain. Ini melanggar prinsip keadilan ('Adalah).</p>`
+                        },
+                        "praktik-manipulasi": {
+                            title: "Praktik Manipulasi Pasar (Tadlis, Najasy, Ihtikar)",
+                            content: `<p class="text-lg text-gray-700/90 mb-4">Serangkaian tindakan yang dirancang untuk menipu pasar atau investor lain.</p><ul class="list-disc list-inside space-y-2 text-gray-700/90"><li><strong>Tadlis (Informasi Menyesatkan):</strong> Menyembunyikan informasi negatif atau cacat suatu objek transaksi.</li><li><strong>Taghrir (Tipuan):</strong> Tindakan aktif menipu pihak lain dengan janji palsu.</li><li><strong>Najasy (Permintaan/Penawaran Palsu):</strong> Merekayasa permintaan/penawaran untuk memanipulasi harga. Contoh: "Pump and Dump" atau "Wash Sale".</li><li><strong>Ihtikar (Penimbunan):</strong> Membeli dalam volume besar untuk menguasai pasokan dan menciptakan kelangkaan artifisial untuk menaikkan harga.</li></ul>`
+                        },
+                        "praktik-risywah": {
+                            title: "Risywah (Suap)",
+                            content: `<p class="text-lg text-gray-700/90 mb-4"><strong>Definisi:</strong> Memberikan atau menerima sesuatu (uang, fasilitas) secara tidak sah untuk memperoleh keuntungan atau keputusan yang tidak semestinya menjadi haknya.</p><p class="text-gray-700/90"><strong>Contoh:</strong> Memberi "hadiah" kepada analis agar mengeluarkan rekomendasi "beli" yang tidak jujur.</p>`
+                        }
+                    }
+                },
+                filosofi: {
+                    title: "Fungsi Ganda Larangan: Filosofi & Manajemen Risiko",
+                    subtitle: "Larangan-larangan ini bukan hanya aturan teologis, tetapi berfungsi sebagai kerangka manajemen risiko etis dan sistemik yang canggih untuk stabilitas jangka panjang.",
+                    points: [
+                        { title: 'Stabilitas Sistemik (vs. Riba)', text: 'Larangan Riba memaksa pergeseran dari transfer risiko berbasis utang menuju mekanisme bagi hasil berbasis ekuitas (Mudarabah, Musyarakah), yang membuat sistem lebih tahan terhadap krisis utang.' },
+                        { title: 'Transparansi Pasar (vs. Gharar)', text: 'Larangan Gharar berfungsi sebagai alat melawan asimetri informasi, mewajibkan transparansi dan kejelasan dalam kontrak, yang mengurangi risiko sengketa dan kegagalan bayar.' },
+                        { title: 'Fokus pada Ekonomi Riil (vs. Maysir)', text: 'Larangan Maysir mengekang spekulasi berlebihan, mencegah gelembung spekulatif, dan mendorong investasi pada ekonomi riil yang nyata dan berbasis aset.' }
+                    ],
+                    conclusion: '<b>Konvergensi:</b> Praktik seperti insider trading dan manipulasi pasar tidak hanya haram, tetapi juga ilegal menurut hukum sekuler (OJK), menunjukkan keselarasan etika Islam dengan prinsip pasar yang sehat.'
+                }
+            },
+            regulasi: {
+                title: "Regulasi & Batas Prudential (BMPD)",
+                konsep: {
+                    title: "Apa itu BMPD? (Konsep & Tujuan)",
+                    text1: "Istilah \"Kredit\" (BMPK) berkonotasi pada pinjaman berbasis bunga (riba). Sebaliknya, \"Penyaluran Dana\" (BMPD) mencerminkan sifat unik keuangan syariah yang melibatkan pembiayaan berbasis kemitraan, jual-beli, dan sewa, bukan pinjaman konvensional.",
+                    text2: "BMPD adalah instrumen manajemen risiko untuk mencegah terjadinya <strong>konsentrasi risiko pembiayaan</strong> yang berlebihan pada satu nasabah atau kelompok. Ini adalah pilar utama untuk mencegah kegagalan bank dan menjaga stabilitas sistemik.",
+                    callout: "OJK secara sengaja menerapkan aturan berbeda untuk <strong>Bank Umum Syariah (BUS)</strong> yang berdampak sistemik besar, dan <strong>Bank Pembiayaan Rakyat Syariah (BPRS)</strong> yang lebih kecil dan berfokus pada komunitas."
+                },
+                dashboard: {
+                    title: "Dasbor Perbandingan Batasan BMPD",
+                    buttons: [
+                        { id: 'bus', title: 'Bank Umum Syariah (BUS)' },
+                        { id: 'bprs', title: 'Bank Pembiayaan Rakyat Syariah (BPRS)' }
+                    ],
+                    bus: {
+                        chartTitle: "Batas BMPD - Bank Umum Syariah (BUS)",
+                        subtitle: "Berdasarkan POJK No. 26/POJK.03/2021",
+                        stats: [
+                            { title: 'Pihak Terkait (Agregat)', value: '10%', note: 'dari Modal Bank (Total)' },
+                            { title: 'Pihak Tidak Terkait (Single)', value: '25%', note: 'dari Modal Inti (Tier 1)' },
+                            { title: 'Pihak Tidak Terkait (Grup)', value: '25%', note: 'dari Modal Inti (Tier 1)' }
+                        ],
+                        chartData: {
+                            labels: ['Pihak Terkait (Agregat)', 'Pihak Tidak Terkait (Single/Grup)'],
+                            values: [10, 25],
+                            subLabels: ['dari Modal Total (T1+T2)', 'dari Modal Inti (T1)']
+                        }
+                    },
+                    bprs: {
+                        chartTitle: "Batas BMPD - Bank Pembiayaan Rakyat Syariah (BPRS)",
+                        subtitle: "Berdasarkan POJK No. 23 Tahun 2022",
+                        stats: [
+                            { title: 'Pihak Terkait (Agregat)', value: '10%', note: 'dari Modal BPRS' },
+                            { title: 'Pihak Tidak Terkait (Single)', value: '20%', note: 'dari Modal BPRS' },
+                            { title: 'Pihak Tidak Terkait (Grup)', value: '30%', note: 'dari Modal BPRS' }
+                        ],
+                        chartData: {
+                            labels: ['Pihak Terkait (Agregat)', 'Pihak Tidak Terkait (Single)', 'Pihak Tidak Terkait (Grup)'],
+                            values: [10, 20, 30],
+                            subLabels: ['dari Modal BPRS', 'dari Modal BPRS', 'dari Modal BPRS']
+                        }
+                    }
+                },
+                analisis: {
+                    title: "Analisis Mendalam & Ketentuan Tambahan",
+                    items: [
+                        {
+                            icon: '⚖️', title: 'Analisis Kunci: Perbedaan Basis Modal (BUS)',
+                            content: `<div class="space-y-4">
+                                <div>
+                                    <strong class="text-sky-700">Pihak Tidak Terkait: 25% dari Modal Inti (Tier 1)</strong>
+                                    <p class="text-gray-600 text-sm">OJK secara konservatif mengukur risiko dari debitur eksternal terhadap modal kualitas tertinggi (Tier 1) yang paling mampu menyerap kerugian.</p>
+                                </div>
+                                <div>
+                                    <strong class="text-sky-700">Pihak Terkait: 10% dari Modal Total (Tier 1 + Tier 2)</strong>
+                                    <p class="text-gray-600 text-sm">Batas yang sangat ketat ini bukan hanya mengelola risiko kredit, tetapi juga risiko tata kelola, benturan kepentingan (conflict of interest), dan moral hazard internal.</p>
+                                </div>
+                            </div>`
+                        },
+                        {
+                            icon: '🌍', title: 'Ruang Lingkup Penyaluran Dana yang Luas',
+                            content: `<p class="text-gray-600 mb-2">POJK 26/2021 (BUS) mendefinisikan "Penyaluran Dana" secara sangat luas untuk mencegah arbitrase regulasi. Ini mencakup:</p>
+                            <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                                <li>Pembiayaan standar, penempatan antar bank, dan Sukuk.</li>
+                                <li>Penyertaan modal dan derivatif syariah.</li>
+                                <li>Eksposur <i>off-balance sheet</i> (seperti jaminan/kafalah dan L/C).</li>
+                            </ul>`
+                        }
+                    ],
+                    tambahan: {
+                        title: "Ketentuan Tambahan & Pengecualian (BUS)",
+                        items: [
+                            {
+                                title: 'Penyaluran Dana Besar (Large Exposures)',
+                                text: 'Didefinisikan sebagai eksposur ke pihak tidak terkait ≥ 10% dari Modal Inti (Tier 1). Ini <strong>bukan pelanggaran</strong>, melainkan penanda untuk pemantauan risiko yang lebih intensif.',
+                                style: 'default'
+                            },
+                            {
+                                title: '🏗️ Pengecualian BUMN (Tujuan Pembangunan)',
+                                text: 'Penyaluran dana ke BUMN untuk proyek strategis (infrastruktur, ketahanan pangan, dll.) mendapat kelonggaran batas lebih tinggi, yaitu <strong>30% dari Modal Bank (Modal Total)</strong>.',
+                                style: 'highlight'
+                            }
+                        ]
+                    }
+                }
+            }
+        };
+
+        // --- 2. LOGIKA APLIKASI ---
+
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- Variabel State & Elemen DOM ---
+            let activeMegaTab = 'larangan';
+            let activeSubTabE = 'pilar';
+            let activeBankTypeF = 'bus';
+
+            let radarChart = null;
+            let bmpdChart = null;
+
+            const mainNav = document.getElementById('main-nav');
+            const subNavE = document.getElementById('sub-nav-e');
+            const subNavTitle = document.getElementById('sub-nav-title');
+            const subContentE = document.getElementById('sub-content-e');
+
+            const pageLarangan = document.getElementById('page-larangan');
+            const pageRegulasi = document.getElementById('page-regulasi');
+
+            // --- Inisialisasi Aplikasi ---
+
+            function init() {
+                renderMegaTabs();
+                renderSubNavE();
+                renderSubPageE(activeSubTabE); // Render halaman default (Pilar)
+                // Halaman Regulasi & Chart BMPD akan di-render saat di-klik (lazy load)
+            }
+
+            // --- Render Mega-Tabs ---
+            function renderMegaTabs() {
+                const html = contentData.megaTabs.map(tab => `
+                    <button
+                        class="mega-tab-btn ${tab.id === activeMegaTab ? 'active' : 'inactive'}"
+                        data-page="${tab.id}">
+                        ${tab.icon} ${tab.title}
+                    </button>
+                `).join('');
+                mainNav.innerHTML = html;
+            }
+
+            // --- Render Sub-Navigasi (Bagian E) ---
+            function renderSubNavE() {
+                subNavTitle.textContent = contentData.larangan.title;
+                const html = contentData.larangan.nav.map(item => `
+                    <button
+                        class="sub-nav-btn ${item.id === activeSubTabE ? 'active' : 'inactive'}"
+                        data-subpage="${item.id}">
+                        ${item.title}
+                    </button>
+                `).join('');
+                subNavE.innerHTML = html;
+            }
+
+            // --- Render Konten Sub-Halaman (Bagian E) ---
+            function renderSubPageE(pageId) {
+                let html = '';
+                // Hancurkan chart lama jika ada
+                if (radarChart) {
+                    radarChart.destroy();
+                    radarChart = null;
+                }
+
+                switch (pageId) {
+                    case 'pilar':
+                        html = buildVerticalTabPage(contentData.larangan.pilar, 'pilar');
+                        break;
+                    case 'industri':
+                        html = buildIndustriPage(contentData.larangan.industri);
+                        break;
+                    case 'praktik':
+                        html = buildVerticalTabPage(contentData.larangan.praktik, 'praktik');
+                        break;
+                    case 'filosofi':
+                        html = buildFilosofiPage(contentData.larangan.filosofi);
+                        break;
+                }
+                subContentE.innerHTML = html;
+                subContentE.classList.add('content-fade-in');
+                subContentE.addEventListener('animationend', () => {
+                    subContentE.classList.remove('content-fade-in');
+                }, { once: true });
+
+
+                // Inisialisasi ulang komponen interaktif
+                if (pageId === 'pilar') {
+                    initVerticalTabs('pilar');
+                } else if (pageId === 'praktik') {
+                    initVerticalTabs('praktik');
+                } else if (pageId === 'filosofi') {
+                    initRadarChart(); // Inisialisasi chart
+                }
+            }
+
+            // --- Render Halaman Regulasi (Bagian F) ---
+            function renderRegulasiPage() {
+                const data = contentData.regulasi;
+
+                // 1. Konsep
+                const konsepHtml = `
+                    <section class="mb-8 bg-white p-6 rounded-lg shadow-sm">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">${data.konsep.title}</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">Perbedaan Mendasar: BMPD vs BMPK</h3>
+                                <p class="text-gray-600 mb-4">${data.konsep.text1}</p>
+                                <h3 class="text-lg font-semibold mb-2 text-gray-700">Tujuan Utama Regulasi</h3>
+                                <p class="text-gray-600">${data.konsep.text2}</p>
+                            </div>
+                            <div class="bg-sky-50 border-l-4 border-sky-600 p-5 rounded-r-lg">
+                                <h3 class="text-lg font-semibold text-sky-800">Pendekatan Regulasi Berjenjang</h3>
+                                <p class="text-sky-800/90">${data.konsep.callout}</p>
+                            </div>
+                        </div>
+                    </section>
+                `;
+
+                // 2. Dashboard
+                const dashboardButtons = data.dashboard.buttons.map(btn => `
+                    <button
+                        id="btn-f-${btn.id}"
+                        class="selector-btn-f w-full sm:w-auto text-base font-semibold py-2 px-6 rounded-lg transition-all duration-150 shadow-sm
+                        ${btn.id === activeBankTypeF ? 'bg-sky-700 text-white' : 'bg-white text-gray-700 hover:bg-gray-100'}"
+                        data-type="${btn.id}">
+                        ${btn.title}
+                    </button>
+                `).join('');
+
+                const dashboardHtml = `
+                    <section id="prinsip-dashboard-f" class="mb-8 bg-white p-6 rounded-lg shadow-sm">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">${data.dashboard.title}</h2>
+                        <div id="dashboard-f-buttons" class="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 mb-8">
+                            ${dashboardButtons}
+                        </div>
+                        <div>
+                            <h3 id="chart-title-f" class="text-xl font-semibold text-center mb-1 text-gray-800"></h3>
+                            <p id="regulation-subtitle-f" class="text-center text-gray-500 mb-6"></p>
+                            <div id="stats-container-f" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                                <!-- Stats diisi oleh JS -->
+                            </div>
+                            <div class="chart-container-bar relative w-full max-w-[700px] mx-auto h-[350px]">
+                                <canvas id="bmpdChart"></canvas>
+                            </div>
+                        </div>
+                    </section>
+                `;
+
+                // 3. Analisis
+                const analisisCards = data.analisis.items.map(item => `
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center text-gray-800">
+                            <span class="text-2xl mr-3">${item.icon}</span> ${item.title}
+                        </h3>
+                        ${item.content}
+                    </div>
+                `).join('');
+
+                const tambahanCards = data.analisis.tambahan.items.map(item => `
+                    <div class="${item.style === 'highlight' ? 'bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg' : 'bg-gray-100 p-4 rounded-lg'}">
+                        <strong class="${item.style === 'highlight' ? 'text-green-800' : 'text-gray-700'}">${item.title}</strong>
+                        <p class="${item.style === 'highlight' ? 'text-green-700' : 'text-gray-600'} text-sm">${item.text}</p>
+                    </div>
+                `).join('');
+
+                const analisisHtml = `
+                    <section>
+                        <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">${data.analisis.title}</h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            ${analisisCards}
+                            <div class="bg-white p-6 rounded-lg shadow-sm lg:col-span-2">
+                                <h3 class="text-xl font-semibold mb-4 flex items-center text-gray-800">
+                                    <span class="text-2xl mr-3">📑</span> ${data.analisis.tambahan.title}
+                                </h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    ${tambahanCards}
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                `;
+
+                // Gabungkan semua
+                pageRegulasi.innerHTML = konsepHtml + dashboardHtml + analisisHtml;
+
+                // Pasang listener untuk tombol dashboard (BUS/BPRS)
+                document.getElementById('dashboard-f-buttons').addEventListener('click', e => {
+                    const button = e.target.closest('.selector-btn-f');
+                    if (button && button.dataset.type !== activeBankTypeF) {
+                        activeBankTypeF = button.dataset.type;
+                        // Update tombol
+                        document.querySelectorAll('.selector-btn-f').forEach(btn => {
+                            btn.classList.toggle('bg-sky-700', btn.dataset.type === activeBankTypeF);
+                            btn.classList.toggle('text-white', btn.dataset.type === activeBankTypeF);
+                            btn.classList.toggle('bg-white', btn.dataset.type !== activeBankTypeF);
+                            btn.classList.toggle('text-gray-700', btn.dataset.type !== activeBankTypeF);
+                        });
+                        // Render ulang dashboard
+                        initBmpdDashboard(activeBankTypeF);
+                    }
+                });
+            }
+
+
+            // --- Pembangun Halaman (HTML Builders) ---
+
+            function buildVerticalTabPage(data, type) {
+                const tabsHtml = data.tabs.map((tab, index) => `
+                    <button
+                        class="vertical-tab-btn ${index === 0 ? 'active' : 'inactive'}"
+                        data-tab="${tab.id}">
+                        ${tab.title}
+                    </button>
+                `).join('');
+
+                return `
+                    <div class="text-center mb-8">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-2">${data.title}</h3>
+                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">${data.subtitle}</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8">
+                        <!-- Navigasi Vertikal -->
+                        <div id="vertical-tabs-${type}" class="md:col-span-1 flex flex-col space-y-1">
+                            ${tabsHtml}
+                        </div>
+                        <!-- Konten Vertikal -->
+                        <div class="md:col-span-3 bg-white rounded-lg shadow-sm p-6 md:p-8 min-h-[300px]">
+                            <div id="vertical-content-${type}">
+                                <!-- Konten diisi oleh JS -->
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            function buildIndustriPage(data) {
+                const cardsHtml = data.items.map(item => `
+                    <div class="bg-white rounded-lg shadow-sm p-6 flex items-center space-x-4 transition-all duration-300 hover:shadow-md">
+                        <span class="text-4xl">${item.icon}</span>
+                        <div>
+                            <h4 class="text-xl font-semibold text-red-700">${item.title}</h4>
+                            <p class="text-gray-600">${item.text}</p>
+                        </div>
+                    </div>
+                `).join('');
+
+                return `
+                    <div class="text-center mb-8">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-2">${data.title}</h3>
+                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">${data.subtitle}</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        ${cardsHtml}
+                    </div>
+                `;
+            }
+
+            function buildFilosofiPage(data) {
+                const pointsHtml = data.points.map(point => `
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800">${point.title}</h4>
+                        <p class="text-gray-600">${point.text}</p>
+                    </div>
+                `).join('');
+
+                return `
+                    <div class="text-center mb-8">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-2">${data.title}</h3>
+                        <p class="text-lg text-gray-600 max-w-3xl mx-auto">${data.subtitle}</p>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 md:p-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="relative w-full max-w-[450px] mx-auto h-[350px]">
+                                <canvas id="fungsiRadarChart"></canvas>
+                            </div>
+                            <div class="space-y-6">
+                                ${pointsHtml}
+                                <div class="border-t border-gray-200 pt-4 text-sm text-gray-500">
+                                    ${data.conclusion}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // --- Logika Interaktif ---
+
+            // Event Listener untuk Mega-Tabs
+            mainNav.addEventListener('click', (e) => {
+                const button = e.target.closest('.mega-tab-btn');
+                if (!button) return;
+
+                const pageId = button.dataset.page;
+                if (pageId === activeMegaTab) return;
+                activeMegaTab = pageId;
+
+                // Update tombol
+                mainNav.querySelectorAll('.mega-tab-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.page === pageId);
+                    btn.classList.toggle('inactive', btn.dataset.page !== pageId);
+                });
+
+                // Update halaman
+                if (pageId === 'larangan') {
+                    pageLarangan.style.display = 'block';
+                    pageRegulasi.style.display = 'none';
+                } else {
+                    pageLarangan.style.display = 'none';
+                    pageRegulasi.style.display = 'block';
+
+                    // Lazy load Halaman Regulasi & Chart
+                    if (!bmpdChart) {
+                        renderRegulasiPage();
+                        initBmpdDashboard(activeBankTypeF);
+                    }
+                }
+            });
+
+            // Event Listener untuk Sub-Navigasi (Bagian E)
+            subNavE.addEventListener('click', (e) => {
+                const button = e.target.closest('.sub-nav-btn');
+                if (!button) return;
+
+                const pageId = button.dataset.subpage;
+                if (pageId === activeSubTabE) return;
+                activeSubTabE = pageId;
+
+                // Update tombol
+                subNavE.querySelectorAll('.sub-nav-btn').forEach(btn => {
+                    btn.classList.toggle('active', btn.dataset.subpage === pageId);
+                    btn.classList.toggle('inactive', btn.dataset.subpage !== pageId);
+                });
+
+                // Render ulang konten sub-halaman
+                renderSubPageE(pageId);
+            });
+
+            // Fungsi untuk inisialisasi Navigasi Vertikal
+            function initVerticalTabs(type) {
+                const tabContainer = document.getElementById(`vertical-tabs-${type}`);
+                if (!tabContainer) return;
+
+                // Set konten default
+                const defaultTabId = tabContainer.querySelector('.vertical-tab-btn.active').dataset.tab;
+                renderVerticalTabContent(type, defaultTabId);
+
+                // Pasang listener
+                tabContainer.addEventListener('click', (e) => {
+                    const tab = e.target.closest('.vertical-tab-btn');
+                    if (tab && !tab.classList.contains('active')) {
+                        tabContainer.querySelectorAll('.vertical-tab-btn').forEach(t => {
+                            t.classList.remove('active');
+                            t.classList.add('inactive');
+                        });
+                        tab.classList.add('active');
+                        tab.classList.remove('inactive');
+                        renderVerticalTabContent(type, tab.dataset.tab);
+                    }
+                });
+            }
+
+            // Fungsi untuk merender konten Navigasi Vertikal
+            function renderVerticalTabContent(type, tabId) {
+                const contentContainer = document.getElementById(`vertical-content-${type}`);
+                if (!contentContainer) return;
+
+                let data;
+                if (type === 'pilar') {
+                    data = contentData.larangan.pilar.content[tabId];
+                } else if (type === 'praktik') {
+                    data = contentData.larangan.praktik.content[tabId];
+                }
+
+                if (data) {
+                    contentContainer.innerHTML = `
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">${data.title}</h3>
+                        ${data.content}
+                    `;
+                    contentContainer.classList.add('content-fade-in');
+                    contentContainer.addEventListener('animationend', () => {
+                        contentContainer.classList.remove('content-fade-in');
+                    }, { once: true });
+                } else {
+                    contentContainer.innerHTML = '<p>Konten tidak ditemukan.</p>';
+                }
+            }
+
+
+            // --- Fungsi Chart.js ---
+
+            function initRadarChart() {
+                const ctx = document.getElementById('fungsiRadarChart');
+                if (!ctx) return;
+
+                if (radarChart) radarChart.destroy();
+
+                radarChart = new Chart(ctx.getContext('2d'), {
+                    type: 'radar',
+                    data: {
+                        labels: ['Stabilitas Sistemik (vs. Riba)', 'Transparansi Pasar (vs. Gharar)', 'Fokus Ekonomi Riil (vs. Maysir)'],
+                        datasets: [{
+                            label: 'Fungsi Kerangka Larangan',
+                            data: [5, 5, 5],
+                            backgroundColor: 'rgba(3, 105, 161, 0.2)', // sky-700
+                            borderColor: 'rgb(3, 105, 161)',
+                            pointBackgroundColor: 'rgb(3, 105, 161)',
+                        }]
+                    },
+                    options: {
+                        maintainAspectRatio: false,
+                        responsive: true,
+                        scales: {
+                            r: {
+                                angleLines: { color: '#d1d5db' },
+                                grid: { color: '#e5e7eb' },
+                                pointLabels: { font: { size: 13 }, color: '#374151' },
+                                ticks: { backdropColor: '#f9fafb', color: '#6b7280', stepSize: 1, display: false },
+                                min: 0,
+                                max: 5
+                            }
+                        },
+                        plugins: { legend: { display: false } }
+                    }
+                });
+            }
+
+            function initBmpdDashboard(bankType) {
+                const data = contentData.regulasi.dashboard[bankType];
+                if (!data) return;
+
+                // 1. Update Kartu Statistik
+                const statsContainer = document.getElementById('stats-container-f');
+                const statsHtml = data.stats.map(stat => `
+                    <div class="bg-white p-5 rounded-lg shadow-md border border-gray-100 text-center">
+                        <span class="text-sm font-medium text-gray-500 uppercase tracking-wider">${stat.title}</span>
+                        <span class="block text-4xl font-bold text-sky-600">${stat.value}</span>
+                        <span class="text-sm text-gray-500">${stat.note}</span>
+                    </div>
+                `).join('');
+                statsContainer.innerHTML = statsHtml;
+
+                // 2. Update Judul Chart
+                document.getElementById('chart-title-f').textContent = data.chartTitle;
+                document.getElementById('regulation-subtitle-f').textContent = data.subtitle;
+
+                // 3. Update Chart.js
+                const ctx = document.getElementById('bmpdChart');
+                if (!ctx) return;
+
+                const chartColors = {
+                    bus: { bg: 'rgba(2, 132, 199, 0.7)', border: 'rgb(2, 132, 199)' }, // sky-600
+                    bprs: { bg: 'rgba(5, 150, 105, 0.7)', border: 'rgb(5, 150, 105)' } // emerald-600
+                };
+                const colors = chartColors[bankType] || chartColors.bus;
+
+                if (bmpdChart) bmpdChart.destroy();
+
+                bmpdChart = new Chart(ctx.getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: data.chartData.labels,
+                        datasets: [{
+                            label: 'Batas Maksimum (%)',
+                            data: data.chartData.values,
+                            backgroundColor: data.chartData.values.map(() => colors.bg),
+                            borderColor: data.chartData.values.map(() => colors.border),
+                            borderWidth: 1,
+                            borderRadius: 4
+                        }]
+                    },
+                    options: {
+                        maintainAspectRatio: false,
+                        responsive: true,
+                        scales: { y: { beginAtZero: true, max: 35, title: { display: true, text: 'Batas Persentase (%) dari Modal' } } },
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: (context) => `${context.dataset.label || ''}: ${context.parsed.y || 0}%`,
+                                    afterLabel: (context) => data.chartData.subLabels[context.dataIndex]
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // --- Jalankan Inisialisasi ---
+            init();
+
+        });
+    </script>
+</body>
+</html>

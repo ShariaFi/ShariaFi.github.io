@@ -1,0 +1,26 @@
+[
+  {
+    "id": "k001",
+    "tipe": "artikel",
+    "judul": "Pengantar Manajemen Investasi",
+    "sumber": "OJK",
+    "url": "#",
+    "kategori_tab": ["beranda"]
+  },
+  {
+    "id": "k002",
+    "tipe": "artikel",
+    "judul": "Memahami Strategi Aktif",
+    "sumber": "Investopedia",
+    "url": "#",
+    "kategori_tab": ["strategi", "instrumen"]
+  },
+  {
+    "id": "k003",
+    "tipe": "artikel",
+    "judul": "Kajian Mendalam: Prinsip Riba",
+    "sumber": "DSN-MUI",
+    "url": "#",
+    "kategori_tab": ["prinsip"]
+  }
+]
