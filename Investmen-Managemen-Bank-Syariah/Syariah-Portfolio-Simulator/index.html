@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syariah Portfolio Simulator (Enhanced)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Custom scrollbar for aesthetics */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1f2937; }
+        ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #6b7280; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        /* Chart container needs a defined height */
+        #portfolioChartContainer { height: 300px; }
+    </style>
+    <script>
+        // Configuration for Tailwind dark mode
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans antialiased">
+
+    <div class="container mx-auto max-w-7xl p-4 md:p-8">
+
+        <header class="mb-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div>
+                <h1 class="text-3xl font-bold text-emerald-400">Syariah Portfolio Simulator</h1>
+                <p class="text-lg text-gray-400">Educational Tool for Syariah Investment Management</p>
+            </div>
+            <div class="flex space-x-3">
+                <button id="simulateBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition-all duration-200">
+                    Simulate Next Day
+                </button>
+                <button id="resetBtn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition-all duration-200">
+                    Reset Portfolio
+                </button>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <div class="bg-gray-800 p-5 rounded-lg shadow-lg">
+                <div class="text-sm font-medium text-gray-400">Total Portfolio Value</div>
+                <div id="totalValue" class="text-3xl font-bold text-white">IDR 1,000,000,000</div>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg shadow-lg">
+                <div class="text-sm font-medium text-gray-400">Available Cash</div>
+                <div id="cashValue" class="text-2xl font-bold text-emerald-400">IDR 1,000,000,000</div>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg shadow-lg">
+                <div class="text-sm font-medium text-gray-400">Asset Value</div>
+                <div id="stockValue" class="text-2xl font-bold text-blue-400">IDR 0</div>
+            </div>
+            <div class="bg-gray-800 p-5 rounded-lg shadow-lg border border-yellow-500">
+                <div class="text-sm font-medium text-yellow-400">Purification Fund (Tathir)</div>
+                <div id="purificationFund" class="text-2xl font-bold text-yellow-300">IDR 0</div>
+            </div>
+        </div>
+
+        <div>
+            <div class="mb-4 border-b border-gray-700">
+                <nav class="flex -mb-px space-x-6" aria-label="Tabs">
+                    <button data-tab="portfolio" class="tab-btn active text-emerald-400 border-emerald-400 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                        My Portfolio
+                    </button>
+                    <button data-tab="market" class="tab-btn text-gray-400 hover:text-gray-200 border-transparent whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                        Syariah Market (DES)
+                    </button>
+                    <button data-tab="report" class="tab-btn text-gray-400 hover:text-gray-200 border-transparent whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm">
+                        Compliance Report
+                    </button>
+                </nav>
+            </div>
+
+            <div class="space-y-6">
+                <div id="tab-portfolio" class="tab-content active">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div class="lg:col-span-2 bg-gray-800 p-6 rounded-lg shadow-lg">
+                            <h2 class="text-xl font-semibold mb-4">My Asset Holdings</h2>
+                            <div id="portfolio-list" class="divide-y divide-gray-700">
+                                <p class="text-gray-400">You do not own any assets yet. Go to the "Market" tab to buy.</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                            <h2 class="text-xl font-semibold mb-4">Asset Allocation</h2>
+                            <div id="portfolioChartContainer">
+                                <canvas id="portfolioChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-market" class="tab-content">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-semibold mb-4">Daftar Efek Syariah (DES) - Mock Data</h2>
+                        <p class="mb-4 text-gray-400">This is a mock list of OJK-approved Syariah-compliant assets. You can only buy assets from this list.</p>
+                        <table class="min-w-full divide-y divide-gray-700">
+                            <thead class="bg-gray-700">
+                                <tr>
+                                    <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Ticker</th>
+                                    <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Asset Name</th>
+                                    <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Price / Info</th>
+                                    <th class="px-4 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider">Ratios / Details</th>
+                                    <th class="px-4 py-3 text-right text-xs font-medium text-gray-300 uppercase tracking-wider">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="market-list" class="bg-gray-800 divide-y divide-gray-700">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="tab-report" class="tab-content">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <div class="flex justify-between items-center mb-4">
+                            <h2 class="text-xl font-semibold">Fund Compliance Report</h2>
+                            <button id="downloadReportBtn" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg shadow-md transition-all duration-200">
+                                Download PDF Report
+                            </button>
+                        </div>
+                        <div id="report-preview" class="bg-gray-900 p-6 rounded-lg border border-gray-700 text-gray-300 font-mono text-sm whitespace-pre-wrap">
+                            Click "Simulate Next Day" to generate report data.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="message-modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 p-4">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-2xl max-w-sm w-full">
+                <h3 id="message-title" class="text-xl font-bold mb-4">Alert</h3>
+                <p id="message-body" class="text-gray-300 mb-6">This is an alert message.</p>
+                <button id="message-close" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg">
+                    Close
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Use destructuring for jsPDF
+        const { jsPDF } = window.jspdf;
+
+        // --- 1. STATIC DATABASE (Mock OJK DES List) ---
+        // Enhanced with asset types (Stock, Sukuk, ETF)
+        let marketData = [
+            {
+                ticker: "TLKM",
+                name: "PT Telkom Indonesia (Persero) Tbk",
+                type: "Stock",
+                price: 3850,
+                debtRatio: 0.42, // (Debt / Assets)
+                incomeRatio: 0.03 // (Non-Halal Income / Total Revenue)
+            },
+            {
+                ticker: "ASII",
+                name: "PT Astra International Tbk",
+                type: "Stock",
+                price: 5300,
+                debtRatio: 0.35,
+                incomeRatio: 0.08
+            },
+            {
+                ticker: "ICBP",
+                name: "PT Indofood CBP Sukses Makmur Tbk",
+                type: "Stock",
+                price: 11200,
+                debtRatio: 0.25,
+                incomeRatio: 0.01
+            },
+            {
+                ticker: "KLBF",
+                name: "PT Kalbe Farma Tbk",
+                type: "Stock",
+                price: 1550,
+                debtRatio: 0.15,
+                incomeRatio: 0.00
+            },
+            {
+                ticker: "UNTR",
+                name: "PT United Tractors Tbk",
+                type: "Stock",
+                price: 24000,
+                debtRatio: 0.39,
+                incomeRatio: 0.04
+            },
+            {
+                ticker: "SR-020",
+                name: "Sukuk Negara Ritel (Govt. Sukuk)",
+                type: "Sukuk",
+                price: 1000000, // Per unit price
+                nisbah: 0.065, // 6.5% annual yield
+                debtRatio: 0,
+                incomeRatio: 0
+            },
+            {
+                ticker: "JII70-ETF",
+                name: "Mock JII70 Syariah ETF (Passive)",
+                type: "ETF",
+                price: 5000, // Initial price
+                debtRatio: 0,
+                incomeRatio: 0
+            }
+        ];
+
+        // --- 2. STATE MANAGEMENT (Portfolio saved in localStorage) ---
+        let portfolio;
+        let portfolioChart;
+
+        const initialState = {
+            cash: 1_000_000_000,
+            stocks: [], // { ticker, shares, avgPrice, type, isCompliant, nonCompliantGains, nisbah }
+            purificationFund: 0
+        };
+
+        function loadPortfolio() {
+            const saved = localStorage.getItem('syariahPortfolio');
+            portfolio = saved ? JSON.parse(saved) : { ...initialState };
+        }
+
+        function savePortfolio() {
+            localStorage.setItem('syariahPortfolio', JSON.stringify(portfolio));
+        }
+
+        // --- 3. UTILITY FUNCTIONS ---
+
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(amount);
+        }
+
+        function getStockData(ticker) {
+            return marketData.find(s => s.ticker === ticker);
+        }
+
+        function calculatePortfolioValue() {
+            const stockAssets = portfolio.stocks.reduce((acc, stock) => {
+                return acc + (getStockData(stock.ticker).price * stock.shares);
+            }, 0);
+            return {
+                stockAssets,
+                total: portfolio.cash + stockAssets
+            };
+        }
+
+        function showMessage(title, body) {
+            document.getElementById('message-title').innerText = title;
+            document.getElementById('message-body').innerText = body;
+            document.getElementById('message-modal').classList.remove('hidden');
+        }
+
+        // --- 4. CORE "BUY" / "SELL" LOGIC ---
+
+        function buyStock(ticker, amountInIDR) {
+            if (amountInIDR <= 0) return showMessage("Invalid Amount", "Please enter a positive amount to buy.");
+            if (portfolio.cash < amountInIDR) return showMessage("Insufficient Funds", "You do not have enough cash to make this purchase.");
+
+            const marketStock = getStockData(ticker);
+            const price = marketStock.price;
+            const sharesToBuy = Math.floor(amountInIDR / price);
+            if (sharesToBuy === 0) return showMessage("Invalid Amount", `The amount is too small to buy even one share/unit at ${formatCurrency(price)}.`);
+
+            const cost = sharesToBuy * price;
+            portfolio.cash -= cost;
+
+            const existingStock = portfolio.stocks.find(s => s.ticker === ticker);
+            if (existingStock) {
+                // Update existing holding
+                const newTotalShares = existingStock.shares + sharesToBuy;
+                const newTotalCost = (existingStock.avgPrice * existingStock.shares) + cost;
+                existingStock.avgPrice = newTotalCost / newTotalShares;
+                existingStock.shares = newTotalShares;
+            } else {
+                // Add new holding
+                portfolio.stocks.push({
+                    ticker: ticker,
+                    shares: sharesToBuy,
+                    avgPrice: price,
+                    type: marketStock.type,
+                    isCompliant: true, // All new assets are compliant
+                    nonCompliantGains: 0,
+                    nisbah: marketStock.nisbah || 0
+                });
+            }
+
+            savePortfolio();
+            renderApp();
+            showMessage("Purchase Successful", `You bought ${sharesToBuy.toLocaleString()} shares/units of ${ticker} for ${formatCurrency(cost)}.`);
+        }
+
+        function sellStock(ticker, sharesToSell) {
+            const stock = portfolio.stocks.find(s => s.ticker === ticker);
+            if (!stock) return showMessage("Error", "You do not own this asset.");
+            if (sharesToSell <= 0 || sharesToSell > stock.shares) return showMessage("Invalid Amount", `You can only sell between 1 and ${stock.shares} shares.`);
+
+            const currentPrice = getStockData(ticker).price;
+            const proceeds = sharesToSell * currentPrice;
+            const costOfSharesSold = sharesToSell * stock.avgPrice;
+            const gain = proceeds - costOfSharesSold;
+
+            // --- ENHANCED PURIFICATION LOGIC (FIQH ACCURACY) ---
+            // Purification only applies to NON-COMPLIANT STOCKS.
+            // Sukuk and ETFs are considered compliant by design in this model.
+            if (stock.type === 'Stock' && !stock.isCompliant) {
+                // Stock is Non-Compliant.
+                // 1. Give back the principal (cost) to the user's cash.
+                portfolio.cash += costOfSharesSold;
+
+                // 2. Any profit (gain) must be purified.
+                if (gain > 0) {
+                    portfolio.purificationFund += gain;
+                    stock.nonCompliantGains += gain; // Track this for reporting
+                    showMessage("Purification Alert", `This stock is non-compliant. ${formatCurrency(gain)} in profit has been moved to the Purification Fund.`);
+                } else {
+                    // If it's a loss, the user just gets their (lower) proceeds back.
+                    // The proceeds are already less than the cost, so this is handled.
+                    portfolio.cash += gain; // (gain is negative)
+                }
+            } else {
+                // Asset is Compliant (Stock, Sukuk, or ETF). All proceeds go to cash.
+                portfolio.cash += proceeds;
+            }
+            // --- End of Purification Logic ---
+
+            stock.shares -= sharesToSell;
+            // Remove stock from portfolio if all shares are sold
+            portfolio.stocks = portfolio.stocks.filter(s => s.shares > 0);
+
+            savePortfolio();
+            renderApp();
+        }
+
+
+        // --- 5. SIMULATION LOGIC (ENHANCED) ---
+
+        function simulateNextDay() {
+            let marketAlerts = [];
+
+            // 5a. Pay Sukuk Yield (Demonstrates Part D - Nisbah)
+            let sukukIncome = 0;
+            portfolio.stocks.forEach(stock => {
+                if (stock.type === 'Sukuk') {
+                    const dailyNisbah = (stock.nisbah / 365) * stock.avgPrice * stock.shares;
+                    portfolio.cash += dailyNisbah;
+                    sukukIncome += dailyNisbah;
+                }
+            });
+            if (sukukIncome > 0) {
+                marketAlerts.push(`You received ${formatCurrency(sukukIncome)} in Sukuk (Nisbah) income.`);
+            }
+
+            // 5b. Simulate Maysir/Najasy Event (Demonstrates Part E)
+            const pumpedStockTicker = localStorage.getItem('pumpedStock');
+            if (pumpedStockTicker) {
+                // This is the "DUMP" day
+                const stock = marketData.find(s => s.ticker === pumpedStockTicker);
+                if (stock) stock.price = Math.round(stock.price * (Math.random() * 0.2 + 0.4)); // Crash 40-60%
+                localStorage.removeItem('pumpedStock');
+                marketAlerts.push(`MARKET CORRECTION: ${pumpedStockTicker} has crashed after the 'Pump and Dump' event!`);
+            } else if (Math.random() < 0.05) { // 5% chance of a "PUMP" event
+                // This is the "PUMP" day
+                const stocksOnly = marketData.filter(s => s.type === 'Stock');
+                const randomStock = stocksOnly[Math.floor(Math.random() * stocksOnly.length)];
+                randomStock.price = Math.round(randomStock.price * (Math.random() * 0.5 + 1.5)); // Pump 50-100%
+                localStorage.setItem('pumpedStock', randomStock.ticker);
+                marketAlerts.push(`MAYSIR WARNING (NAJASY): Market rumors are 'pumping' ${randomStock.ticker}. This is speculation (judi), not real value! Sell at your own risk.`);
+            }
+
+            // 5c. Simulate Price Changes (Stock vs. ETF vs. Sukuk)
+            let etfPriceSum = 0;
+            let compliantStockCount = 0;
+
+            marketData.forEach(stock => {
+                if (stock.type === 'Stock') {
+                    // Fluctuate stocks
+                    const changePercent = (Math.random() - 0.48) * 0.1; // -4.8% to +5.2%
+                    stock.price = Math.round(stock.price * (1 + changePercent));
+
+                    // Check OJK limits for ETF calculation
+                    const OJK_DEBT_LIMIT = 0.45;
+                    const OJK_INCOME_LIMIT = 0.10;
+                    if (stock.debtRatio <= OJK_DEBT_LIMIT && stock.incomeRatio <= OJK_INCOME_LIMIT) {
+                        etfPriceSum += stock.price;
+                        compliantStockCount++;
+                    }
+                }
+                // Sukuk price remains stable (stock.type === 'Sukuk')
+            });
+
+            // Update ETF Price (Demonstrates Part C - Passive)
+            const etf = marketData.find(s => s.type === 'ETF');
+            if (etf && compliantStockCount > 0) {
+                // Simple average for this mock. A real one would be weighted.
+                const newEtfPrice = Math.round(etfPriceSum / compliantStockCount / 5); // Just scaling it down
+                etf.price = newEtfPrice > 0 ? newEtfPrice : etf.price; // Avoid 0 price
+            }
+
+
+            // 5d. Simulate Compliance Failure (For Stocks Only)
+            portfolio.stocks.forEach(stock => {
+                if (stock.type === 'Stock' && stock.isCompliant) {
+                    const OJK_DEBT_LIMIT = 0.45;
+                    const OJK_INCOME_LIMIT = 0.10;
+
+                    if (Math.random() < 0.05) { // 5% chance of failure
+                        const failType = Math.random() < 0.5 ? 'debt' : 'income';
+                        const marketStock = marketData.find(s => s.ticker === stock.ticker);
+
+                        if (failType === 'debt') {
+                            marketStock.debtRatio = OJK_DEBT_LIMIT + Math.random() * 0.1; // e.g., 45%-55%
+                        } else {
+                            marketStock.incomeRatio = OJK_INCOME_LIMIT + Math.random() * 0.05; // e.g., 10%-15%
+                        }
+
+                        stock.isCompliant = false; // Mark the *portfolio* stock as non-compliant
+                        marketAlerts.push(`COMPLIANCE FAILURE: ${stock.ticker} has breached Syariah screening ratios (Debt: ${marketStock.debtRatio.toFixed(2)} / Income: ${marketStock.incomeRatio.toFixed(2)}). You must divest this stock. Future gains will be purified.`);
+                    }
+                }
+            });
+
+            savePortfolio();
+            renderApp();
+
+            // Show consolidated messages
+            if (marketAlerts.length > 0) {
+                showMessage(marketAlerts[0], marketAlerts.slice(1).join('\n') || "Market prices have been updated.");
+            } else {
+                showMessage("Market Simulated", "A new day has passed. Market prices and compliance ratios have been updated.");
+            }
+        }
+
+        // --- 6. RENDERING LOGIC (Update UI) ---
+
+        function renderApp() {
+            renderDashboard();
+            renderPortfolioList();
+            renderMarketList();
+            renderReportPreview();
+            renderPortfolioChart();
+        }
+
+        function renderDashboard() {
+            const { stockAssets, total } = calculatePortfolioValue();
+            document.getElementById('totalValue').innerText = formatCurrency(total);
+            document.getElementById('cashValue').innerText = formatCurrency(portfolio.cash);
+            document.getElementById('stockValue').innerText = formatCurrency(stockAssets);
+            document.getElementById('purificationFund').innerText = formatCurrency(portfolio.purificationFund);
+        }
+
+        function renderPortfolioList() {
+            const listEl = document.getElementById('portfolio-list');
+            if (portfolio.stocks.length === 0) {
+                listEl.innerHTML = `<p class="text-gray-400 py-4">You do not own any assets yet. Go to the "Market" tab to buy.</p>`;
+                return;
+            }
+
+            listEl.innerHTML = portfolio.stocks.map(stock => {
+                const currentPrice = getStockData(stock.ticker).price;
+                const currentValue = stock.shares * currentPrice;
+                const totalCost = stock.shares * stock.avgPrice;
+                const gain = currentValue - totalCost;
+                const gainPercent = totalCost > 0 ? (gain / totalCost) * 100 : 0;
+
+                let statusBadge;
+                if (stock.type === 'Stock') {
+                    statusBadge = stock.isCompliant
+                        ? `<span class="px-2 py-0.5 inline-flex text-xs leading-5 font-semibold rounded-full bg-emerald-100 text-emerald-800">Compliant Stock</span>`
+                        : `<span class="px-2 py-0.5 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800 animate-pulse">NON-COMPLIANT</span>`;
+                } else if (stock.type === 'Sukuk') {
+                    statusBadge = `<span class="px-2 py-0.5 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">Sukuk</span>`;
+                } else {
+                    statusBadge = `<span class="px-2 py-0.5 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">Passive ETF</span>`;
+                }
+
+
+                return `
+                    <div class="py-4 flex flex-col md:flex-row justify-between md:items-center">
+                        <div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-lg font-bold text-white">${stock.ticker}</span>
+                                ${statusBadge}
+                            </div>
+                            <div class="text-sm text-gray-400">${stock.shares.toLocaleString()} shares/units @ avg ${formatCurrency(stock.avgPrice)}</div>
+                        </div>
+                        <div class="text-left md:text-right mt-3 md:mt-0">
+                            <div class="text-lg font-semibold">${formatCurrency(currentValue)}</div>
+                            ${stock.type === 'Stock' ? `
+                            <div class="${gain > 0 ? 'text-emerald-400' : 'text-red-400'} text-sm">
+                                ${gain > 0 ? '▲' : '▼'} ${formatCurrency(gain)} (${gainPercent.toFixed(2)}%)
+                            </div>
+                            ` : `
+                            <div class="text-sm text-gray-400">(Yield-bearing asset)</div>
+                            `}
+                        </div>
+                        <div class="mt-3 md:mt-0 md:ml-4 flex space-x-2">
+                            <input type="number" id="sell-amount-${stock.ticker}" class="w-24 bg-gray-700 border border-gray-600 rounded-md py-1 px-2 text-white" placeholder="Units">
+                            <button data-ticker="${stock.ticker}" class="sell-btn bg-red-600 hover:bg-red-700 text-white text-sm font-medium py-1 px-3 rounded-md">Sell</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderMarketList() {
+            const listEl = document.getElementById('market-list');
+            listEl.innerHTML = marketData.map(stock => {
+                const OJK_DEBT_LIMIT = 0.45;
+                const OJK_INCOME_LIMIT = 0.10;
+                let isCompliant = true;
+                let priceInfo, ratioInfo, buyButton;
+
+                if (stock.type === 'Stock') {
+                    isCompliant = stock.debtRatio <= OJK_DEBT_LIMIT && stock.incomeRatio <= OJK_INCOME_LIMIT;
+                    priceInfo = `<div class="text-sm text-gray-300">${formatCurrency(stock.price)}</div>`;
+                    ratioInfo = `
+                        <div class="${stock.debtRatio > OJK_DEBT_LIMIT ? 'text-red-400' : 'text-gray-300'}">Debt: ${(stock.debtRatio * 100).toFixed(1)}%</div>
+                        <div class="${stock.incomeRatio > OJK_INCOME_LIMIT ? 'text-red-400' : 'text-gray-300'}">Income: ${(stock.incomeRatio * 100).toFixed(1)}%</div>
+                    `;
+                    buyButton = `
+                        <button data-ticker="${stock.ticker}" ${isCompliant ? '' : 'disabled'} class="buy-btn ${isCompliant ? 'bg-emerald-600 hover:bg-emerald-700' : 'bg-gray-500 cursor-not-allowed'} text-white text-sm font-medium py-1 px-3 rounded-md">
+                            ${isCompliant ? 'Buy' : 'Non-Compliant'}
+                        </button>
+                    `;
+                } else if (stock.type === 'Sukuk') {
+                    priceInfo = `<div class="text-sm text-gray-300">${formatCurrency(stock.price)} <span class="text-xs text-gray-400">(per unit)</span></div>`;
+                    ratioInfo = `<div class="text-blue-400">Yield: ${(stock.nisbah * 100).toFixed(1)}% p.a.</div><div class="text-xs text-gray-400">(Asset-backed)</div>`;
+                    buyButton = `<button data-ticker="${stock.ticker}" class="buy-btn bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-1 px-3 rounded-md">Buy</button>`;
+                } else { // ETF
+                    priceInfo = `<div class="text-sm text-gray-300">${formatCurrency(stock.price)}</div>`;
+                    ratioInfo = `<div class="text-purple-400">Passive Strategy</div><div class="text-xs text-gray-400">(Tracks JII70 Mock)</div>`;
+                    buyButton = `<button data-ticker="${stock.ticker}" class="buy-btn bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium py-1 px-3 rounded-md">Buy</button>`;
+                }
+
+                return `
+                    <tr class="${isCompliant ? '' : 'bg-red-900 bg-opacity-30'}">
+                        <td class="px-4 py-3 whitespace-nowrap">
+                            <div class="text-sm font-bold text-white">${stock.ticker}</div>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap">
+                            <div class="text-sm text-gray-300">${stock.name}</div>
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap">
+                            ${priceInfo}
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-sm">
+                            ${ratioInfo}
+                        </td>
+                        <td class="px-4 py-3 whitespace-nowrap text-right text-sm font-medium">
+                            <div class="flex justify-end space-x-2">
+                                <input type="number" id="buy-amount-${stock.ticker}" class="w-32 bg-gray-700 border border-gray-600 rounded-md py-1 px-2 text-white" placeholder="Amount (IDR)">
+                                ${buyButton}
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function renderReportPreview() {
+            const reportEl = document.getElementById('report-preview');
+            const { stockAssets, total } = calculatePortfolioValue();
+            const date = new Date().toLocaleString('id-ID', { dateStyle: 'full', timeStyle: 'long' });
+
+            let holdingsReport = portfolio.stocks.map(stock => {
+                const marketStock = getStockData(stock.ticker);
+                let status;
+
+                if (stock.type === 'Stock') {
+                    status = stock.isCompliant
+                        ? "COMPLIANT"
+                        : `NON-COMPLIANT (Debt: ${(marketStock.debtRatio * 100).toFixed(1)}%, Income: ${(marketStock.incomeRatio * 100).toFixed(1)}%)`;
+                } else {
+                    status = `COMPLIANT (${stock.type})`;
+                }
+
+                return `
+    Ticker    : ${stock.ticker} (${stock.type})
+    Shares    : ${stock.shares.toLocaleString()}
+    Avg. Price: ${formatCurrency(stock.avgPrice)}
+    Status    : ${status}
+                `;
+            }).join('\n');
+
+            if (portfolio.stocks.length === 0) {
+                holdingsReport = "    No holdings in portfolio.";
+            }
+
+            const reportText = `
+    ===================================================
+      SYARIAH COMPLIANCE & PURIFICATION REPORT (MOCK)
+    ===================================================
+
+    Report Generated: ${date}
+    Student Name    : [Your Name Here]
+    Lecturer (Dosen): [Your Lecturer's Name Here]
+
+    --- 1. PORTFOLIO SUMMARY ---
+
+    Total Value       : ${formatCurrency(total)}
+    Available Cash    : ${formatCurrency(portfolio.cash)}
+    Asset Value       : ${formatCurrency(stockAssets)}
+
+    --- 2. PURIFICATION (TATHIR) SUMMARY ---
+
+    This fund represents non-permissible income (e.g., gains
+    from non-compliant stocks) that has been identified and
+    set aside for charitable distribution.
+
+    TOTAL PURIFICATION FUND: ${formatCurrency(portfolio.purificationFund)}
+
+    --- 3. DETAILED HOLDINGS ---
+${holdingsReport}
+
+    --- END OF REPORT ---
+            `;
+            reportEl.textContent = reportText;
+        }
+
+        function renderPortfolioChart() {
+            const ctx = document.getElementById('portfolioChart').getContext('2d');
+            const { stockAssets } = calculatePortfolioValue();
+
+            const labels = ['Available Cash'];
+            const data = [portfolio.cash];
+            const colors = ['#10b981']; // Emerald (Cash)
+
+            // Asset-specific colors
+            const colorMap = {
+                'Stock': '#3b82f6', // Blue
+                'Sukuk': '#06b6d4', // Cyan
+                'ETF': '#a855f7', // Purple
+                'Default': '#f97316' // Orange (fallback)
+            }
+
+            portfolio.stocks.forEach(stock => {
+                labels.push(stock.ticker);
+                data.push(getStockData(stock.ticker).price * stock.shares);
+                colors.push(colorMap[stock.type] || colorMap['Default']);
+            });
+
+            if (portfolioChart) {
+                portfolioChart.destroy();
+            }
+
+            portfolioChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: colors,
+                        borderColor: '#1f2937', // bg-gray-800
+                        borderWidth: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                color: '#d1d5db', // text-gray-300
+                                font: {
+                                    family: 'Inter'
+                                }
+                            }
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.parsed !== null) {
+                                        label += formatCurrency(context.parsed);
+                                    }
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        // --- 7. EVENT LISTENERS ---
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Tab Navigation ---
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const tabId = btn.dataset.tab;
+
+                    // Update button active state
+                    document.querySelectorAll('.tab-btn').forEach(b => {
+                        b.classList.remove('active', 'text-emerald-400', 'border-emerald-400');
+                        b.classList.add('text-gray-400', 'hover:text-gray-200', 'border-transparent');
+                    });
+                    btn.classList.add('active', 'text-emerald-400', 'border-emerald-400');
+                    btn.classList.remove('text-gray-400', 'hover:text-gray-200', 'border-transparent');
+
+                    // Show correct content
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                        if (content.id === `tab-${tabId}`) {
+                            content.classList.add('active');
+                        }
+                    });
+                });
+            });
+
+            // --- Modal Close ---
+            document.getElementById('message-close').addEventListener('click', () => {
+                document.getElementById('message-modal').classList.add('hidden');
+            });
+
+            // --- Core Action Buttons ---
+            document.getElementById('simulateBtn').addEventListener('click', simulateNextDay);
+
+            document.getElementById('resetBtn').addEventListener('click', () => {
+                if (confirm("Are you sure you want to reset your portfolio? All progress will be lost.")) {
+                    localStorage.removeItem('syariahPortfolio');
+                    localStorage.removeItem('pumpedStock'); // Clear this too
+                    loadPortfolio();
+                    renderApp();
+                    showMessage("Reset Complete", "Your portfolio has been reset to IDR 1,000,000,000.");
+                }
+            });
+
+            document.getElementById('downloadReportBtn').addEventListener('click', () => {
+                const reportText = document.getElementById('report-preview').textContent;
+                const pdf = new jsPDF();
+
+                pdf.setFont("courier", "normal");
+                pdf.setFontSize(10);
+                pdf.text(reportText, 10, 20);
+                pdf.save("Syariah_Compliance_Report.pdf");
+            });
+
+            // --- Dynamic Buy/Sell Button Listeners (using event delegation) ---
+            document.body.addEventListener('click', (e) => {
+                // Buy Button
+                const buyBtn = e.target.closest('.buy-btn');
+                if (buyBtn) {
+                    const ticker = buyBtn.dataset.ticker;
+                    const amountInput = document.getElementById(`buy-amount-${ticker}`);
+                    const amount = parseInt(amountInput.value, 10);
+                    if (isNaN(amount) || amount <= 0) {
+                        showMessage("Invalid Amount", "Please enter a valid amount in IDR to buy.");
+                        return;
+                    }
+                    buyStock(ticker, amount);
+                    amountInput.value = ''; // Clear input
+                }
+
+                // Sell Button
+                const sellBtn = e.target.closest('.sell-btn');
+                if (sellBtn) {
+                    const ticker = sellBtn.dataset.ticker;
+                    const amountInput = document.getElementById(`sell-amount-${ticker}`);
+                    const shares = parseInt(amountInput.value, 10);
+                    if (isNaN(shares) || shares <= 0) {
+                        showMessage("Invalid Amount", "Please enter a valid number of shares/units to sell.");
+                        return;
+                    }
+                    sellStock(ticker, shares);
+                    amountInput.value = ''; // Clear input
+                }
+            });
+
+            // --- Initial Load ---
+            loadPortfolio();
+            renderApp();
+        });
+
+    </script>
+</body>
+</html>

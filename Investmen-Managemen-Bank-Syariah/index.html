@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Investasi Bank Syariah</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {'sans': ['Inter', 'sans-serif'], 'serif': ['Lora', 'serif']},
+                    colors: {
+                        'brand-dark': '#0A2342', 'brand-light': '#F8F5F0',
+                        'brand-accent': '#D4AF37', 'brand-secondary': '#8D99AE',
+                        // --- ADD THESE COLORS FOR THE CHARTS AND CARDS ---
+                        'blue-700': '#1D4ED8',
+                        'red-600': '#DC2626',
+                        'yellow-600': '#CA8A04',
+                        'blue-600': '#2563EB',
+                        'yellow-600': '#D97706',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/prinsip-module.css">
+
+</head>
+<body class="font-sans bg-brand-light text-brand-dark antialiased">
+
+    <header class="bg-brand-light/90 backdrop-blur-sm sticky top-0 z-50 shadow-md border-b-2 border-brand-accent/30">
+        <div class="container mx-auto px-4">
+            <div class="text-center py-4">
+                <h1 class="font-serif text-3xl font-semibold text-brand-dark">Manajemen Investasi Bank Syariah</h1>
+                <p class="font-sans text-sm text-brand-secondary">Sebuah Hub Pembelajaran Interaktif</p>
+            </div>
+            <nav class="flex justify-center flex-wrap -mb-px">
+                <button data-target="beranda" class="nav-link font-medium border-b-4 py-3 px-4 md:px-6 transition-colors duration-200">Beranda</button>
+                <button data-target="strategi" class="nav-link font-medium border-b-4 py-3 px-4 md:px-6 transition-colors duration-200">Strategi</button>
+                <button data-target="instrumen" class="nav-link font-medium border-b-4 py-3 px-4 md:px-6 transition-colors duration-200">Jelajah Instrumen</button>
+                <button data-target="prinsip" class="nav-link font-medium border-b-4 py-3 px-4 md:px-6 transition-colors duration-200">Prinsip & Praktik</button>
+                <button data-target="simulasi" class="nav-link font-medium border-b-4 py-3 px-4 md:px-6 transition-colors duration-200">Simulasi</button>
+                <button data-target="kuis" class="nav-link font-medium border-b-4 py-3 px-4 md:px-6 transition-colors duration-200">Kuis</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 md:p-8">
+        <div id="global-error-banner" class="hidden"></div>
+        <section id="beranda" class="content-section"></section>
+        <section id="strategi" class="content-section"></section>
+        <section id="instrumen" class="content-section"></section>
+        <section id="prinsip" class="content-section"></section>
+        <section id="simulasi" class="content-section"></section>
+        <section id="kuis" class="content-section"></section>
+
+    </main>
+    </main>
+
+    <div id="modal-backdrop" class="hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50"></div>
+
+    <div id="modal-al-hasyr-18" class="modal hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+        bg-white rounded-lg shadow-xl z-50 w-11/12 md:w-1/2 p-6 md:p-8">
+
+        <h3 class="font-serif text-2xl text-brand-dark mb-4">Surah Al-Hasyr, Ayat 18</h3>
+        <p class="font-sans text-brand-dark/80 mb-6">
+            "Hai orang-orang yang beriman, bertakwalah kepada Allah dan hendaklah setiap diri memperhatikan apa yang telah diperbuatnya untuk hari esok (akhirat); dan bertakwalah kepada Allah, sesungguhnya Allah Maha Mengetahui apa yang kamu kerjakan."
+        </p>
+        <button class="modal-close-btn bg-brand-dark text-white px-4 py-2 rounded hover:bg-brand-dark/90 transition-colors">Tutup</button>
+    </div>
+
+    <div id="modal-al-baqarah-261" class="modal hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+        bg-white rounded-lg shadow-xl z-50 w-11/12 md:w-1/2 p-6 md:p-8">
+
+        <h3 class="font-serif text-2xl text-brand-dark mb-4">Surah Al-Baqarah, Ayat 261</h3>
+        <p class="font-sans text-brand-dark/80 mb-6">
+            "Perumpamaan (nafkah yang dikeluarkan oleh) orang-orang yang menafkahkan hartanya di jalan Allah adalah serupa dengan sebutir benih yang menumbuhkan tujuh bulir, pada tiap-tiap bulir seratus biji. Allah melipat gandakan (ganjaran) bagi siapa yang Dia kehendaki. Dan Allah Maha Luas (karunia-Nya) lagi Maha Mengetahui."
+        </p>
+        <button class="modal-close-btn bg-brand-dark text-white px-4 py-2 rounded hover:bg-brand-dark/90 transition-colors">Tutup</button>
+    </div>
+    <script src="assets/js/EventBus.js"></script>
+    <script src="assets/js/AppConfig.js"></script>
+    <script src="assets/js/KurikulumRenderer.js"></script>
+    <script src="assets/js/BerandaModule.js"></script>
+    <script src="assets/js/StrategiModule.js"></script>
+    <script src="assets/js/PrinsipModule.js"></script>
+    <script src="assets/js/InstrumentModal.js"></script>
+    <script src="assets/js/InstrumentFilter.js"></script>
+    <script src="assets/js/InstrumenController.js"></script>
+    <script src="assets/js/SimulasiModule.js"></script>
+    <script src="assets/js/quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><script src="assets/js/app.js"></script>
+    <script src="assets/js/KurikulumModule.js"></script>
+    </body>
+</html>

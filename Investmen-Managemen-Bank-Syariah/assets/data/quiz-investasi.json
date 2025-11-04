@@ -1,0 +1,2501 @@
+[
+  {
+    "question": "Apa perbedaan filosofis utama antara tujuan investasi konvensional (menurut OJK) dan investasi syariah?",
+    "answers": [
+      {
+        "text": "Investasi syariah bertujuan ganda (laba finansial dan 'falah' dunia-akhirat), sementara konvensional berfokus tunggal pada laba finansial.",
+        "correct": true,
+        "feedback": "Tepat! Ini disebut 'Dual-Objective Function', di mana 'falah' (kebahagiaan dunia-akhirat) adalah tujuan yang melampaui sekadar laba (profit)."
+      },
+      {
+        "text": "Investasi syariah hanya berfokus pada akhirat ('falah') dan tidak mementingkan laba finansial.",
+        "correct": false,
+        "feedback": "Kurang tepat. Syariah mengejar keduanya (dual-objective). Laba finansial yang halal tetap penting."
+      },
+      {
+        "text": "Keduanya sama-sama mencari laba, bedanya syariah harus melalui OJK dan DSN-MUI.",
+        "correct": false,
+        "feedback": "Kurang lengkap. Perbedaan intinya ada di filosofi tujuan akhir ('falah'), bukan hanya di struktur tata kelolanya."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Prinsip filosofis yang menyatakan bahwa manusia adalah 'khalifah' (wakil) yang bertugas mengelola sumber daya milik Allah disebut...",
+    "answers": [
+      {
+        "text": "Tauhid (Keesaan Allah)",
+        "correct": true,
+        "feedback": "Benar. Tauhid menetapkan kedaulatan Allah atas semua sumber daya, dan manusia berperan sebagai khalifah atau wali amanat."
+      },
+      {
+        "text": "'Adl (Keadilan)",
+        "correct": false,
+        "feedback": "Bukan. 'Adl adalah prinsip keadilan, kesetaraan, dan transparansi dalam transaksi."
+      },
+      {
+        "text": "Maslahah (Kesejahteraan Umum)",
+        "correct": false,
+        "feedback": "Bukan. Maslahah adalah prinsip promosi kepentingan publik dan pencegahan kerugian."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Tujuan akhir dari keseluruhan sistem keuangan syariah yang dirancang untuk melindungi 5 nilai penting (agama, jiwa, akal, keturunan, harta) dikenal sebagai...",
+    "answers": [
+      {
+        "text": "Maqasid al-Shariah",
+        "correct": true,
+        "feedback": "Tepat. Maqasid al-Shariah adalah tujuan-tujuan luhur dari hukum Islam yang menjadi orientasi sistem keuangan syariah."
+      },
+      {
+        "text": "Fikih Muamalah",
+        "correct": false,
+        "feedback": "Kurang tepat. Fikih Muamalah adalah ilmunya (yurisprudensi transaksi), sedangkan Maqasid al-Shariah adalah tujuannya."
+      },
+      {
+        "text": "Dual-Objective Function",
+        "correct": false,
+        "feedback": "Bukan. Dual-Objective adalah fungsinya (laba + falah), Maqasid adalah tujuan luhur di balik fungsi tersebut."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Peran ganda Dewan Pengawas Syariah (DPS) sebagai 'penjaga gerbang' (memastikan kepatuhan) dan 'pendorong inovasi' (merancang produk baru) disebut sebagai...",
+    "answers": [
+      {
+        "text": "Gatekeeper & Enabler",
+        "correct": true,
+        "feedback": "Benar. DPS tidak hanya mengawasi (Gatekeeper), tetapi juga aktif membantu merancang produk agar patuh syariah (Enabler)."
+      },
+      {
+        "text": "Supervisor & Auditor",
+        "correct": false,
+        "feedback": "Kurang tepat. Peran DPS lebih dari sekadar mengawasi, tapi juga aktif *memungkinkan* inovasi produk baru."
+      },
+      {
+        "text": "Regulator & Eksekutor",
+        "correct": false,
+        "feedback": "Bukan. Regulator utama adalah OJK, dan eksekutor adalah manajemen bank. DPS adalah penasihat dan pengawas kepatuhan syariah."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Siapakah yang berwenang memberikan rekomendasi formal sebelum anggota DPS (Dewan Pengawas Syariah) dapat diangkat oleh RUPS?",
+    "answers": [
+      {
+        "text": "Otoritas Jasa Keuangan (OJK)",
+        "correct": false,
+        "feedback": "Kurang tepat. OJK mengawasi sisi keuangan, namun rekomendasi kompetensi syariah anggota DPS berasal dari DSN-MUI."
+      },
+      {
+        "text": "Bank Indonesia (BI)",
+        "correct": false,
+        "feedback": "Kurang tepat. BI berfokus pada makroekonomi dan sistem pembayaran, bukan pengangkatan DPS."
+      },
+      {
+        "text": "Dewan Syariah Nasional - Majelis Ulama Indonesia (DSN-MUI)",
+        "correct": true,
+        "feedback": "Tepat. RUPS mengangkat anggota DPS hanya setelah mendapat rekomendasi dari DSN-MUI."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Apa tujuan utama dari strategi Investasi Aktif (Active Investing)?",
+    "answers": [
+      {
+        "text": "Meniru kinerja pasar (Match the Market) dengan biaya serendah mungkin.",
+        "correct": false,
+        "feedback": "Kurang tepat. Ini adalah tujuan dari strategi Investasi Pasif (Passive Investing)."
+      },
+      {
+        "text": "Mengalahkan pasar (Beat the Market) atau indeks acuan melalui analisis mendalam.",
+        "correct": true,
+        "feedback": "Benar! Strategi Aktif bertujuan 'outperform the market' melalui keahlian manajer investasi dalam memilih saham dan market timing."
+      },
+      {
+        "text": "Hanya berinvestasi pada saham yang membagikan dividen secara rutin.",
+        "correct": false,
+        "feedback": "Bukan. Ini bisa menjadi salah satu gaya investasi (dividend investing), tetapi bukan tujuan utama dari strategi aktif secara umum."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Menurut penelitian, mengapa semua investasi syariah pada dasarnya dapat dianggap 'inheren aktif'?",
+    "answers": [
+      {
+        "text": "Karena semua manajer investasi syariah wajib melakukan 'market timing' harian.",
+        "correct": false,
+        "feedback": "Tidak wajib. 'Inheren aktif' merujuk pada keharusan *menyaring* (screening), bukan strategi spesifik seperti market timing."
+      },
+      {
+        "text": "Karena proses penyaringan (screening) saham yang tidak patuh itu sendiri adalah sebuah tindakan seleksi aktif.",
+        "correct": true,
+        "feedback": "Tepat. Investasi pasif konvensional bisa membeli 'seluruh pasar' (misal S&P 500), tapi investasi syariah harus *aktif* membuang yang haram."
+      },
+      {
+        "text": "Karena akad Mudharabah mengharuskan jual-beli setiap hari.",
+        "correct": false,
+        "feedback": "Tidak. Akad Mudharabah mendorong keterlibatan, tapi alasan 'inheren aktif' utamanya adalah proses *screening* awal."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Konsep keahlian unik MI syariah dalam memilih perusahaan yang kualitas kepatuhannya terbaik (misal: rasio utang jauh di bawah batas 45%) disebut...",
+    "answers": [
+      {
+        "text": "Alpha Kepatuhan (Compliance Alpha)",
+        "correct": true,
+        "feedback": "Benar. Ini adalah 'alpha' tambahan selain alpha finansial, yaitu keahlian memilih saham yang kualitas syariahnya paling baik dan stabil."
+      },
+      {
+        "text": "Beta Kepatuhan (Compliance Beta)",
+        "correct": false,
+        "feedback": "Bukan. Beta mengukur volatilitas relatif terhadap pasar, bukan keunggulan seleksi."
+      },
+      {
+        "text": "Screening Kualitatif",
+        "correct": false,
+        "feedback": "Bukan. Screening Kualitatif adalah proses menyaring jenis bisnis (misal: non-alkohol), sedangkan Alpha Kepatuhan adalah *keahlian* dalam screening kuantitatif."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Strategi Investasi Pasif didasarkan pada filosofi bahwa pasar sudah efisien dan sulit dikalahkan dalam jangka panjang. Teori ini disebut...",
+    "answers": [
+      {
+        "text": "Modern Portfolio Theory (Teori Portofolio Modern)",
+        "correct": false,
+        "feedback": "Kurang tepat. MPT (Markowitz) adalah tentang optimalisasi portofolio (risiko vs imbal hasil), bukan tentang efisiensi harga pasar."
+      },
+      {
+        "text": "Behavioral Finance (Keuangan Perilaku)",
+        "correct": false,
+        "feedback": "Kebalikan. Teori ini justru menantang efisiensi pasar dengan memasukkan faktor psikologi investor."
+      },
+      {
+        "text": "Efficient Market Hypothesis (Hipotesis Pasar Efisien)",
+        "correct": true,
+        "feedback": "Tepat. Teori ini menyatakan bahwa harga aset telah mencerminkan semua informasi, sehingga 'mengalahkan pasar' secara konsisten itu sulit."
+      }
+    ],
+    "section": "C"
+  },
+  {
+    "question": "Manakah dari berikut ini yang merupakan keunggulan terbesar dari strategi Investasi Pasif?",
+    "answers": [
+      {
+        "text": "Potensi imbal hasil yang jauh di atas rata-rata pasar.",
+        "correct": false,
+        "feedback": "Ini adalah *tujuan* strategi Aktif. Strategi Pasif, berdasarkan desain, *tidak akan* di atas pasar (hanya meniru)."
+      },
+      {
+        "text": "Fleksibilitas tinggi untuk beralih ke kas saat pasar turun.",
+        "correct": false,
+        "feedback": "Ini adalah *kelemahan* strategi Pasif, yang harus tetap memegang indeks. Fleksibilitas adalah keunggulan strategi Aktif."
+      },
+      {
+        "text": "Biaya manajemen dan biaya transaksi yang jauh lebih rendah.",
+        "correct": true,
+        "feedback": "Benar. Karena tidak perlu riset mendalam dan frekuensi dagang rendah, biaya (expense ratio) dana pasif sangat efisien."
+      }
+    ],
+    "section": "C"
+  },
+  {
+    "question": "Apa keunggulan struktural strategi pasif syariah (seperti ETF Syariah) dari sudut pandang manajemen kepatuhan?",
+    "answers": [
+      {
+        "text": "Manajer Investasi (MI) dana pasif tidak memerlukan pengawasan DPS.",
+        "correct": false,
+        "feedback": "Salah. Semua produk syariah, baik aktif maupun pasif, tetap wajib memiliki pengawasan DPS."
+      },
+      {
+        "text": "Proses screening yang rumit sudah dilakukan oleh penyedia indeks (OJK/BEI).",
+        "correct": true,
+        "feedback": "Tepat! Ini disebut 'Efisiensi Kepatuhan'. MI hanya perlu meniru indeks yang sudah disaring, sehingga beban kepatuhannya jauh lebih ringan."
+      },
+      {
+        "text": "Strategi pasif dijamin 100% bebas dari pendapatan non-halal.",
+        "correct": false,
+        "feedback": "Tidak ada jaminan. Tetap ada risiko (misal: dari kas yang mengendap), namun beban MI-nya jauh lebih ringan dibanding MI aktif."
+      }
+    ],
+    "section": "C"
+  },
+  {
+    "question": "Akad KPR Syariah di mana bank dan nasabah membeli rumah bersama-sama (misal bank 80%, nasabah 20%) dan nasabah mencicil porsi kepemilikan bank sambil membayar sewa disebut...",
+    "answers": [
+      {
+        "text": "Murabahah (Jual Beli)",
+        "correct": false,
+        "feedback": "Bukan. Dalam Murabahah, bank beli dulu 100%, lalu langsung menjualnya ke nasabah dengan margin keuntungan. Kepemilikan langsung beralih."
+      },
+      {
+        "text": "Musyarakah Mutanaqisah (Kemitraan Berkurang)",
+        "correct": true,
+        "feedback": "Tepat! Ini adalah akad kemitraan (Musyarakah) di mana porsi kepemilikan salah satu pihak (bank) berkurang (Mutanaqisah) secara bertahap."
+      },
+      {
+        "text": "Ijarah (Sewa Murni)",
+        "correct": false,
+        "feedback": "Bukan. Ijarah murni adalah sewa tanpa pengalihan kepemilikan di akhir."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Berapa batas maksimum rasio 'Total utang berbasis bunga' terhadap 'Total Aset' agar sebuah saham lolos screening syariah OJK?",
+    "answers": [
+      {
+        "text": "Kurang dari 10% dari Total Pendapatan",
+        "correct": false,
+        "feedback": "Kurang tepat. Batas 10% adalah untuk rasio *pendapatan non-halal* terhadap *total pendapatan*."
+      },
+      {
+        "text": "Kurang dari 45% dari Total Aset",
+        "correct": true,
+        "feedback": "Tepat! Ini adalah salah satu kriteria kuantitatif utama dalam Daftar Efek Syariah (DES) yang ditetapkan oleh OJK."
+      },
+      {
+        "text": "Kurang dari 33% dari Kapitalisasi Pasar",
+        "correct": false,
+        "feedback": "Kurang tepat. Ini adalah standar yang mungkin digunakan di yurisdiksi lain (misal: AAOIFI), tetapi OJK Indonesia menggunakan 45% dari Aset."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Berapa batas maksimum rasio 'Total pendapatan non-halal' terhadap 'Total Pendapatan' agar sebuah saham lolos screening syariah OJK?",
+    "answers": [
+      {
+        "text": "Kurang dari 10% dari Total Pendapatan",
+        "correct": true,
+        "feedback": "Tepat! Ini adalah kriteria kuantitatif kedua, untuk memastikan pendapatan utama perusahaan berasal dari bisnis yang halal."
+      },
+      {
+        "text": "Kurang dari 45% dari Total Aset",
+        "correct": false,
+        "feedback": "Kurang tepat. Batas 45% adalah untuk rasio *utang berbasis bunga* terhadap *total aset*."
+      },
+      {
+        "text": "Kurang dari 50% dari Total Pendapatan",
+        "correct": false,
+        "feedback": "Salah. Batas toleransi yang ditetapkan OJK jauh lebih ketat, yaitu 10%."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Apa perbedaan fundamental antara Sukuk dan Obligasi konvensional?",
+    "answers": [
+      {
+        "text": "Sukuk adalah bukti kepemilikan atas aset (asset-backed), sementara Obligasi adalah surat utang (debt-based).",
+        "correct": true,
+        "feedback": "Benar. Pemegang sukuk memiliki bagian atas aset/proyek (mendapat sewa/bagi hasil), pemegang obligasi adalah kreditur (mendapat bunga)."
+      },
+      {
+        "text": "Sukuk hanya diterbitkan oleh negara, Obligasi hanya oleh korporasi.",
+        "correct": false,
+        "feedback": "Tidak tepat. Ada Sukuk Negara (SBSN) dan Sukuk Korporasi. Ada juga Obligasi Negara (SUN) dan Obligasi Korporasi."
+      },
+      {
+        "text": "Sukuk memberikan imbal hasil tetap (Nisbah), Obligasi memberikan kupon mengambang (bunga).",
+        "correct": false,
+        "feedback": "Tidak tepat. Imbal hasil Sukuk bisa berasal dari sewa (Ujrah), margin, atau bagi hasil (Nisbah) dan bisa bersifat tetap atau mengambang."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Dalam Reksa Dana Syariah, jika ada pendapatan non-halal yang tidak dapat dihindari (misal: bunga dari kas), MI wajib memisahkannya dan menyalurkannya untuk amal. Mekanisme ini disebut...",
+    "answers": [
+      {
+        "text": "Screening Kuantitatif",
+        "correct": false,
+        "feedback": "Bukan. Screening adalah proses *pemilihan* aset di awal."
+      },
+      {
+        "text": "Wakalah bil Ujrah",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah akad antara investor dan MI (agensi dengan biaya), bukan proses pembersihan."
+      },
+      {
+        "text": "Cleansing / Purification (Pembersihan)",
+        "correct": true,
+        "feedback": "Tepat! Ini adalah fitur unik reksa dana syariah untuk membersihkan portofolio dari pendapatan non-halal yang diterima secara tidak sengaja."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Larangan atas setiap tambahan yang disyaratkan di muka atas jumlah pokok pinjaman karena berjalannya waktu disebut...",
+    "answers": [
+      {
+        "text": "Riba",
+        "correct": true,
+        "feedback": "Benar. Ini adalah definisi inti dari Riba, yaitu keuntungan dari utang tanpa menanggung risiko usaha."
+      },
+      {
+        "text": "Gharar",
+        "correct": false,
+        "feedback": "Bukan. Gharar adalah ketidakpastian atau ambiguitas yang berlebihan dalam kontrak."
+      },
+      {
+        "text": "Maysir",
+        "correct": false,
+        "feedback": "Bukan. Maysir adalah perjudian atau spekulasi untung-untungan."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Transaksi yang dilarang karena mengandung ketidakjelasan, ambiguitas, atau ketidakpastian yang berlebihan pada objek atau harganya disebut...",
+    "answers": [
+      {
+        "text": "Gharar",
+        "correct": true,
+        "feedback": "Tepat. Larangan Gharar bertujuan untuk menjamin transparansi, keadilan, dan 'informed consent' bagi semua pihak."
+      },
+      {
+        "text": "Riba",
+        "correct": false,
+        "feedback": "Bukan. Riba adalah tambahan/bunga atas utang. Gharar adalah ketidakpastian."
+      },
+      {
+        "text": "Najasy",
+        "correct": false,
+        "feedback": "Bukan. Najasy adalah praktik manipulasi pasar (permintaan palsu) untuk menaikkan harga."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Transaksi yang dilarang karena perolehan kekayaannya terjadi murni secara kebetulan atau untung-untungan (zero-sum game) disebut...",
+    "answers": [
+      {
+        "text": "Maysir / Qimar",
+        "correct": true,
+        "feedback": "Benar. Ini adalah larangan atas perjudian atau spekulasi murni, di mana keuntungan satu pihak berasal dari kerugian pihak lain tanpa ada nilai ekonomi riil."
+      },
+      {
+        "text": "Gharar",
+        "correct": false,
+        "feedback": "Berhubungan, tapi tidak sama. Gharar adalah *ketidakpastiannya*, Maysir adalah *perjudian* atas ketidakpastian itu."
+      },
+      {
+        "text": "Tadlis",
+        "correct": false,
+        "feedback": "Bukan. Tadlis adalah menyembunyikan cacat atau memberikan informasi yang menyesatkan (penipuan)."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Praktik 'Short Selling' (menjual saham yang belum dimiliki) dilarang dalam syariah terutama karena mengandung unsur...",
+    "answers": [
+      {
+        "text": "Riba (Bunga)",
+        "correct": false,
+        "feedback": "Bukan. Meskipun transaksi margin untuk short selling bisa melibatkan Riba, larangan utamanya adalah karena investor menjual sesuatu yang bukan miliknya."
+      },
+      {
+        "text": "Gharar (Ketidakpastian) dan Ba'i al-Ma'dum (Menjual yang Tidak Dimiliki)",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah larangan menjual sesuatu yang tidak berada dalam kepemilikan dan kendali penjual, yang mengandung Gharar ekstrem."
+      },
+      {
+        "text": "Ihtikar (Penimbunan)",
+        "correct": false,
+        "feedback": "Bukan. Ihtikar adalah menimbun barang untuk menaikkan harga, kebalikan dari short selling."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Praktik merekayasa permintaan atau penawaran palsu untuk memberi kesan palsu tentang aktivitas pasar, seperti 'Pump and Dump' (goreng saham), disebut...",
+    "answers": [
+      {
+        "text": "Tadlis (Informasi Menyesatkan)",
+        "correct": false,
+        "feedback": "Kurang tepat. Tadlis adalah menyembunyikan informasi negatif atau cacat suatu produk."
+      },
+      {
+        "text": "Ihtikar (Penimbunan)",
+        "correct": false,
+        "feedback": "Bukan. Ihtikar adalah menimbun pasokan untuk menciptakan kelangkaan artifisial."
+      },
+      {
+        "text": "Najasy (Permintaan/Penawaran Palsu)",
+        "correct": true,
+        "feedback": "Tepat! Najasy secara spesifik merujuk pada rekayasa permintaan (seperti 'pump and dump' atau 'wash sale') untuk memanipulasi harga."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Mengapa praktik 'Insider Trading' (perdagangan dengan informasi orang dalam) dilarang menurut prinsip syariah?",
+    "answers": [
+      {
+        "text": "Karena melanggar prinsip keadilan ('Adalah) dengan menciptakan asimetri informasi yang ekstrem.",
+        "correct": true,
+        "feedback": "Benar. Ini dianggap tidak adil karena satu pihak mengambil keuntungan dari informasi yang tidak dimiliki publik."
+      },
+      {
+        "text": "Karena transaksi tersebut pasti mengandung unsur Riba (bunga).",
+        "correct": false,
+        "feedback": "Bukan. Masalah utamanya bukan Riba, tetapi ketidakadilan dan pelanggaran amanah atas informasi."
+      },
+      {
+        "text": "Karena merupakan bentuk Maysir (judi).",
+        "correct": false,
+        "feedback": "Kurang tepat. Meskipun spekulatif, larangan intinya adalah pada ketidakadilan ('Adl) dan penipuan."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Selain sebagai aturan agama, larangan Riba, Gharar, dan Maysir juga berfungsi sebagai...",
+    "answers": [
+      {
+        "text": "Kerangka manajemen risiko etis dan sistemik.",
+        "correct": true,
+        "feedback": "Tepat. Larangan ini (misal: larang riba) secara inheren membuat sistem lebih stabil dan fokus pada ekonomi riil."
+      },
+      {
+        "text": "Alat untuk memaksimalkan keuntungan jangka pendek.",
+        "correct": false,
+        "feedback": "Bukan. Justru larangan ini membatasi cara-cara spekulatif untuk mendapat keuntungan jangka pendek."
+      },
+      {
+        "text": "Standar akuntansi yang diwajibkan OJK.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah prinsip filosofis dan hukum (fikih), bukan standar akuntansi teknis (meskipun memengaruhinya)."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Mengapa dalam perbankan syariah digunakan istilah 'Batas Maksimum Penyaluran Dana' (BMPD) dan bukan 'Batas Maksimum Pemberian Kredit' (BMPK)?",
+    "answers": [
+      {
+        "text": "Karena 'Kredit' berkonotasi pinjaman berbasis bunga (riba), sedangkan 'Penyaluran Dana' mencakup akad syariah seperti bagi hasil dan jual-beli.",
+        "correct": true,
+        "feedback": "Tepat. Terminologi ini sangat fundamental untuk membedakan filosofi (non-utang) perbankan syariah."
+      },
+      {
+        "text": "Karena BMPD hanya berlaku untuk BPRS, sedangkan BMPK berlaku untuk Bank Umum Syariah.",
+        "correct": false,
+        "feedback": "Salah. BMPD berlaku untuk Bank Umum Syariah (BUS) dan BPRS. BMPK adalah istilah untuk bank konvensional."
+      },
+      {
+        "text": "Karena BMPD dihitung berdasarkan Modal Inti, sedangkan BMPK dari Modal Total.",
+        "correct": false,
+        "feedback": "Bukan. Perbedaan utamanya ada di filosofi akad (kredit vs. penyaluran dana), bukan di teknis perhitungan modalnya."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Apa tujuan utama dari penerapan regulasi BMPD oleh OJK?",
+    "answers": [
+      {
+        "text": "Untuk memastikan semua nasabah mendapat porsi pembiayaan yang sama.",
+        "correct": false,
+        "feedback": "Bukan. Tujuannya bukan pemerataan, tapi mitigasi risiko."
+      },
+      {
+        "text": "Mencegah konsentrasi risiko pembiayaan yang berlebihan pada satu nasabah atau grup.",
+        "correct": true,
+        "feedback": "Benar. Ini adalah instrumen manajemen risiko agar bank tidak bangkrut jika 1-2 nasabah besar gagal bayar."
+      },
+      {
+        "text": "Mendorong bank agar lebih banyak menyalurkan dana ke pihak terkait.",
+        "correct": false,
+        "feedback": "Sebaliknya. BMPD justru *membatasi* penyaluran dana ke pihak terkait dengan sangat ketat (hanya 10%)."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Berapa batas maksimum BMPD untuk Bank Umum Syariah (BUS) kepada seluruh PIHAK TERKAIT (agregat)?",
+    "answers": [
+      {
+        "text": "10% dari Modal Inti (Tier 1)",
+        "correct": false,
+        "feedback": "Kurang tepat. Angka 10% sudah benar, tetapi basis perhitungannya adalah Modal Total."
+      },
+      {
+        "text": "10% dari Modal Total (Tier 1 + Tier 2)",
+        "correct": true,
+        "feedback": "Tepat. Batas untuk pihak terkait sangat ketat (10%) dan dihitung dari keseluruhan modal bank."
+      },
+      {
+        "text": "25% dari Modal Inti (Tier 1)",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah batas untuk Pihak TIDAK Terkait."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Berapa batas maksimum BMPD untuk Bank Umum Syariah (BUS) kepada satu PIHAK TIDAK TERKAIT (single atau grup)?",
+    "answers": [
+      {
+        "text": "10% dari Modal Total (Tier 1 + Tier 2)",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah batas untuk Pihak TERKAIT."
+      },
+      {
+        "text": "25% dari Modal Total (Tier 1 + Tier 2)",
+        "correct": false,
+        "feedback": "Kurang tepat. Angka 25% sudah benar, tetapi basis perhitungannya adalah Modal Inti."
+      },
+      {
+        "text": "25% dari Modal Inti (Tier 1)",
+        "correct": true,
+        "feedback": "Tepat. Batas untuk pihak tidak terkait (nasabah biasa) adalah 25% dari modal kualitas tertinggi (Modal Inti)."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Mengapa OJK menggunakan basis 'Modal Inti' (Tier 1) yang lebih ketat untuk menghitung batas BMPD pihak tidak terkait (25%) pada BUS?",
+    "answers": [
+      {
+        "text": "Untuk memastikan ketahanan bank terhadap gagal bayar besar diukur terhadap modal kualitas tertinggi (paling mampu serap rugi).",
+        "correct": true,
+        "feedback": "Benar. Ini adalah pilihan kebijakan yang konservatif dan prudensial dari OJK."
+      },
+      {
+        "text": "Agar bank bisa menyalurkan dana lebih besar, karena Modal Inti nilainya lebih besar dari Modal Total.",
+        "correct": false,
+        "feedback": "Salah. Modal Total (Tier 1 + Tier 2) nilainya lebih besar dari Modal Inti (Tier 1). Menggunakan Modal Inti justru lebih ketat."
+      },
+      {
+        "text": "Karena Modal Inti (Tier 1) adalah satu-satunya modal yang diakui oleh DSN-MUI.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah murni pertimbangan prudensial (kehati-hatian) dari OJK, bukan DSN-MUI."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Regulasi BMPD untuk Bank Pembiayaan Rakyat Syariah (BPRS) menetapkan batas 30% dari Modal BPRS untuk...",
+    "answers": [
+      {
+        "text": "Pihak Terkait (Agregat)",
+        "correct": false,
+        "feedback": "Bukan. Batas untuk Pihak Terkait di BPRS adalah 10%."
+      },
+      {
+        "text": "Pihak Tidak Terkait (Single)",
+        "correct": false,
+        "feedback": "Bukan. Batas untuk Pihak Tidak Terkait (Single) di BPRS adalah 20%."
+      },
+      {
+        "text": "Pihak Tidak Terkait (Grup)",
+        "correct": true,
+        "feedback": "Tepat. Batas 30% dari Modal BPRS adalah untuk satu kelompok peminjam yang tidak terkait."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Mengapa regulasi BMPD (POJK 26/2021) mendefinisikan 'Penyaluran Dana' secara sangat luas (termasuk investasi Sukuk, derivatif, hingga L/C)?",
+    "answers": [
+      {
+        "text": "Untuk mencegah arbitrase regulasi, di mana bank bisa menyembunyikan eksposur risiko di instrumen non-pembiayaan.",
+        "correct": true,
+        "feedback": "Tepat. Ini untuk memastikan *total eksposur ekonomi* bank ke satu pihak terhitung, apapun bentuk instrumennya."
+      },
+      {
+        "text": "Untuk melarang Bank Umum Syariah berinvestasi di Sukuk atau derivatif.",
+        "correct": false,
+        "feedback": "Bukan untuk melarang, tapi untuk *menghitung* eksposur dari investasi tersebut ke dalam batas BMPD."
+      },
+      {
+        "text": "Karena akad Sukuk, derivatif, dan L/C adalah akad yang paling berisiko.",
+        "correct": false,
+        "feedback": "Bukan. Tujuannya adalah untuk *menghitung total eksposur*, bukan mengkategorikan risiko instrumen."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Menurut POJK 26/2021, apa yang dimaksud dengan 'Penyaluran Dana Besar' (Large Exposures)?",
+    "answers": [
+      {
+        "text": "Setiap penyaluran dana yang melanggar batas 25% dari Modal Inti.",
+        "correct": false,
+        "feedback": "Bukan. 'Large Exposure' bukanlah pelanggaran, melainkan sebuah penanda untuk pemantauan intensif."
+      },
+      {
+        "text": "Setiap penyaluran dana ke pihak terkait yang melebihi 10% dari Modal Total.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah pelanggaran BMPD pihak terkait."
+      },
+      {
+        "text": "Setiap penyaluran dana ke pihak tidak terkait yang mencapai atau melampaui 10% dari Modal Inti.",
+        "correct": true,
+        "feedback": "Tepat. Ini bukan pelanggaran, tapi status yang mewajibkan bank melakukan pemantauan risiko lebih intensif."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Apakah ada pengecualian dari batas BMPD 25% untuk pihak tidak terkait di BUS? (Menurut POJK 26/2021)",
+    "answers": [
+      {
+        "text": "Tidak ada. Batas 25% dari Modal Inti bersifat mutlak untuk semua pihak tidak terkait.",
+        "correct": false,
+        "feedback": "Kurang tepat. Ada pengecualian spesifik untuk mendukung program pembangunan nasional."
+      },
+      {
+        "text": "Ya, untuk BUMN (proyek strategis seperti infrastruktur), batasnya bisa 30% dari Modal Total Bank.",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah kelonggaran yang diberikan OJK untuk menyeimbangkan stabilitas (mikro) dan pembangunan (makro)."
+      },
+      {
+        "text": "Ya, untuk nasabah UMKM, batasnya bisa 50% dari Modal Inti.",
+        "correct": false,
+        "feedback": "Tidak disebutkan dalam naskah. Pengecualian spesifik yang dibahas adalah untuk BUMN."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Dalam kesimpulan, arsitektur tata kelola keuangan syariah Indonesia ditopang oleh dua pilar pengawasan, yaitu...",
+    "answers": [
+      {
+        "text": "Bank Indonesia (BI) dan Bank Umum Syariah (BUS).",
+        "correct": false,
+        "feedback": "Bukan. BI adalah otoritas makroekonomi, dan BUS adalah obyek yang diawasi."
+      },
+      {
+        "text": "Otoritas prudensial (OJK) dan otoritas kepatuhan syariah (DSN-MUI & DPS).",
+        "correct": true,
+        "feedback": "Tepat. OJK mengawasi kesehatan finansial, sementara DSN-MUI & DPS mengawasi kepatuhan prinsip."
+      },
+      {
+        "text": "Manajer Investasi (MI) dan Dewan Pengawas Syariah (DPS).",
+        "correct": false,
+        "feedback": "Kurang tepat. MI dan DPS adalah bagian dari struktur internal, bukan pilar pengawasan eksternal secara keseluruhan."
+      }
+    ],
+    "section": "Kesimpulan"
+  },
+  {
+    "question": "Kesimpulan menyebut bank syariah telah bertransformasi menjadi 'supermarket keuangan terkurasi'. Apa artinya?",
+    "answers": [
+      {
+        "text": "Bank hanya menjual produk-produk dari bank lain (pihak ketiga).",
+        "correct": false,
+        "feedback": "Kurang tepat. Bank juga *menciptakan* produknya sendiri (seperti deposito)."
+      },
+      {
+        "text": "Bank berperan ganda: sebagai kreator produk (deposito) dan agen distribusi (Sukuk, Reksa Dana).",
+        "correct": true,
+        "feedback": "Tepat. Bank menjadi 'satu pintu' bagi nasabah untuk mengakses produk internal bank dan produk pasar modal."
+      },
+      {
+        "text": "Bank diwajibkan menjual semua produk keuangan syariah yang ada di pasar.",
+        "correct": false,
+        "feedback": "Bukan. Istilah 'terkurasi' berarti bank *memilih* produk-produk yang akan ditawarkannya."
+      }
+    ],
+    "section": "Kesimpulan"
+  },
+  {
+    "question": "Menurut kesimpulan, apa tantangan ganda bagi manajer investasi aktif syariah di Indonesia?",
+    "answers": [
+      {
+        "text": "Mereka harus mengalahkan kinerja strategi pasif dan strategi konvensional.",
+        "correct": false,
+        "feedback": "Bisa jadi, tapi bukan itu 'tantangan ganda' unik yang dimaksud dalam kesimpulan."
+      },
+      {
+        "text": "Mereka harus mengejar 'alpha finansial' (keunggulan kinerja) dan 'alpha kepatuhan' (kualitas syariah terbaik).",
+        "correct": true,
+        "feedback": "Tepat. Mereka tidak hanya dituntut cari untung, tapi juga cari untung dari saham yang kualitas kepatuhannya paling baik."
+      },
+      {
+        "text": "Mereka harus mematuhi aturan OJK dan aturan DSN-MUI secara terpisah.",
+        "correct": false,
+        "feedback": "Ini adalah kewajiban, bukan 'tantangan ganda' dalam konteks kinerja (alpha)."
+      }
+    ],
+    "section": "Kesimpulan"
+  },
+  {
+    "question": "Kesimpulan menyatakan bahwa produk investasi pasif (seperti ETF Syariah) memiliki keunggulan struktural dalam hal...",
+    "answers": [
+      {
+        "text": "Menghasilkan imbal hasil yang pasti lebih tinggi dari investasi aktif.",
+        "correct": false,
+        "feedback": "Tidak. Investasi pasif bertujuan *meniru* pasar, bukan mengalahkannya."
+      },
+      {
+        "text": "Efisiensi Kepatuhan, karena proses screening sudah tertanam dalam metodologi indeks.",
+        "correct": true,
+        "feedback": "Tepat. Ini meringankan beban kepatuhan Manajer Investasi secara signifikan."
+      },
+      {
+        "text": "Tidak memerlukan pengawasan DPS sama sekali.",
+        "correct": false,
+        "feedback": "Salah. Semua produk syariah, baik aktif maupun pasif, tetap wajib diawasi oleh DPS."
+      }
+    ],
+    "section": "Kesimpulan"
+  },
+  {
+    "question": "Praktik menyembunyikan informasi negatif atau cacat suatu objek transaksi, atau memberikan informasi yang tidak benar (misleading) disebut...",
+    "answers": [
+      {
+        "text": "Najasy",
+        "correct": false,
+        "feedback": "Bukan. Najasy adalah rekayasa permintaan/penawaran palsu."
+      },
+      {
+        "text": "Tadlis",
+        "correct": true,
+        "feedback": "Tepat! Tadlis adalah bentuk penipuan dengan menyembunyikan cacat atau memberikan informasi yang menyesatkan."
+      },
+      {
+        "text": "Gharar",
+        "correct": false,
+        "feedback": "Berhubungan, tapi Tadlis lebih spesifik ke *penipuan* informasi, sedangkan Gharar adalah *ketidakpastian* dalam kontrak."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Praktik melakukan aksi beli besar-besaran untuk menguasai pasokan agar terjadi kelangkaan artifisial sehingga harga naik disebut...",
+    "answers": [
+      {
+        "text": "Ihtikar (Penimbunan)",
+        "correct": true,
+        "feedback": "Benar. Ini adalah praktik monopoli pasokan yang dilarang karena merugikan pasar."
+      },
+      {
+        "text": "Pump and Dump",
+        "correct": false,
+        "feedback": "Bukan. Pump and Dump (Najasy) adalah rekayasa *permintaan* melalui promosi palsu, bukan rekayasa *pasokan*."
+      },
+      {
+        "text": "Risywah (Suap)",
+        "correct": false,
+        "feedback": "Bukan. Risywah adalah suap untuk memengaruhi keputusan."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Regulasi BMPD untuk Bank Pembiayaan Rakyat Syariah (BPRS) menetapkan batas 20% dari Modal BPRS untuk...",
+    "answers": [
+      {
+        "text": "Pihak Terkait (Agregat)",
+        "correct": false,
+        "feedback": "Bukan. Batas untuk Pihak Terkait di BPRS adalah 10%."
+      },
+      {
+        "text": "Pihak Tidak Terkait (Single)",
+        "correct": true,
+        "feedback": "Tepat! Batas 20% dari Modal BPRS adalah untuk satu peminjam yang tidak terkait."
+      },
+      {
+        "text": "Pihak Tidak Terkait (Grup)",
+        "correct": false,
+        "feedback": "Bukan. Batas untuk Pihak Tidak Terkait (Grup) di BPRS adalah 30%."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Hubungan antara investor dan Manajer Investasi (MI) dalam Reksa Dana Syariah biasanya diatur oleh akad...",
+    "answers": [
+      {
+        "text": "Mudharabah (Bagi Hasil)",
+        "correct": false,
+        "feedback": "Kurang tepat. Mudharabah adalah bagi hasil atas *keuntungan*, sedangkan MI mendapat *biaya* tetap (fee)."
+      },
+      {
+        "text": "Wakalah bil Ujrah (Agensi dengan Biaya/Fee)",
+        "correct": true,
+        "feedback": "Tepat. Investor (Muwakkil) memberi mandat kepada MI (Wakil) untuk mengelola dana dengan imbalan 'Ujrah' (biaya manajemen)."
+      },
+      {
+        "text": "Musyarakah (Kemitraan)",
+        "correct": false,
+        "feedback": "Bukan. Musyarakah berarti MI ikut menyertakan modalnya dan berbagi risiko dan hasil."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Dalam produk Shariah Restricted Investment Account (SRIA), akad apa yang digunakan dan siapa yang menanggung risiko investasi?",
+    "answers": [
+      {
+        "text": "Akad Mudharabah Muqayyadah; Nasabah (Shahibul Mal) menanggung seluruh risiko.",
+        "correct": true,
+        "feedback": "Tepat. Dalam Mudharabah Muqayyadah (investasi terikat), bank sebagai pengelola (Mudharib) hanya menjalankan mandat, dan nasabah menanggung risiko."
+      },
+      {
+        "text": "Akad Mudharabah Muthlaqah; Bank (Mudharib) menanggung risiko kerugian.",
+        "correct": false,
+        "feedback": "Kurang tepat. Mudharabah Muthlaqah (investasi tidak terikat) adalah untuk Deposito biasa, di mana dana dicampur dan risiko dikelola bank."
+      },
+      {
+        "text": "Akad Wakalah bil Ujrah; Manajer Investasi menanggung seluruh risiko.",
+        "correct": false,
+        "feedback": "Bukan. Akad Wakalah bil Ujrah untuk Reksa Dana (MI mendapat fee), dan risiko tetap pada investor."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Mana otoritas yang menjadi sumber data primer dan paling otoritatif untuk statistik operasional dan keuangan Bank Syariah di Indonesia?",
+    "answers": [
+      {
+        "text": "Bank Indonesia (BI), melalui Statistik Ekonomi dan Keuangan Indonesia (SEKI).",
+        "correct": false,
+        "feedback": "Kurang tepat. BI (SEKI) berfokus pada data makroekonomi, bukan data operasional terperinci perbankan syariah."
+      },
+      {
+        "text": "Otoritas Jasa Keuangan (OJK), melalui Statistik Perbankan Syariah (SPS).",
+        "correct": true,
+        "feedback": "Benar. OJK adalah otoritas pengawas terintegrasi yang mengambil alih pengawasan perbankan dari BI dan mempublikasikan data SPS."
+      },
+      {
+        "text": "Dewan Syariah Nasional (DSN-MUI), melalui kumpulan fatwa.",
+        "correct": false,
+        "feedback": "Bukan. DSN-MUI adalah otoritas penetap fatwa dan kepatuhan syariah, bukan penerbit data statistik keuangan."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Salah satu tantangan bagi Manajer Investasi (MI) aktif syariah adalah 'Constrained Investment Universe'. Apa maksudnya?",
+    "answers": [
+      {
+        "text": "Proses screening syariah (DES) menghasilkan pilihan saham yang lebih sedikit, sehingga berpotensi mengurangi peluang 'alpha'.",
+        "correct": true,
+        "feedback": "Tepat. Karena banyak sektor (misal: bank konvensional) dikecualikan, alam semesta investasinya lebih terbatas."
+      },
+      {
+        "text": "MI syariah dilarang berinvestasi di luar negeri atau pada saham non-Rupiah.",
+        "correct": false,
+        "feedback": "Bukan. Tantangannya adalah pada *keterbatasan* akibat proses *screening*, bukan pada yurisdiksi."
+      },
+      {
+        "text": "MI syariah hanya boleh berinvestasi pada saham yang masuk indeks JII70.",
+        "correct": false,
+        "feedback": "Kurang tepat. Alam semesta investasinya adalah Daftar Efek Syariah (DES) yang lebih luas, JII70 hanya salah satu indeks."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Menurut studi kasus (dalam naskah) penerapan Model Markowitz (MPT) pada saham-saham JII, apa temuan utamanya?",
+    "answers": [
+      {
+        "text": "Portofolio optimal dapat mencapai imbal hasil yang diharapkan dengan risiko keseluruhan yang jauh lebih rendah daripada risiko saham individu.",
+        "correct": true,
+        "feedback": "Benar. Ini memvalidasi bahwa manfaat diversifikasi (MPT) tetap berlaku bahkan di dalam alam semesta syariah yang terbatas."
+      },
+      {
+        "text": "Model Markowitz (MPT) tidak dapat diterapkan pada saham syariah karena melanggar prinsip anti-spekulasi.",
+        "correct": false,
+        "feedback": "Salah. MPT adalah model matematika untuk manajemen risiko, bukan praktik spekulasi (Maysir)."
+      },
+      {
+        "text": "Portofolio syariah terbukti memiliki risiko lebih tinggi dan imbal hasil lebih rendah daripada portofolio konvensional.",
+        "correct": false,
+        "feedback": "Bukan. Studi itu menunjukkan *manfaat diversifikasi* di *internal* portofolio JII, bukan perbandingan dengan konvensional."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Apa perbedaan utama antara ETF Syariah dan Reksa Dana Indeks Syariah dari sisi transaksi?",
+    "answers": [
+      {
+        "text": "ETF Syariah diperdagangkan di bursa (intraday), Reksa Dana Indeks ditransaksikan via MI (berdasarkan NAB akhir hari).",
+        "correct": true,
+        "feedback": "Tepat. ETF diperdagangkan seperti saham (real-time di bursa), sementara Reksa Dana Indeks adalah reksa dana tradisional."
+      },
+      {
+        "text": "ETF Syariah dikelola aktif, Reksa Dana Indeks dikelola pasif.",
+        "correct": false,
+        "feedback": "Tidak tepat. Keduanya umumnya dikelola secara pasif untuk melacak indeks."
+      },
+      {
+        "text": "ETF Syariah hanya untuk investor institusi, Reksa Dana Indeks untuk ritel.",
+        "correct": false,
+        "feedback": "Tidak. Keduanya tersedia untuk investor ritel."
+      }
+    ],
+    "section": "C"
+  },
+  {
+    "question": "Dalam produk Gadai Emas Syariah (Rahn), akad apa yang digunakan bank untuk memungut biaya atas penitipan jaminan emas tersebut?",
+    "answers": [
+      {
+        "text": "Riba (bunga atas pinjaman Qardh).",
+        "correct": false,
+        "feedback": "Salah. Pinjaman (Qardh) dalam Rahn bersifat kebajikan (tanpa bunga). Riba dilarang."
+      },
+      {
+        "text": "Ujrah (biaya/fee atas jasa penitipan dan pemeliharaan).",
+        "correct": true,
+        "feedback": "Tepat. Bank mengenakan biaya atas jasa *penitipan* dan *pemeliharaan* emas yang dijaminkan, bukan atas pinjamannya."
+      },
+      {
+        "text": "Nisbah (bagi hasil atas nilai emas).",
+        "correct": false,
+        "feedback": "Bukan. Gadai adalah transaksi pinjaman (utang-piutang), bukan kemitraan investasi (bagi hasil)."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Manakah dari berikut ini yang termasuk dalam 'Screening Kualitatif' (Kegiatan Usaha) untuk Saham Syariah?",
+    "answers": [
+      {
+        "text": "Memeriksa rasio utang perusahaan < 45% dari aset.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah 'Screening Kuantitatif' (Rasio Keuangan)."
+      },
+      {
+        "text": "Memeriksa apakah bisnis inti perusahaan adalah perbankan konvensional, produksi alkohol, atau perjudian.",
+        "correct": true,
+        "feedback": "Tepat. Screening Kualitatif menyaring *jenis bisnis* (industri haram) terlebih dahulu."
+      },
+      {
+        "text": "Memeriksa rasio pendapatan non-halal < 10% dari pendapatan.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah 'Screening Kuantitatif' (Rasio Keuangan)."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Apa isi portofolio utama (100%) dari Reksa Dana Pasar Uang Syariah?",
+    "answers": [
+      {
+        "text": "Saham syariah dari JII70.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah isi dari Reksa Dana Saham Syariah (risiko tinggi)."
+      },
+      {
+        "text": "Campuran Saham Syariah dan Sukuk.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah isi dari Reksa Dana Campuran Syariah (risiko moderat)."
+      },
+      {
+        "text": "Instrumen pasar uang syariah jangka pendek (< 1 tahun) seperti Deposito Syariah dan Sukuk jatuh tempo.",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah produk berisiko paling rendah, cocok untuk likuiditas."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Apa isi portofolio utama (minimum 80%) dari Reksa Dana Pendapatan Tetap Syariah?",
+    "answers": [
+      {
+        "text": "Sukuk (Negara atau Korporasi).",
+        "correct": true,
+        "feedback": "Benar. Ini adalah produk 'pendapatan tetap' versi syariah, yang berfokus pada instrumen berbasis utang/aset syariah (Sukuk)."
+      },
+      {
+        "text": "Saham syariah (dari DES).",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah isi dari Reksa Dana Saham Syariah."
+      },
+      {
+        "text": "Deposito Syariah dan instrumen pasar uang.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah isi dari Reksa Dana Pasar Uang Syariah."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Apa isi portofolio utama (minimum 80%) dari Reksa Dana Saham Syariah?",
+    "answers": [
+      {
+        "text": "Sukuk Negara Ritel (SR).",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah isi dari Reksa Dana Pendapatan Tetap Syariah."
+      },
+      {
+        "text": "Saham syariah (dari Daftar Efek Syariah - DES).",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah produk berisiko tinggi dengan fokus pada pertumbuhan modal dari saham."
+      },
+      {
+        "text": "Instrumen pasar uang syariah.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah isi dari Reksa Dana Pasar Uang Syariah."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Reksa Dana Syariah yang berinvestasi secara fleksibel di portofolio campuran Saham Syariah, Sukuk, dan instrumen pasar uang disebut...",
+    "answers": [
+      {
+        "text": "Reksa Dana Pendapatan Tetap Syariah.",
+        "correct": false,
+        "feedback": "Kurang tepat. Jenis ini harus berinvestasi minimal 80% di Sukuk."
+      },
+      {
+        "text": "Reksa Dana Campuran Syariah.",
+        "correct": true,
+        "feedback": "Tepat. Jenis ini memiliki fleksibilitas untuk mengalokasikan asetnya di ketiga instrumen (saham, sukuk, pasar uang)."
+      },
+      {
+        "text": "Reksa Dana Indeks Syariah.",
+        "correct": false,
+        "feedback": "Kurang tepat. Jenis ini portofolionya meniru komposisi indeks tertentu, bukan campuran fleksibel."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Mengapa 'Margin Trading' (transaksi margin) konvensional dilarang di pasar modal syariah?",
+    "answers": [
+      {
+        "text": "Karena investor meminjam uang dari broker dan broker mengenakan bunga (Riba) atas pinjaman tersebut.",
+        "correct": true,
+        "feedback": "Tepat. Larangan ini utamanya disebabkan oleh unsur Riba (bunga) yang ada dalam fasilitas pinjaman margin."
+      },
+      {
+        "text": "Karena investor menjual saham yang tidak dimilikinya.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah larangan untuk 'Short Selling' (Ba'i al-Ma'dum)."
+      },
+      {
+        "text": "Karena merupakan praktik penimbunan (Ihtikar).",
+        "correct": false,
+        "feedback": "Bukan. Margin trading adalah transaksi berbasis utang, Ihtikar adalah manipulasi pasokan."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Praktik memberikan 'hadiah' atau fasilitas kepada analis agar mengeluarkan rekomendasi 'beli' yang tidak jujur dilarang karena termasuk...",
+    "answers": [
+      {
+        "text": "Najasy (Permintaan Palsu)",
+        "correct": false,
+        "feedback": "Bukan. Najasy adalah rekayasa *di pasar* (permintaan/penawaran palsu), bukan menyuap analis."
+      },
+      {
+        "text": "Risywah (Suap)",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah bentuk suap untuk memperoleh keputusan (rekomendasi) yang tidak semestinya."
+      },
+      {
+        "text": "Tadlis (Menyembunyikan Cacat)",
+        "correct": false,
+        "feedback": "Bukan. Tadlis adalah penipuan terkait informasi *produk*, Risywah adalah penipuan terkait *keputusan*."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Larangan terhadap 'ketidakpastian berlebih' dalam kontrak adalah..., sedangkan larangan 'untung-untungan' (judi) adalah...",
+    "answers": [
+      {
+        "text": "Riba; Gharar",
+        "correct": false,
+        "feedback": "Kurang tepat. Riba adalah bunga/tambahan atas utang."
+      },
+      {
+        "text": "Gharar; Maysir",
+        "correct": true,
+        "feedback": "Tepat. Gharar adalah ketidakpastian/ambiguitas, Maysir adalah perjudian/spekulasi."
+      },
+      {
+        "text": "Maysir; Riba",
+        "correct": false,
+        "feedback": "Terbalik dan salah. Riba adalah bunga."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Apa konsekuensi bagi bank yang menyetujui fasilitas pembiayaan baru yang akan mengakibatkan pelanggaran/pelampauan BMPD?",
+    "answers": [
+      {
+        "text": "Tindakan tersebut secara tegas dilarang dan akan dikenai sanksi administratif oleh OJK.",
+        "correct": true,
+        "feedback": "Benar. Pelampauan BMPD adalah pelanggaran prudensial yang serius dan dilarang."
+      },
+      {
+        "text": "Tindakan tersebut diperbolehkan, asalkan bank melapor dalam 1x24 jam.",
+        "correct": false,
+        "feedback": "Salah. Tindakan menyetujui fasilitas *baru* yang *akan* melanggar itu dilarang, bukan hanya wajib lapor."
+      },
+      {
+        "text": "Tindakan tersebut diperbolehkan, asalkan mendapat persetujuan dari DSN-MUI.",
+        "correct": false,
+        "feedback": "Salah. BMPD adalah aturan prudensial (kehati-hatian) dari OJK, bukan ranah fatwa DSN-MUI."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Imbal hasil Sukuk Ijarah (berbasis aset sewa) disebut..., sedangkan imbal hasil Obligasi konvensional disebut...",
+    "answers": [
+      {
+        "text": "Nisbah (Bagi Hasil); Kupon (Bunga)",
+        "correct": false,
+        "feedback": "Kurang tepat. Nisbah adalah untuk akad bagi hasil (Mudharabah/Musyarakah), bukan sewa (Ijarah)."
+      },
+      {
+        "text": "Ujrah (Uang Sewa); Kupon (Bunga)",
+        "correct": true,
+        "feedback": "Tepat. Pemegang Sukuk Ijarah mendapat bagian dari Ujrah (uang sewa) atas aset yang mendasarinya."
+      },
+      {
+        "text": "Margin (Keuntungan); Dividen",
+        "correct": false,
+        "feedback": "Kurang tepat. Margin untuk akad jual-beli (Murabahah), Dividen untuk saham (ekuitas)."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Prinsip yang menuntut transparansi dan kebebasan dari eksploitasi dalam kontrak adalah..., sedangkan prinsip yang berfokus pada kesejahteraan umum masyarakat adalah...",
+    "answers": [
+      {
+        "text": "'Adl (Keadilan); Maslahah (Kesejahteraan Umum)",
+        "correct": true,
+        "feedback": "Tepat. 'Adl adalah keadilan dalam transaksi, Maslahah adalah dampak/manfaat bagi publik."
+      },
+      {
+        "text": "Maslahah (Kesejahteraan Umum); 'Adl (Keadilan)",
+        "correct": false,
+        "feedback": "Terbalik. 'Adl adalah keadilan, Maslahah adalah kesejahteraan umum."
+      },
+      {
+        "text": "Tauhid (Keesaan); Falah (Kebahagiaan)",
+        "correct": false,
+        "feedback": "Bukan. Tauhid adalah fondasi (keesaan Allah), Falah adalah tujuan akhir (kebahagiaan)."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Secara ringkas, strategi Investasi Aktif bertujuan..., sedangkan strategi Investasi Pasif bertujuan...",
+    "answers": [
+      {
+        "text": "Mengalahkan Pasar (Beat the Market); Meniru Pasar (Match the Market)",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah perbedaan tujuan (objektif) yang paling fundamental."
+      },
+      {
+        "text": "Meniru Pasar (Match the Market); Mengalahkan Pasar (Beat the Market)",
+        "correct": false,
+        "feedback": "Terbalik. Aktif ingin mengalahkan, Pasif ingin meniru."
+      },
+      {
+        "text": "Biaya Tinggi (High Cost); Biaya Rendah (Low Cost)",
+        "correct": false,
+        "feedback": "Ini adalah *karakteristik* atau *konsekuensi* dari strategi, bukan *tujuan* utamanya."
+      }
+    ],
+    "section": "B-C"
+  },
+  {
+    "question": "Bunga yang timbul karena penundaan pembayaran utang (misal: bunga pinjaman) disebut..., sedangkan kelebihan dalam pertukaran barang sejenis (misal: 1kg emas ditukar 1.1kg emas) disebut...",
+    "answers": [
+      {
+        "text": "Riba Nasi'ah; Riba Fadhl",
+        "correct": true,
+        "feedback": "Tepat. Riba Nasi'ah adalah riba karena penundaan/waktu, Riba Fadhl adalah riba karena kelebihan kuantitas barang sejenis."
+      },
+      {
+        "text": "Riba Fadhl; Riba Nasi'ah",
+        "correct": false,
+        "feedback": "Terbalik."
+      },
+      {
+        "text": "Riba; Gharar",
+        "correct": false,
+        "feedback": "Kurang spesifik. Keduanya adalah Riba, tapi jenisnya berbeda. Gharar adalah ketidakpastian."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Mengapa OJK menerapkan aturan BMPD yang berbeda (lebih kompleks untuk BUS dan lebih sederhana untuk BPRS)?",
+    "answers": [
+      {
+        "text": "Karena BUS berpotensi memiliki dampak sistemik, sedangkan BPRS dampaknya terbatas (non-sistemik).",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah pendekatan pengawasan berjenjang berbasis risiko (tiered, risk-based supervisory approach)."
+      },
+      {
+        "text": "Karena BUS diawasi OJK, sedangkan BPRS diawasi oleh Bank Indonesia.",
+        "correct": false,
+        "feedback": "Salah. Keduanya (BUS dan BPRS) diawasi oleh OJK."
+      },
+      {
+        "text": "Karena BUS hanya boleh menyalurkan dana ke korporasi, BPRS hanya ke ritel.",
+        "correct": false,
+        "feedback": "Bukan. Alasan utamanya adalah perbedaan profil risiko dan dampak sistemik."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Investasi syariah harus memenuhi empat aspek fundamental. Manakah dari berikut ini yang *bukan* salah satunya?",
+    "answers": [
+      {
+        "text": "Aspek Material (Finansial)",
+        "correct": false,
+        "feedback": "Kurang tepat. Aspek material (menghasilkan laba halal) adalah salah satu dari empat aspek tersebut."
+      },
+      {
+        "text": "Aspek Jaminan Keuntungan (Guaranteed Profit)",
+        "correct": true,
+        "feedback": "Tepat! Jaminan keuntungan (profit guarantee) justru dilarang karena Riba. Yang dicari adalah 'Aspek Material', bukan 'Jaminan'."
+      },
+      {
+        "text": "Aspek Sosial dan Lingkungan",
+        "correct": false,
+        "feedback": "Kurang tepat. Aspek sosial dan lingkungan (kontribusi positif) adalah salah satu dari empat aspek tersebut."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Pengecualian sektor-sektor besar (seperti bank konvensional) dari Daftar Efek Syariah (DES) dapat menimbulkan risiko spesifik yaitu...",
+    "answers": [
+      {
+        "text": "Risiko Konsentrasi Sektor (Sector Concentration Risk)",
+        "correct": true,
+        "feedback": "Tepat. Karena tidak bisa berinvestasi di semua sektor, portofolio syariah bisa menjadi terlalu terkonsentrasi di sektor tertentu."
+      },
+      {
+        "text": "Risiko Likuiditas",
+        "correct": false,
+        "feedback": "Bukan. Pengecualian sektor tidak secara langsung berarti saham yang tersisa menjadi tidak likuid."
+      },
+      {
+        "text": "Risiko Kepatuhan Syariah (Sharia Non-Compliance Risk)",
+        "correct": false,
+        "feedback": "Kurang tepat. Risiko ini adalah risiko *salah beli*, sedangkan Konsentrasi Sektor adalah risiko *akibat* dari *proses screening*."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Dalam investasi pasif, penyimpangan antara kinerja dana pasif (ETF/Reksa Dana Indeks) dan kinerja aktual dari indeks yang dilacaknya disebut...",
+    "answers": [
+      {
+        "text": "Alpha",
+        "correct": false,
+        "feedback": "Bukan. Alpha adalah keunggulan kinerja (excess return) *di atas* indeks, yang dicari oleh strategi aktif."
+      },
+      {
+        "text": "Tracking Error",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah risiko teknis dalam strategi pasif di mana kinerja dana tidak 100% identik dengan indeksnya."
+      },
+      {
+        "text": "Beta",
+        "correct": false,
+        "feedback": "Bukan. Beta adalah ukuran volatilitas portofolio relatif terhadap pasar (indeks)."
+      }
+    ],
+    "section": "C"
+  },
+  {
+    "question": "Apa perbedaan utama Tabungan Syariah berakad Mudharabah dan berakad Wadiah Yad Dhamanah?",
+    "answers": [
+      {
+        "text": "Mudharabah adalah bagi hasil (nasabah dapat nisbah), Wadiah adalah titipan (nasabah tidak dijanjikan imbal hasil, tapi bank boleh memberi bonus/hibah).",
+        "correct": true,
+        "feedback": "Tepat. Mudharabah adalah akad investasi (bagi hasil), Wadiah adalah akad titipan (dijamin kembali, imbal hasil tidak dijanjikan)."
+      },
+      {
+        "text": "Mudharabah adalah titipan, Wadiah adalah bagi hasil.",
+        "correct": false,
+        "feedback": "Terbalik. Mudharabah adalah bagi hasil (investasi), Wadiah adalah titipan."
+      },
+      {
+        "text": "Mudharabah dan Wadiah keduanya menjanjikan imbal hasil tetap.",
+        "correct": false,
+        "feedback": "Salah. Keduanya tidak menjanjikan imbal hasil tetap. Jaminan hasil adalah Riba."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Praktik 'Wash Sale' (transaksi jual-beli semu antara pihak berelasi tanpa perpindahan kepemilikan) dilarang karena termasuk...",
+    "answers": [
+      {
+        "text": "Najasy (Permintaan/Penawaran Palsu)",
+        "correct": true,
+        "feedback": "Tepat! 'Wash Sale' adalah bentuk Najasy karena menciptakan volume perdagangan palsu untuk memanipulasi pasar."
+      },
+      {
+        "text": "Ihtikar (Penimbunan)",
+        "correct": false,
+        "feedback": "Bukan. Ihtikar adalah manipulasi *pasokan* (supply), 'Wash Sale' adalah manipulasi *volume transaksi*."
+      },
+      {
+        "text": "Risywah (Suap)",
+        "correct": false,
+        "feedback": "Bukan. Risywah adalah suap untuk memengaruhi keputusan."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Untuk BPRS (Bank Pembiayaan Rakyat Syariah), berapa batas BMPD untuk satu peminjam (single) *pihak tidak terkait*?",
+    "answers": [
+      {
+        "text": "10% dari Modal BPRS",
+        "correct": false,
+        "feedback": "Bukan. Batas 10% adalah untuk seluruh Pihak Terkait (agregat)."
+      },
+      {
+        "text": "20% dari Modal BPRS",
+        "correct": true,
+        "feedback": "Tepat! Batas untuk satu nasabah tunggal non-terkait di BPRS adalah 20% dari Modal BPRS."
+      },
+      {
+        "text": "30% dari Modal BPRS",
+        "correct": false,
+        "feedback": "Bukan. Batas 30% adalah untuk satu *kelompok* peminjam non-terkait di BPRS."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Struktur tata kelola unik keuangan syariah yang mengawasi 'Fungsi Tujuan Ganda' (profitabilitas dan kepatuhan) disebut...",
+    "answers": [
+      {
+        "text": "Arsitektur Otoritas Ganda (OJK mengawasi keuangan, DSN-MUI/DPS mengawasi syariah).",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah pilar tata kelola unik di mana OJK mengawasi sisi finansial dan DSN-MUI/DPS mengawasi sisi kepatuhan prinsip."
+      },
+      {
+        "text": "Sistem Pengawasan Tunggal (OJK mengawasi keuangan dan syariah sekaligus).",
+        "correct": false,
+        "feedback": "Kurang tepat. OJK mengawasi keuangan, namun kepatuhan syariah diawasi oleh otoritas terpisah (DSN-MUI/DPS)."
+      },
+      {
+        "text": "Sistem Pengawasan BI dan OJK (BI mengawasi syariah, OJK mengawasi keuangan).",
+        "correct": false,
+        "feedback": "Salah. BI berfokus pada makroekonomi/moneter, bukan pengawasan syariah."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Selain screening, mengapa kontrak seperti Mudarabah dan Musharakah memaksa bank syariah menjadi investor yang 'aktif'?",
+    "answers": [
+      {
+        "text": "Karena bank *berbagi risiko dan hasil* (risk-sharing), sehingga harus aktif melakukan due diligence kelayakan bisnis, bukan hanya kelayakan kredit.",
+        "correct": true,
+        "feedback": "Tepat. Tidak seperti kreditur pasif, bank (sebagai mitra) harus terlibat aktif memantau kelayakan dan profitabilitas bisnis yang dibiayai."
+      },
+      {
+        "text": "Karena kontrak ini mengharuskan bank menempatkan direksinya di perusahaan nasabah.",
+        "correct": false,
+        "feedback": "Tidak. Keterlibatan aktif tidak berarti harus menempatkan direksi, melainkan aktif dalam due diligence dan monitoring."
+      },
+      {
+        "text": "Karena kontrak ini hanya boleh digunakan untuk strategi investasi aktif.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah sifat *dasar* kontraknya, yang secara alami mendorong bank untuk proaktif."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Manakah yang merupakan *kelemahan* atau *kekurangan* utama dari strategi investasi pasif?",
+    "answers": [
+      {
+        "text": "Biaya manajemen dan transaksi yang sangat tinggi.",
+        "correct": false,
+        "feedback": "Kebalikan. Ini adalah *keunggulan* utama strategi pasif (biaya rendah)."
+      },
+      {
+        "text": "Tidak fleksibel; tidak bisa beralih ke kas atau menjual aset untuk melindungi portofolio saat pasar turun (bear market).",
+        "correct": true,
+        "feedback": "Tepat. Strategi pasif harus tetap memegang komposisi indeks, apapun kondisi pasarnya (kurang fleksibel)."
+      },
+      {
+        "text": "Sangat bergantung pada keahlian manajer investasi (Manager Risk).",
+        "correct": false,
+        "feedback": "Kebalikan. Ini adalah *kelemahan* strategi *aktif*. Strategi pasif justru menghilangkan 'Manager Risk'."
+      }
+    ],
+    "section": "C"
+  },
+  {
+    "question": "Produk bank syariah (misal: BSI Emas Digital) di mana emas fisiknya disimpan oleh bank atas nama nasabah, menggunakan fasilitas...",
+    "answers": [
+      {
+        "text": "Murabahah (Jual Beli)",
+        "correct": false,
+        "feedback": "Bukan. Murabahah adalah akad untuk *mencicil* emasnya (jual-beli), bukan untuk *penyimpanan* emas yang sudah dibeli."
+      },
+      {
+        "text": "Rahn (Gadai)",
+        "correct": false,
+        "feedback": "Bukan. Rahn adalah akad untuk *menjaminkan* emas (gadai), bukan untuk menyimpan emas sebagai investasi."
+      },
+      {
+        "text": "Custody (Penyimpanan/Penitipan)",
+        "correct": true,
+        "feedback": "Tepat. Dalam emas digital, bank bertindak sebagai kustodian yang menyimpan emas fisik atas nama nasabah."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Naskah penelitian menunjukkan bahwa praktik seperti 'Insider Trading' dan 'Manipulasi Pasar' (Najasy) dilarang oleh...",
+    "answers": [
+      {
+        "text": "Hanya oleh Fikih Muamalah (DSN-MUI), tapi diperbolehkan oleh OJK.",
+        "correct": false,
+        "feedback": "Salah. Praktik ini juga ilegal menurut OJK dan hukum pasar modal sekuler."
+      },
+      {
+        "text": "Hanya oleh OJK (hukum sekuler), tapi tidak dibahas dalam Fikih Muamalah.",
+        "correct": false,
+        "feedback": "Salah. Fikih Muamalah secara tegas melarangnya karena melanggar prinsip keadilan ('Adl) dan transparansi."
+      },
+      {
+        "text": "Keduanya: dilarang keras oleh Fikih Muamalah (prinsip 'Adl) dan juga ilegal menurut hukum pasar modal OJK.",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah contoh konvergensi di mana etika Islam selaras dengan prinsip pasar yang sehat dan adil."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Untuk BPRS (Bank Pembiayaan Rakyat Syariah), berapa batas BMPD untuk satu *kelompok* peminjam *pihak tidak terkait*?",
+    "answers": [
+      {
+        "text": "10% dari Modal BPRS",
+        "correct": false,
+        "feedback": "Bukan. Batas 10% adalah untuk seluruh Pihak Terkait (agregat)."
+      },
+      {
+        "text": "20% dari Modal BPRS",
+        "correct": false,
+        "feedback": "Bukan. Batas 20% adalah untuk satu peminjam *tunggal* (single) non-terkait."
+      },
+      {
+        "text": "30% dari Modal BPRS",
+        "correct": true,
+        "feedback": "Tepat! Batas untuk satu *kelompok* peminjam non-terkait di BPRS adalah 30% dari Modal BPRS."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Mengapa OJK memberikan kelonggaran batas BMPD (hingga 30% dari Modal Total) untuk penyaluran dana ke BUMN tertentu?",
+    "answers": [
+      {
+        "text": "Karena BUMN dijamin tidak akan pernah gagal bayar.",
+        "correct": false,
+        "feedback": "Bukan. Tidak ada jaminan absolut, tetapi BUMN dianggap memiliki risiko yang didukung negara."
+      },
+      {
+        "text": "Untuk mendukung program pembangunan nasional (proyek strategis seperti infrastruktur, ketahanan pangan, dll).",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah alat makroprudensial untuk menyeimbangkan stabilitas bank dengan agenda pembangunan ekonomi nasional."
+      },
+      {
+        "text": "Karena BUMN secara otomatis dianggap sebagai Pihak Terkait.",
+        "correct": false,
+        "feedback": "Bukan. Pengecualian ini diberikan untuk BUMN sebagai Pihak *Tidak Terkait* yang mengerjakan proyek strategis."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Menurut kesimpulan naskah, apa tantangan utama ke depan untuk industri investasi syariah di Indonesia?",
+    "answers": [
+      {
+        "text": "Kurangnya produk, karena baru ada Deposito Syariah.",
+        "correct": false,
+        "feedback": "Salah. Kesimpulan justru menyatakan produknya *semakin beragam* (Saham, Sukuk, Reksa Dana)."
+      },
+      {
+        "text": "Peningkatan literasi dan edukasi keuangan syariah kepada masyarakat luas, serta inovasi berkelanjutan.",
+        "correct": true,
+        "feedback": "Tepat. Kesimpulan menyoroti bahwa tantangan ke depan adalah edukasi dan inovasi, bukan lagi pada ketersediaan produk atau regulasi dasar."
+      },
+      {
+        "text": "Mengubah regulasi BMPD yang dianggap terlalu ketat.",
+        "correct": false,
+        "feedback": "Bukan. Kesimpulan justru menilai regulasi BMPD sudah 'canggih' dan 'matang'."
+      }
+    ],
+    "section": "Kesimpulan"
+  },
+  {
+    "question": "Bank Syariah memiliki 'Kewajiban Fidusia Ganda' (Dual Fiduciary Duty). Apa artinya?",
+    "answers": [
+      {
+        "text": "Kewajiban kepada OJK dan kepada Bank Indonesia.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah kewajiban regulasi, bukan 'fidusia' (amanah) kepada klien/prinsip."
+      },
+      {
+        "text": "Kewajiban kepada Klien (maksimalkan imbal hasil halal) dan kepada Prinsip Syariah (patuh fatwa).",
+        "correct": true,
+        "feedback": "Tepat. Ini adalah kewajiban ganda: (1) memaksimalkan hasil untuk klien, dan (2) memastikan hasil itu 100% patuh syariah."
+      },
+      {
+        "text": "Kewajiban kepada pemegang saham (profit) dan kepada masyarakat (CSR).",
+        "correct": false,
+        "feedback": "Mirip, tapi kurang spesifik. 'Dual Fiduciary Duty' secara teknis merujuk pada Klien dan Prinsip Syariah."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Apa temuan studi (dalam naskah) mengenai kinerja historis reksa dana saham syariah *aktif* di Indonesia selama fluktuasi pasar (pandemi)?",
+    "answers": [
+      {
+        "text": "Selalu berkinerja lebih baik (outperform) secara konsisten dibanding IHSG.",
+        "correct": false,
+        "feedback": "Bukan. Naskah menyebutkan bahwa IHSG justru *mengungguli* Indeks Reksa Dana Saham Syariah pada periode tersebut."
+      },
+      {
+        "text": "Seringkali *kesulitan* (struggled) untuk memberikan imbal hasil yang konsisten melampaui benchmark mereka.",
+        "correct": true,
+        "feedback": "Tepat. Naskah menyebutkan bahwa reksa dana aktif *berjuang* (struggled) dan IHSG mengungguli indeks reksa dana syariah saat itu."
+      },
+      {
+        "text": "Kinerjanya pasti sama dengan IHSG, karena dikelola pasif.",
+        "correct": false,
+        "feedback": "Salah. Pertanyaannya adalah tentang reksa dana *aktif*, yang tujuannya *mengalahkan* pasar (meskipun seringkali gagal)."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Dari perspektif hukum Islam (fikih), manakah strategi yang lebih unggul atau lebih diperbolehkan?",
+    "answers": [
+      {
+        "text": "Strategi Aktif, karena lebih mencerminkan kerja keras (ikhtiar).",
+        "correct": false,
+        "feedback": "Tidak. Meskipun benar, hukum fikih tidak mengunggulkannya. Kepatuhan dinilai dari aset dan transaksinya."
+      },
+      {
+        "text": "Strategi Pasif, karena lebih menghindari spekulasi (Maysir).",
+        "correct": false,
+        "feedback": "Meskipun memiliki keunggulan kepatuhan, hukum fikih tidak mengunggulkannya. Kepatuhan dinilai dari aset dan transaksinya."
+      },
+      {
+        "text": "Keduanya pada dasarnya diperbolehkan (mubah); kepatuhan ditentukan oleh *aset dasar* dan *mekanisme transaksi*.",
+        "correct": true,
+        "feedback": "Tepat. Fikih tidak menentukan strategi (aktif/pasif), melainkan mengharuskan asetnya halal dan transaksinya bebas Riba, Gharar, Maysir."
+      }
+    ],
+    "section": "C"
+  },
+  {
+    "question": "Apa fungsi dari Rekening Dana Nasabah (RDN) Syariah atau Tabungan Efek Syariah yang disediakan oleh bank?",
+    "answers": [
+      {
+        "text": "Rekening untuk menerima bagi hasil (Nisbah) dari Deposito Syariah.",
+        "correct": false,
+        "feedback": "Bukan. Untuk itu digunakan rekening tabungan biasa."
+      },
+      {
+        "text": "Rekening wajib untuk menampung dana investor yang akan digunakan dalam transaksi jual-beli saham di pasar modal.",
+        "correct": true,
+        "feedback": "Tepat. RDN adalah rekening 'dompet' investor yang terpisah dari rekening bank, yang diwajibkan regulator untuk transaksi efek."
+      },
+      {
+        "text": "Rekening khusus untuk membayar cicilan KPR Syariah.",
+        "correct": false,
+        "feedback": "Bukan. Untuk itu digunakan rekening tabungan biasa."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Mengapa Riba (bunga) dilarang keras dalam Islam (menurut naskah)?",
+    "answers": [
+      {
+        "text": "Karena memungkinkan pemberi pinjaman menghasilkan kekayaan hanya dari berlalunya waktu, tanpa mengambil risiko usaha (risk-sharing).",
+        "correct": true,
+        "feedback": "Tepat. Riba dianggap eksploitatif karena keuntungan dihasilkan dari utang, bukan dari aktivitas ekonomi riil yang produktif dan berisiko."
+      },
+      {
+        "text": "Karena Riba menciptakan ketidakpastian (Gharar) dalam transaksi.",
+        "correct": false,
+        "feedback": "Kurang tepat. Riba justru *pasti* (ditentukan di muka), berlawanan dengan Gharar (ketidakpastian)."
+      },
+      {
+        "text": "Karena Riba adalah bentuk penimbunan (Ihtikar).",
+        "correct": false,
+        "feedback": "Bukan. Riba adalah tambahan atas utang, Ihtikar adalah manipulasi pasokan barang."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Regulasi BMPD disebut memiliki 'fungsi ganda'. Apa sajakah itu?",
+    "answers": [
+      {
+        "text": "Fungsi Mikroprudensial (melindungi bank individual) dan Fungsi Makroprudensial (mendukung agenda pembangunan nasional).",
+        "correct": true,
+        "feedback": "Tepat. Fungsi Mikro-nya melindungi bank dari konsentrasi risiko. Fungsi Makro-nya terlihat dari pengecualian untuk BUMN (mendukung pembangunan)."
+      },
+      {
+        "text": "Fungsi Kepatuhan (diawasi DPS) dan Fungsi Keuangan (diawasi OJK).",
+        "correct": false,
+        "feedback": "Bukan. BMPD adalah murni aturan prudensial (keuangan) dari OJK, bukan ranah DPS (kepatuhan syariah)."
+      },
+      {
+        "text": "Fungsi Aktif (memilih nasabah) dan Fungsi Pasif (melaporkan pelanggaran).",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah terminologi yang tidak relevan dengan fungsi kebijakan dari regulasi BMPD."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Prinsip filosofis 'Tauhid' (Keesaan Allah) menetapkan bahwa manusia bukanlah pemilik absolut, melainkan...",
+    "answers": [
+      {
+        "text": "Khalifah (wali amanat) yang bertugas mengelola sumber daya sesuai pedoman ilahi.",
+        "correct": true,
+        "feedback": "Tepat. Prinsip Tauhid membingkai ulang aktivitas ekonomi dari pengejaran materialistis menjadi pemenuhan amanah sebagai khalifah."
+      },
+      {
+        "text": "Pemilik tunggal yang bebas melakukan apa saja dengan hartanya.",
+        "correct": false,
+        "feedback": "Salah. Ini adalah pandangan antroposentris, berlawanan dengan prinsip Tauhid (teosentris)."
+      },
+      {
+        "text": "Subjek yang wajib membayar pajak kepada DSN-MUI.",
+        "correct": false,
+        "feedback": "Bukan. Tauhid adalah konsep filosofis tentang kepemilikan dan amanah, bukan tentang kewajiban pajak ke DSN-MUI."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Proses screening syariah (khususnya kriteria kuantitatif) secara inheren menyukai perusahaan dengan tingkat utang rendah. Apa karakteristik portofolio yang dihasilkan?",
+    "answers": [
+      {
+        "text": "Karakteristik Agresif (High-Growth)",
+        "correct": false,
+        "feedback": "Belum tentu. Pertumbuhan tinggi seringkali dibiayai utang tinggi. Karakteristik utamanya adalah stabilitas."
+      },
+      {
+        "text": "Karakteristik Defensif (potensi lebih stabil saat pasar bergejolak).",
+        "correct": true,
+        "feedback": "Tepat. Perusahaan dengan utang rendah (low leverage) cenderung lebih tahan banting (defensif) selama krisis."
+      },
+      {
+        "text": "Karakteristik Zero-Risk (Bebas Risiko)",
+        "correct": false,
+        "feedback": "Salah. Tidak ada investasi saham yang bebas risiko. Ini hanya *mengurangi* profil risiko tertentu."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Mengapa frekuensi transaksi yang rendah (low turnover) dalam strategi pasif membantu manajemen risiko kepatuhan?",
+    "answers": [
+      {
+        "text": "Karena setiap transaksi adalah 'titik potensi kegagalan kepatuhan', sehingga lebih sedikit transaksi berarti lebih sedikit risiko.",
+        "correct": true,
+        "feedback": "Benar. Strategi aktif (high turnover) menciptakan banyak titik di mana MI harus memastikan kepatuhan, sehingga risikonya lebih tinggi."
+      },
+      {
+        "text": "Karena DPS hanya mengawasi transaksi setahun sekali.",
+        "correct": false,
+        "feedback": "Salah. Pengawasan DPS bersifat berkelanjutan. Alasan utamanya adalah mengurangi 'titik kegagalan'."
+      },
+      {
+        "text": "Karena transaksi yang rendah pasti menghasilkan keuntungan yang lebih tinggi.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah tentang *manajemen risiko kepatuhan*, bukan jaminan keuntungan."
+      }
+    ],
+    "section": "C"
+  },
+  {
+    "question": "Apa perbedaan utama antara Reksa Dana Pasar Uang Syariah (RDPUS) dan Reksa Dana Pendapatan Tetap Syariah (RDPTS)?",
+    "answers": [
+      {
+        "text": "RDPUS berisi Saham Syariah, RDPTS berisi Sukuk.",
+        "correct": false,
+        "feedback": "Kurang tepat. RDPUS berisi instrumen pasar uang (deposito syariah, sukuk <1 tahun), RDPTS berisi Sukuk (mayoritas >1 tahun)."
+      },
+      {
+        "text": "RDPUS berfokus pada instrumen jangka pendek (<1 tahun) untuk likuiditas, RDPTS berfokus pada Sukuk jangka menengah/panjang untuk pendapatan stabil.",
+        "correct": true,
+        "feedback": "Tepat. Perbedaan kuncinya ada di *durasi/jatuh tempo* asetnya, yang memengaruhi profil risiko dan imbal hasil."
+      },
+      {
+        "text": "RDPUS dikelola pasif, RDPTS dikelola aktif.",
+        "correct": false,
+        "feedback": "Tidak. Keduanya umumnya dikelola secara aktif, meskipun RDPUS sangat konservatif."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Apa akad syariah yang paling umum digunakan untuk produk 'Cicil Emas' di bank syariah?",
+    "answers": [
+      {
+        "text": "Rahn (Gadai)",
+        "correct": false,
+        "feedback": "Bukan. Rahn adalah akad untuk *menjaminkan* emas yang sudah dimiliki untuk mendapat pinjaman."
+      },
+      {
+        "text": "Murabahah (Jual-beli dengan margin keuntungan)",
+        "correct": true,
+        "feedback": "Tepat. Bank membeli emas, lalu menjualnya kepada nasabah dengan harga (pokok + margin) yang dicicil."
+      },
+      {
+        "text": "Mudharabah (Bagi Hasil)",
+        "correct": false,
+        "feedback": "Bukan. Cicil Emas adalah transaksi jual-beli (utang-piutang), bukan investasi bagi hasil."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Apa perbedaan antara 'Tadlis' dan 'Taghrir' dalam larangan transaksi?",
+    "answers": [
+      {
+        "text": "Tadlis adalah 'permintaan palsu', Taghrir adalah 'penimbunan'.",
+        "correct": false,
+        "feedback": "Salah. Permintaan palsu adalah Najasy, penimbunan adalah Ihtikar."
+      },
+      {
+        "text": "Tadlis adalah 'menyembunyikan informasi negatif/cacat', Taghrir adalah 'upaya aktif menipu dengan kebohongan'.",
+        "correct": true,
+        "feedback": "Tepat. Tadlis bersifat pasif (menyembunyikan), Taghrir bersifat aktif (menipu/berbohong) untuk memengaruhi keputusan."
+      },
+      {
+        "text": "Keduanya sama, hanya beda istilah dalam bahasa Arab.",
+        "correct": false,
+        "feedback": "Salah. Keduanya adalah bentuk penipuan, tetapi memiliki nuansa yang berbeda (pasif vs aktif)."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Bagaimana larangan 'Gharar' (ketidakpastian berlebih) secara fungsional berkontribusi pada kesehatan pasar?",
+    "answers": [
+      {
+        "text": "Mendorong transparansi, pengungkapan penuh (full disclosure), dan 'informed consent' dalam kontrak.",
+        "correct": true,
+        "feedback": "Benar. Dengan melarang ambiguitas, Gharar memaksa semua pihak untuk transparan, yang mengurangi risiko sengketa."
+      },
+      {
+        "text": "Menghilangkan semua risiko bisnis, sehingga investasi pasti untung.",
+        "correct": false,
+        "feedback": "Salah. Gharar melarang *ketidakpastian yang tidak perlu/bisa dihindari*, bukan risiko komersial yang sah (risk-taking)."
+      },
+      {
+        "text": "Memaksa investor menggunakan strategi pasif saja.",
+        "correct": false,
+        "feedback": "Bukan. Larangan Gharar berlaku untuk semua transaksi, baik aktif maupun pasif."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Bagaimana larangan 'Maysir' (judi/spekulasi) secara fungsional berkontribusi pada stabilitas ekonomi?",
+    "answers": [
+      {
+        "text": "Mencegah pembentukan gelembung spekulatif (speculative bubbles) dan mendorong investasi ke ekonomi riil (asset-based).",
+        "correct": true,
+        "feedback": "Tepat. Maysir (zero-sum game) dilarang agar modal mengalir ke sektor produktif, bukan spekulasi 'di atas kertas'."
+      },
+      {
+        "text": "Menjamin semua investasi syariah bebas dari risiko gagal bayar.",
+        "correct": false,
+        "feedback": "Salah. Investasi syariah (misal: Mudharabah) tetap memiliki risiko bisnis, ini berbeda dari spekulasi murni (Maysir)."
+      },
+      {
+        "text": "Memastikan semua investor mendapat keuntungan yang sama rata.",
+        "correct": false,
+        "feedback": "Bukan. Larangan Maysir adalah tentang *proses* (anti-judi), bukan tentang *hasil* (pemerataan)."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Apa alasan utama OJK mendefinisikan 'Penyaluran Dana' dalam POJK 26/2021 secara sangat luas (mencakup Sukuk, L/C, derivatif, dll)?",
+    "answers": [
+      {
+        "text": "Untuk mencegah 'arbitrase regulasi' (regulatory arbitrage), di mana bank menyembunyikan eksposur risiko di pos non-pembiayaan.",
+        "correct": true,
+        "feedback": "Tepat. Ini untuk memastikan *total eksposur ekonomi* bank ke satu pihak terhitung, apapun bentuk instrumennya."
+      },
+      {
+        "text": "Untuk melarang Bank Umum Syariah berinvestasi di Sukuk atau derivatif.",
+        "correct": false,
+        "feedback": "Bukan untuk melarang, tapi untuk *menghitung* eksposur dari investasi tersebut ke dalam batas BMPD."
+      },
+      {
+        "text": "Karena akad Sukuk, derivatif, dan L/C adalah akad yang paling berisiko.",
+        "correct": false,
+        "feedback": "Bukan. Tujuannya adalah untuk *menghitung total eksposur*, bukan mengkategorikan risiko instrumen."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Sebuah Bank Umum Syariah (BUS) memiliki Modal Inti (Tier 1) 100 Miliar Rupiah. Berapakah batas 'Penyaluran Dana Besar' (Large Exposures) bank tersebut?",
+    "answers": [
+      {
+        "text": "10 Miliar Rupiah (10% dari Modal Inti)",
+        "correct": true,
+        "feedback": "Tepat. 'Large Exposure' didefinisikan sebagai eksposur ke pihak tidak terkait yang mencapai atau melampaui 10% dari Modal Inti."
+      },
+      {
+        "text": "25 Miliar Rupiah (25% dari Modal Inti)",
+        "correct": false,
+        "feedback": "Bukan. 25% adalah batas *maksimum* BMPD, bukan definisi 'Large Exposure'."
+      },
+      {
+        "text": "10 Miliar Rupiah (10% dari Modal Total)",
+        "correct": false,
+        "feedback": "Kurang tepat. Definisi 'Large Exposure' menggunakan basis Modal Inti (Tier 1)."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "BUS A memiliki Modal Inti (Tier 1) 100 Miliar dan Modal Total (Tier 1+2) 120 Miliar. Berapa batas maksimum penyaluran dana ke seluruh *pihak terkait*?",
+    "answers": [
+      {
+        "text": "10 Miliar (10% dari Modal Inti)",
+        "correct": false,
+        "feedback": "Kurang tepat. Basis perhitungan untuk pihak terkait adalah Modal Total."
+      },
+      {
+        "text": "12 Miliar (10% dari Modal Total)",
+        "correct": true,
+        "feedback": "Tepat. Batas untuk pihak terkait adalah 10% dari Modal Total (10% x 120 Miliar)."
+      },
+      {
+        "text": "25 Miliar (25% dari Modal Inti)",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah batas untuk pihak *tidak terkait*."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "BUS A memiliki Modal Inti (Tier 1) 100 Miliar dan Modal Total (Tier 1+2) 120 Miliar. Berapa batas maksimum penyaluran dana ke satu nasabah *tidak terkait*?",
+    "answers": [
+      {
+        "text": "12 Miliar (10% dari Modal Total)",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah batas untuk seluruh *pihak terkait*."
+      },
+      {
+        "text": "30 Miliar (25% dari Modal Total)",
+        "correct": false,
+        "feedback": "Salah. Basis perhitungan untuk pihak tidak terkait adalah Modal Inti."
+      },
+      {
+        "text": "25 Miliar (25% dari Modal Inti)",
+        "correct": true,
+        "feedback": "Tepat. Batas untuk satu pihak tidak terkait adalah 25% dari Modal Inti (25% x 100 Miliar)."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Apa akad spesifik yang digunakan dalam Shariah Restricted Investment Account (SRIA) di mana nasabah dapat menetapkan batasan spesifik atas investasinya?",
+    "answers": [
+      {
+        "text": "Mudharabah Muqayyadah (Bagi Hasil Terikat/Spesifik)",
+        "correct": true,
+        "feedback": "Tepat. 'Muqayyadah' berarti terikat, di mana nasabah (Shahibul Mal) memberikan batasan/syarat khusus atas penggunaan dananya."
+      },
+      {
+        "text": "Mudharabah Muthlaqah (Bagi Hasil Tidak Terikat)",
+        "correct": false,
+        "feedback": "Bukan. 'Muthlaqah' (tidak terikat) adalah akad untuk Deposito Syariah biasa, di mana bank bebas mengelola dana."
+      },
+      {
+        "text": "Wakalah bil Ujrah (Agensi dengan Biaya)",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah akad untuk Reksa Dana atau jasa, bukan produk simpanan investasi terikat di bank."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Kinerja portofolio yang sangat bergantung pada keahlian satu individu atau tim manajer investasi disebut... dan ini adalah risiko utama dalam strategi...",
+    "answers": [
+      {
+        "text": "Manager Risk; Strategi Aktif",
+        "correct": true,
+        "feedback": "Tepat. 'Manager Risk' adalah risiko bahwa manajer investasi membuat keputusan yang buruk. Ini adalah inti dari strategi aktif."
+      },
+      {
+        "text": "Tracking Error; Strategi Pasif",
+        "correct": false,
+        "feedback": "Bukan. Tracking Error adalah risiko teknis dalam strategi pasif."
+      },
+      {
+        "text": "Compliance Risk; Strategi Syariah",
+        "correct": false,
+        "feedback": "Bukan. Compliance risk ada di keduanya, tapi 'Manager Risk' spesifik pada performa manajer dalam strategi aktif."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Apa risiko utama bagi nasabah yang menempatkan dana di Deposito Syariah (Mudharabah)?",
+    "answers": [
+      {
+        "text": "Risiko kehilangan seluruh pokok simpanan karena bank adalah Mudharib.",
+        "correct": false,
+        "feedback": "Kurang tepat. Deposito di bank dijamin oleh LPS (Lembaga Penjamin Simpanan), terlepas dari akadnya."
+      },
+      {
+        "text": "Risiko imbal hasil (Nisbah) yang diterima berfluktuasi dan bisa jadi lebih rendah dari ekspektasi (tergantung kinerja pendapatan bank).",
+        "correct": true,
+        "feedback": "Tepat. Berbeda dengan bunga yang tetap, Nisbah bagi hasil bersifat *tidak tetap* dan bergantung pada keuntungan bank."
+      },
+      {
+        "text": "Risiko dikenakan biaya Ujrah (fee) yang tinggi oleh bank.",
+        "correct": false,
+        "feedback": "Bukan. Akadnya adalah Mudharabah (bagi hasil), bukan Wakalah bil Ujrah (fee)."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Menukar 1 kg gandum kualitas A dengan 1.2 kg gandum kualitas B secara tunai dilarang karena termasuk...",
+    "answers": [
+      {
+        "text": "Riba Fadhl (Kelebihan kuantitas dalam pertukaran barang ribawi sejenis).",
+        "correct": true,
+        "feedback": "Tepat. Gandum adalah barang ribawi. Menukar barang sejenis (gandum dengan gandum) secara tunai harus sama kuantitasnya."
+      },
+      {
+        "text": "Riba Nasi'ah (Kelebihan karena penundaan waktu).",
+        "correct": false,
+        "feedback": "Bukan. Transaksi ini dilakukan secara tunai, masalahnya ada di *kuantitas*, bukan *waktu*."
+      },
+      {
+        "text": "Gharar (Ketidakpastian).",
+        "correct": false,
+        "feedback": "Bukan. Transaksinya jelas (1 kg vs 1.2 kg), tapi *dilarang* karena Riba Fadhl."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Meminjam uang 1 Juta Rupiah dan wajib mengembalikan 1.1 Juta Rupiah bulan depan dilarang karena termasuk...",
+    "answers": [
+      {
+        "text": "Riba Nasi'ah (Kelebihan yang disyaratkan karena penundaan waktu).",
+        "correct": true,
+        "feedback": "Tepat. Tambahan 100 ribu itu adalah bunga (riba) yang timbul karena adanya penundaan waktu pembayaran utang."
+      },
+      {
+        "text": "Riba Fadhl (Kelebihan kuantitas barang sejenis).",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah transaksi utang-piutang (uang), bukan barter barang sejenis."
+      },
+      {
+        "text": "Maysir (Judi).",
+        "correct": false,
+        "feedback": "Bukan. Transaksi ini *pasti* (pemberi pinjaman pasti untung), bukan untung-untungan (judi)."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Apa perbedaan peran utama antara Bank Indonesia (BI) dan Otoritas Jasa Keuangan (OJK)?",
+    "answers": [
+      {
+        "text": "BI mengawasi bank konvensional, OJK mengawasi bank syariah.",
+        "correct": false,
+        "feedback": "Salah. OJK mengawasi *seluruh* bank (konvensional dan syariah) dan industri jasa keuangan lainnya."
+      },
+      {
+        "text": "BI fokus pada Makroprudensial, Moneter, dan Sistem Pembayaran. OJK fokus pada pengawasan terintegrasi (Mikroprudensial) seluruh Sektor Jasa Keuangan.",
+        "correct": true,
+        "feedback": "Tepat. BI menjaga stabilitas Rupiah dan sistem pembayaran (makro), OJK mengawasi kesehatan lembaga keuangan (mikro)."
+      },
+      {
+        "text": "OJK menetapkan fatwa syariah, BI yang mengawasinya di lapangan.",
+        "correct": false,
+        "feedback": "Salah. Fatwa syariah ditetapkan oleh DSN-MUI."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Investasi syariah memiliki empat aspek fundamental: Material/Finansial, Kehalalan, Sosial/Lingkungan, dan...",
+    "answers": [
+      {
+        "text": "Aspek Politis (Kesesuaian dengan Kebijakan Pemerintah).",
+        "correct": false,
+        "feedback": "Bukan. Kepatuhan regulasi penting, tapi 'Aspek Politis' bukan salah satu dari empat pilar filosofisnya."
+      },
+      {
+        "text": "Aspek Pengharapan Rida Allah (Motivasi Spiritual).",
+        "correct": true,
+        "feedback": "Tepat. Motivasi tertinggi dari investasi syariah adalah sebagai bentuk ibadah untuk meraih keridaan Allah."
+      },
+      {
+        "text": "Aspek Kepatuhan Global (Sesuai Standar Internasional).",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah aspek operasional, bukan pilar filosofis."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Manakah dari 5 pilar Maqasid al-Shariah yang secara *langsung* paling terkait dengan penetapan hak milik yang jelas dan peredaran kekayaan yang adil?",
+    "answers": [
+      {
+        "text": "Perlindungan Agama (ad-din)",
+        "correct": false,
+        "feedback": "Bukan. Ini terkait perlindungan nilai-nilai agama dan etika."
+      },
+      {
+        "text": "Perlindungan Akal (al-'aql)",
+        "correct": false,
+        "feedback": "Bukan. Ini terkait transparansi dan larangan industri yang merusak pikiran (misal: alkohol)."
+      },
+      {
+        "text": "Perlindungan Harta (al-mal)",
+        "correct": true,
+        "feedback": "Tepat! Perlindungan Harta (al-mal) adalah pilar yang memastikan kekayaan dihasilkan, dilindungi, dan diedarkan secara adil dan produktif."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Apa perbedaan antara 'Perusahaan Manajer Investasi Syariah' dan 'Unit Pengelolaan Investasi Syariah' (UPIS)?",
+    "answers": [
+      {
+        "text": "Keduanya sama, hanya UPIS adalah istilah yang digunakan oleh OJK.",
+        "correct": false,
+        "feedback": "Salah. Keduanya adalah entitas yang berbeda secara struktural."
+      },
+      {
+        "text": "Perusahaan MI Syariah adalah perusahaan yang *sejak awal* syariah, UPIS adalah *unit khusus* di dalam MI konvensional.",
+        "correct": true,
+        "feedback": "Tepat. UPIS adalah 'jendela syariah' di dalam perusahaan MI konvensional, sedangkan Perusahaan MI Syariah murni syariah."
+      },
+      {
+        "text": "Perusahaan MI Syariah mengelola Reksa Dana, UPIS mengelola ETF.",
+        "correct": false,
+        "feedback": "Salah. Keduanya dapat mengelola berbagai produk syariah."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Apa yang dimaksud dengan 'Beban Kepatuhan' (Compliance Burden) dalam strategi investasi aktif syariah?",
+    "answers": [
+      {
+        "text": "Kewajiban MI untuk membayar biaya kepatuhan (Ujrah) yang tinggi kepada DPS.",
+        "correct": false,
+        "feedback": "Bukan. Ini merujuk pada beban *kerja* dan *risiko*, bukan biaya DPS."
+      },
+      {
+        "text": "Beban kerja ekstra (screening & monitoring ketat) karena tingginya frekuensi transaksi, yang membuka risiko lebih besar untuk salah beli.",
+        "correct": true,
+        "feedback": "Tepat. Semakin sering bertransaksi (aktif), semakin berat beban untuk memastikan setiap transaksi 100% patuh."
+      },
+      {
+        "text": "Kewajiban MI untuk selalu mengalahkan kinerja pasar.",
+        "correct": false,
+        "feedback": "Bukan. Itu adalah 'tujuan' strategi aktif, bukan 'beban kepatuhan'."
+      }
+    ],
+    "section": "B"
+  },
+  {
+    "question": "Bagaimana strategi pasif 'Beli dan Tahan' (Buy & Hold) secara inheren membantu investor menghindari larangan 'Maysir'?",
+    "answers": [
+      {
+        "text": "Karena menjauhkan investor dari aktivitas spekulatif (judi) yang terkait dengan perdagangan jangka pendek frekuensi tinggi.",
+        "correct": true,
+        "feedback": "Tepat. Sifat 'beli dan tahan' berfokus pada pertumbuhan jangka panjang, bukan 'untung-untungan' (Maysir) dari trading harian."
+      },
+      {
+        "text": "Karena dana pasif dijamin oleh DSN-MUI agar tidak rugi.",
+        "correct": false,
+        "feedback": "Salah. Tidak ada jaminan seperti itu. Investasi pasif tetap memiliki risiko pasar."
+      },
+      {
+        "text": "Karena strategi pasif hanya membeli Sukuk, bukan saham.",
+        "correct": false,
+        "feedback": "Salah. Strategi pasif bisa melacak indeks saham (misal: JII70)."
+      }
+    ],
+    "section": "C"
+  },
+  {
+    "question": "Apa perbedaan sumber imbal hasil antara Sukuk Ijarah dan Sukuk Mudharabah?",
+    "answers": [
+      {
+        "text": "Ijarah memberi Ujrah (uang sewa) dari aset, Mudharabah memberi Nisbah (bagi hasil) dari keuntungan usaha/proyek.",
+        "correct": true,
+        "feedback": "Tepat. Ijarah adalah akad sewa-menyewa (imbal hasil dari sewa aset), Mudharabah adalah akad bagi hasil (imbal hasil dari profit usaha)."
+      },
+      {
+        "text": "Ijarah memberi Margin (keuntungan), Mudharabah memberi Ujrah (uang sewa).",
+        "correct": false,
+        "feedback": "Kurang tepat. Margin adalah untuk akad Murabahah (jual-beli)."
+      },
+      {
+        "text": "Keduanya sama-sama memberi Nisbah (bagi hasil).",
+        "correct": false,
+        "feedback": "Salah. Hanya Mudharabah yang memberi Nisbah. Ijarah memberi Ujrah."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Mengapa mekanisme 'Cleansing/Purification' (Pembersihan) *dibutuhkan* dalam Reksa Dana Syariah?",
+    "answers": [
+      {
+        "text": "Untuk membersihkan portofolio dari saham-saham yang kinerjanya buruk.",
+        "correct": false,
+        "feedback": "Bukan. Ini adalah murni mekanisme *kepatuhan syariah*, bukan manajemen kinerja portofolio."
+      },
+      {
+        "text": "Karena ada risiko menerima pendapatan non-halal yang *tidak dapat dihindari* (misal: bunga kas), yang wajib dipisahkan dan disalurkan ke amal.",
+        "correct": true,
+        "feedback": "Tepat. Mekanisme ini adalah jaring pengaman untuk memisahkan pendapatan non-halal yang sangat kecil dan tidak disengaja."
+      },
+      {
+        "text": "Sebagai biaya administrasi yang dibayarkan kepada Manajer Investasi.",
+        "correct": false,
+        "feedback": "Salah. Dana 'cleansing' disalurkan untuk amal, bukan untuk Manajer Investasi."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Apa perbedaan utama antara larangan Riba dan larangan Maysir?",
+    "answers": [
+      {
+        "text": "Riba adalah 'keuntungan yang pasti' dari utang, Maysir adalah 'keuntungan yang tidak pasti' (untung-untungan) dari spekulasi.",
+        "correct": true,
+        "feedback": "Tepat. Riba dilarang karena kepastian untung tanpa risiko usaha, Maysir dilarang karena untung-untungan (judi) tanpa kerja produktif."
+      },
+      {
+        "text": "Riba adalah 'ketidakpastian' (Gharar), Maysir adalah 'bunga' (Riba).",
+        "correct": false,
+        "feedback": "Terbalik dan salah. Riba adalah bunga, Maysir adalah judi, Gharar adalah ketidakpastian."
+      },
+      {
+        "text": "Riba hanya berlaku di perbankan, Maysir hanya berlaku di pasar modal.",
+        "correct": false,
+        "feedback": "Salah. Kedua larangan ini berlaku di semua lini transaksi keuangan."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Apa perbedaan utama antara Gharar dan Riba?",
+    "answers": [
+      {
+        "text": "Gharar adalah 'ketidakpastian' dalam kontrak, Riba adalah 'kepastian' tambahan atas utang.",
+        "correct": true,
+        "feedback": "Tepat. Gharar dilarang karena terlalu *tidak pasti* (ambigu). Riba dilarang karena terlalu *pasti* (tambahan yang dijamin) tanpa risiko."
+      },
+      {
+        "text": "Gharar adalah 'bunga', Riba adalah 'judi'.",
+        "correct": false,
+        "feedback": "Salah. Gharar = ketidakpastian, Riba = bunga, Maysir = judi."
+      },
+      {
+        "text": "Gharar dilarang oleh OJK, Riba dilarang oleh DSN-MUI.",
+        "correct": false,
+        "feedback": "Salah. Keduanya dilarang oleh DSN-MUI (syariah). OJK juga melarang praktik yang mengandung Gharar (misal: penipuan)."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Larangan 'Ba'i al-Ma'dum' (Short Selling) secara langsung didasarkan pada larangan fundamental apa?",
+    "answers": [
+      {
+        "text": "Riba (Bunga)",
+        "correct": false,
+        "feedback": "Bukan. Masalah utamanya bukan bunga, tapi status kepemilikan barang."
+      },
+      {
+        "text": "Gharar (Ketidakpastian yang berlebihan)",
+        "correct": true,
+        "feedback": "Tepat. Menjual sesuatu yang tidak Anda miliki (Ba'i al-Ma'dum) menciptakan ketidakpastian (Gharar) yang ekstrem pada objek transaksi."
+      },
+      {
+        "text": "Ihtikar (Penimbunan)",
+        "correct": false,
+        "feedback": "Bukan. Ihtikar adalah menimbun, short selling adalah menjual barang pinjaman."
+      }
+    ],
+    "section": "E"
+  },
+  {
+    "question": "Apa yang dimaksud dengan 'Arbitrase Regulasi' (Regulatory Arbitrage) dan bagaimana POJK 26/2021 (BMPD) mencegahnya?",
+    "answers": [
+      {
+        "text": "Praktik bank 'menyembunyikan' eksposur risiko di pos non-pembiayaan (misal: Sukuk) agar tidak terhitung BMPD. POJK 26 mencegahnya dengan definisi 'Penyaluran Dana' yang luas.",
+        "correct": true,
+        "feedback": "Tepat! Dengan menghitung *semua* eksposur (termasuk Sukuk, L/C, dll), bank tidak bisa 'sembunyi' dari aturan BMPD."
+      },
+      {
+        "text": "Praktik bank memilih antara aturan BI atau OJK. POJK 26 mencegahnya dengan mewajibkan bank memilih OJK.",
+        "correct": false,
+        "feedback": "Salah. Bank tidak bisa memilih. Pengawasan perbankan ada di OJK."
+      },
+      {
+        "text": "Praktik bank memindahkan dana antara BUS dan BPRS. POJK 26 mencegahnya dengan menyamakan aturan keduanya.",
+        "correct": false,
+        "feedback": "Salah. POJK 26 justru *membedakan* aturan BUS dan BPRS (di POJK 23/2022)."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Apa perbedaan utama antara status 'Penyaluran Dana Besar' (Large Exposures) dan 'Pelanggaran BMPD'?",
+    "answers": [
+      {
+        "text": "Keduanya adalah pelanggaran, tapi 'Large Exposures' sanksinya lebih ringan.",
+        "correct": false,
+        "feedback": "Salah. 'Large Exposures' BUKAN pelanggaran."
+      },
+      {
+        "text": "'Large Exposures' (>=10% Modal Inti) adalah *penanda* untuk dimonitor intensif, sedangkan 'Pelanggaran BMPD' (>=25% Modal Inti) adalah *pelanggaran* yang dilarang.",
+        "correct": true,
+        "feedback": "Tepat. 'Large Exposure' adalah 'lampu kuning' (hati-hati, monitor), Pelanggaran BMPD adalah 'lampu merah' (dilarang)."
+      },
+      {
+        "text": "'Large Exposures' berlaku untuk Pihak Terkait, 'Pelanggaran BMPD' untuk Pihak Tidak Terkait.",
+        "correct": false,
+        "feedback": "Salah. Keduanya berlaku untuk Pihak Tidak Terkait. (Batas Pihak Terkait adalah 10% Modal Total)."
+      }
+    ],
+    "section": "F"
+  },
+  {
+    "question": "Menurut kesimpulan, mengapa produk investasi pasif (seperti ETF Syariah) memiliki potensi besar sebagai 'motor pertumbuhan' industri di masa depan?",
+    "answers": [
+      {
+        "text": "Karena dijamin memberi keuntungan lebih tinggi dari strategi aktif.",
+        "correct": false,
+        "feedback": "Salah. Tujuannya meniru pasar, bukan mengalahkan. Potensinya ada di efisiensi."
+      },
+      {
+        "text": "Karena menawarkan 'Efisiensi Kepatuhan' (proses screening sudah tertanam di indeks), sehingga lebih mudah diadopsi secara massal.",
+        "correct": true,
+        "feedback": "Tepat. Efisiensi kepatuhan membuatnya lebih scalable, efisien, dan lebih mudah dipahami investor."
+      },
+      {
+        "text": "Karena hanya produk pasif yang diawasi langsung oleh DSN-MUI.",
+        "correct": false,
+        "feedback": "Salah. Semua produk syariah (aktif dan pasif) diawasi oleh DPS yang direkomendasikan DSN-MUI."
+      }
+    ],
+    "section": "Kesimpulan"
+  },
+  {
+    "question": "Kesimpulan naskah menyebut bank syariah sebagai 'supermarket keuangan terkurasi'. Apa arti dari kata 'terkurasi' (curated)?",
+    "answers": [
+      {
+        "text": "Bank wajib menjual *semua* produk syariah yang ada di Indonesia.",
+        "correct": false,
+        "feedback": "Bukan. 'Terkurasi' berarti *dipilih*, bukan 'semua ada'."
+      },
+      {
+        "text": "Produk yang ditawarkan telah *dipilih* dan *disaring* oleh bank untuk memastikan kualitas dan kepatuhan syariahnya.",
+        "correct": true,
+        "feedback": "Tepat. 'Terkurasi' berarti bank bertindak sebagai agen yang telah menyeleksi produk-produk terbaik dan terpatuh untuk nasabahnya."
+      },
+      {
+        "text": "Produk tersebut harganya lebih mahal karena proses kurasi.",
+        "correct": false,
+        "feedback": "Bukan. Kurasi di sini merujuk pada *seleksi*, bukan *harga*."
+      }
+    ],
+    "section": "Kesimpulan"
+  },
+  {
+    "question": "Apa implikasi ekonomi praktis dari prinsip 'Tauhid' (memandang manusia sebagai khalifah/wali amanat)?",
+    "answers": [
+      {
+        "text": "Membingkai ulang aktivitas ekonomi dari pengejaran materialistis murni menjadi tindakan ibadah dan pemenuhan tanggung jawab sosial.",
+        "correct": true,
+        "feedback": "Benar. Ini mengubah *motivasi* berinvestasi, dari sekadar 'profit' menjadi 'profit yang bertanggung jawab dan berkah' (falah)."
+      },
+      {
+        "text": "Mengharuskan semua keuntungan investasi diserahkan kepada negara.",
+        "correct": false,
+        "feedback": "Salah. Islam sangat menghargai hak milik pribadi, selama diperoleh dan dikelola secara halal."
+      },
+      {
+        "text": "Melarang semua bentuk investasi karena harta adalah milik Allah.",
+        "correct": false,
+        "feedback": "Salah. Justru karena titipan Allah, harta *harus* dikelola secara produktif (diinvestasikan), bukan didiamkan."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Prinsip filosofis 'Maslahah' (Kesejahteraan Umum) berarti semua aktivitas ekonomi harus...",
+    "answers": [
+      {
+        "text": "Memberikan keuntungan maksimal bagi investor individu, tanpa mempedulikan dampak sosial.",
+        "correct": false,
+        "feedback": "Kebalikan. Prinsip Maslahah justru *mewajibkan* untuk mempertimbangkan dampak sosial."
+      },
+      {
+        "text": "Dievaluasi berdasarkan kapasitasnya untuk menghasilkan manfaat sejati (manfa'ah) bagi masyarakat luas dan mencegah kerugian (mudharat).",
+        "correct": true,
+        "feedback": "Tepat. 'Maslahah' menggerakkan fokus dari profit individu ke kesejahteraan kolektif."
+      },
+      {
+        "text": "Dikelola langsung oleh pemerintah untuk memastikan kesejahteraan.",
+        "correct": false,
+        "feedback": "Bukan. 'Maslahah' adalah prinsip yang harus dipegang oleh semua pelaku ekonomi (termasuk swasta), bukan hanya pemerintah."
+      }
+    ],
+    "section": "A"
+  },
+  {
+    "question": "Manakah risiko utama strategi *Aktif*, dan manakah risiko utama strategi *Pasif*?",
+    "answers": [
+      {
+        "text": "Aktif: Tracking Error; Pasif: Manager Risk",
+        "correct": false,
+        "feedback": "Terbalik. Aktif memiliki Manager Risk, Pasif memiliki Tracking Error."
+      },
+      {
+        "text": "Aktif: Manager Risk (risiko manajer salah pilih); Pasif: Tracking Error (risiko dana tidak meniru indeks secara sempurna).",
+        "correct": true,
+        "feedback": "Tepat! Ini adalah perbedaan risiko fundamental antara kedua strategi."
+      },
+      {
+        "text": "Aktif: Risiko Likuiditas; Pasif: Risiko Kredit",
+        "correct": false,
+        "feedback": "Kurang tepat. Kedua strategi bisa memiliki risiko likuiditas atau kredit, tergantung aset yang dipegang."
+      }
+    ],
+    "section": "B-C"
+  },
+  {
+    "question": "Mana dari jenis Reksa Dana Syariah berikut yang memiliki profil risiko paling *rendah* dan cocok untuk parkir dana jangka pendek?",
+    "answers": [
+      {
+        "text": "Reksa Dana Saham Syariah",
+        "correct": false,
+        "feedback": "Salah. Ini memiliki risiko paling *tinggi*."
+      },
+      {
+        "text": "Reksa Dana Campuran Syariah",
+        "correct": false,
+        "feedback": "Salah. Ini memiliki risiko moderat-tinggi."
+      },
+      {
+        "text": "Reksa Dana Pasar Uang Syariah",
+        "correct": true,
+        "feedback": "Tepat. Berisi instrumen <1 tahun seperti Deposito Syariah, RDPUS memiliki risiko paling rendah dan likuiditas tinggi."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Mana dari jenis Reksa Dana Syariah berikut yang memiliki profil risiko paling *tinggi* dan cocok untuk investor agresif jangka panjang?",
+    "answers": [
+      {
+        "text": "Reksa Dana Saham Syariah",
+        "correct": true,
+        "feedback": "Tepat. Dengan portofolio minimum 80% saham, jenis ini menawarkan potensi pertumbuhan tertinggi dengan risiko tertinggi."
+      },
+      {
+        "text": "Reksa Dana Pendapatan Tetap Syariah",
+        "correct": false,
+        "feedback": "Salah. Ini memiliki risiko rendah-moderat, fokus pada pendapatan stabil dari Sukuk."
+      },
+      {
+        "text": "Reksa Dana Pasar Uang Syariah",
+        "correct": false,
+        "feedback": "Salah. Ini memiliki risiko paling *rendah*."
+      }
+    ],
+    "section": "D"
+  },
+  {
+    "question": "Perusahaan C (perusahaan rokok) memiliki utang 0% dan pendapatan non-halal 0%. Apakah sahamnya lolos screening syariah OJK?",
+    "answers": [
+      {
+        "text": "Ya, karena lolos Screening Kuantitatif (rasio keuangan 0%).",
+        "correct": false,
+        "feedback": "Salah. Lolos screening kuantitatif tidak cukup, harus lolos kualitatif juga."
+      },
+      {
+        "text": "Tidak, karena gagal di Screening Kualitatif (Kegiatan Usaha), di mana tembakau termasuk industri yang dilarang.",
+        "correct": true,
+        "feedback": "Tepat. Screening Kualitatif (jenis bisnis) adalah filter pertama. Tembakau termasuk dalam industri yang dihindari (haram/syubhat)."
+      },
+      {
+        "text": "Tergantung. Jika labanya besar, akan lolos.",
+        "correct": false,
+        "feedback": "Salah. Besaran laba tidak memengaruhi lolos atau tidaknya screening syariah."
+      }
+    ],
+    "section": "D-E"
+  },
+  {
+    "question": "Apa perbedaan utama antara 'Tadlis' dan 'Najasy'?",
+    "answers": [
+      {
+        "text": "Tadlis adalah 'penipuan informasi' (menyembunyikan cacat), Najasy adalah 'rekayasa pasar' (permintaan/penawaran palsu).",
+        "correct": true,
+        "feedback": "Tepat. Tadlis merusak keadilan informasi produk, Najasy merusak keadilan mekanisme harga pasar."
+      },
+      {
+        "text": "Tadlis adalah 'penimbunan', Najasy adalah 'suap'.",
+        "correct": false,
+        "feedback": "Salah. Penimbunan adalah Ihtikar, Suap adalah Risywah."
+      },
+      {
+        "text": "Keduanya sama, yaitu praktik 'goreng saham'.",
+        "correct": false,
+        "feedback": "Kurang tepat. 'Goreng saham' (Pump and Dump) adalah contoh spesifik dari Najasy, bukan Tadlis."
+      }
+    ],
+    "section": "E"
+  }
+]

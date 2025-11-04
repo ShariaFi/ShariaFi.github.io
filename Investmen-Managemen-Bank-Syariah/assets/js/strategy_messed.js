@@ -1,0 +1,565 @@
+/*
+ * ====================================================================
+ * StrategiModule.js: (FIX: Desain Sub-Navigasi Responsif)
+ * ====================================================================
+ * REFAKTOR KRITIS (Berdasarkan Umpan Balik Mobile):
+ * 1. MASALAH: Sub-navigasi horizontal (Filosofi Inti, dst.)
+ * memiliki UX yang buruk di ponsel (memerlukan scroll horizontal).
+ * 2. SOLUSI: Menerapkan pendekatan hibrida (responsif).
+ * 3. DI PONSEL (md:hidden):
+ * - Sub-navigasi sekarang menjadi <select> dropdown.
+ * - Ini sangat hemat ruang dan "native" untuk mobile.
+ * 4. DI DESKTOP (hidden md:flex):
+ * - <select> disembunyikan.
+ * - Navigasi horizontal lengkap ditampilkan seperti biasa.
+ * 5. JAVASCRIPT:
+ * - Menambahkan metode '_initSubNav()' baru.
+ * - Metode ini menambahkan event listener 'change' ke <select>
+ * agar navigasi berfungsi di ponsel.
+ *
+ * !! KETERGANTUNGAN Chart.js TETAP BERLAKU !!
+ * Pastikan Chart.js (v3.7.0+) dimuat di HTML induk Anda.
+ */
+class StrategiModule {
+
+    constructor(eventBus, kurikulumModule) {
+        this.section = document.getElementById('strategi');
+        this.eventBus = eventBus;
+        this.kurikulumModule = kurikulumModule;
+        this.hasInitialized = false;
+
+        // Subscribe ke event tab
+        this.eventBus.subscribe(AppConfig.EVENTS.TAB_CHANGED, (targetId) => this.handleTabChange(targetId));
+    }
+
+    /**
+     * Menangani 'tabChanged' (Tidak berubah)
+     */
+    handleTabChange(targetId) {
+        if (targetId !== 'strategi') {
+            return;
+        }
+        if (this.hasInitialized) {
+            return;
+        }
+
+        this.render(); // Panggil render statis
+        this.hasInitialized = true;
+        // Kirim event untuk memberitahu KurikulumModule agar merender kontennya.
+        this.eventBus.publish('renderKurikulum', targetId);
+    }
+
+    /**
+     * Render (Dengan Perbaikan Navigasi Mobile)
+     */
+    render() {
+
+        // 1. Hapus konten lama
+        this.section.innerHTML = '';
+
+        // 2. Buat dan suntikkan <style> (Tidak berubah)
+        const styleElement = document.createElement('style');
+        const cssRules = `
+            body {
+                font-family: 'Inter', sans-serif;
+            }
+            .chart-container {
+                position: relative;
+                width: 100%;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                height: 300px;
+                max-height: 400px;
+            }
+            @media (min-width: 768px) {
+                .chart-container {
+                    height: 350px;
+                }
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(10px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            .fade-in {
+                animation: fadeIn 0.6s ease-out forwards;
+            }
+        `;
+        styleElement.textContent = cssRules;
+        this.section.appendChild(styleElement);
+
+
+        // 3. Buat div konten utama
+        const contentDiv = document.createElement('div');
+        contentDiv.className = "bg-gray-50 text-gray-800";
+
+        // 4. Atur innerHTML dengan TATA LETAK SPA TEMATIK LENGKAP
+        contentDiv.innerHTML = `
+            <!-- (PERBAIKAN MOBILE) Sub-navigasi sekarang responsif -->
+            <nav class="bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-200">
+                <div class="container mx-auto max-w-7xl p-4">
+                    
+                    <!-- Tampilan Mobile: <select> dropdown -->
+                    <!-- Tampil di layar kecil, tersembunyi di 'md' ke atas -->
+                    <div class="md:hidden">
+                        <label for="strategi-subnav-select" class="sr-only">Pilih Bagian</label>
+                        <select id="strategi-subnav-select" class="block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 text-base">
+                            <option value="#filosofi">Filosofi Inti</option>
+                            <option value="#tradeoffs">Trade-Offs</option>
+                            <option value="#analisis-syariah">Analisis Syariah</option>
+                            <option value="#penerapan">Penerapan</option>
+                        </select>
+                    </div>
+
+                    <!-- Tampilan Desktop: Link horizontal -->
+                    <!-- Tersembunyi di layar kecil, tampil sebagai 'flex' di 'md' ke atas -->
+                    <div class="hidden md:flex justify-center items-center space-x-4 sm:space-x-8">
+                        <a href="#filosofi" class="text-sm sm:text-base font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200 px-3 py-2 rounded-md">Filosofi Inti</a>
+                        <a href="#tradeoffs" class="text-sm sm:text-base font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200 px-3 py-2 rounded-md">Trade-Offs</a>
+                        <a href="#analisis-syariah" class="text-sm sm:text-base font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200 px-3 py-2 rounded-md">Analisis Syariah</a>
+                        <a href="#penerapan" class="text-sm sm:text-base font-medium text-gray-600 hover:text-blue-600 transition-colors duration-200 px-3 py-2 rounded-md">Penerapan</a>
+                    </div>
+                </div>
+            </nav>
+
+            <main class="container mx-auto p-4 sm:p-8 max-w-7xl">
+                <!-- Header Utama (Tidak berubah) -->
+                <header class="text-center my-12 sm:my-16 fade-in">
+                    <h1 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-emerald-600 to-blue-600 mb-4">
+                        Investasi Syariah: Aktif vs. Pasif
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+                        Sebuah analisis interaktif untuk membedah dua filosofi inti manajemen portofolio.
+                    </p>
+                    <p class="text-base text-gray-500 max-w-2xl mx-auto mt-6">
+                        Aplikasi ini membandingkan strategi investasi Aktif dan Pasif berdasarkan laporan Anda. Gunakan navigasi di atas untuk melompat ke bagian tematik, atau gulir ke bawah untuk menjelajahi perbandingan lengkap dari definisi, trade-off, hingga penerapan uniknya dalam konteks syariah di Indonesia.
+                    </p>
+                </header>
+
+                <!-- Konten Section (Seluruh <section> ... </section> tidak berubah) -->
+                
+                <section id="filosofi" class="mb-16 sm:mb-24 fade-in" style="animation-delay: 0.2s;">
+                    <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">Filosofi Inti & Tujuan Utama</h2>
+                    <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                        Bagian ini membedah definisi dasar dan keyakinan fundamental yang mendorong setiap strategi. Apa tujuan utama mereka, dan apa asumsi mereka tentang pasar?
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <article class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:border-emerald-300 h-full flex flex-col">
+                            <h3 class="text-2xl font-bold text-emerald-600 mb-5 pb-3 border-b border-emerald-100 flex items-center gap-3">
+                                <span class="text-3xl">🎯</span>
+                                Investasi Aktif
+                            </h3>
+                            <div class="space-y-4 text-gray-700 leading-relaxed flex-grow">
+                                <p><strong class="text-gray-900">Tujuan Utama:</strong> Untuk <strong class="text-emerald-700">"mengalahkan pasar" (beat the market)</strong>. Menghasilkan imbal hasil yang lebih tinggi daripada indeks acuan (benchmark) melalui keputusan proaktif.</p>
+                                <p><strong class="text-gray-900">Filosofi:</strong> Didasarkan pada keyakinan bahwa <strong class="text-emerald-700">pasar tidak selalu efisien</strong>. Ada peluang untuk menemukan aset yang nilainya salah harga (mispriced assets) melalui analisis superior dan riset mendalam.</p>
+                                <p class="text-sm text-gray-500 italic mt-4">Keberhasilan bergantung sepenuhnya pada keahlian manajer investasi.</p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:border-blue-300 h-full flex flex-col">
+                            <h3 class="text-2xl font-bold text-blue-600 mb-5 pb-3 border-b border-blue-100 flex items-center gap-3">
+                                <span class="text-3xl">🛡️</span>
+                                Investasi Pasif
+                            </h3>
+                            <div class="space-y-4 text-gray-700 leading-relaxed flex-grow">
+                                <p><strong class="text-gray-900">Tujuan Utama:</strong> Untuk <strong class="text-blue-700">"mereplikasi pasar" (match the market)</strong>. Menerima imbal hasil rata-rata pasar dengan meniru komposisi indeks acuan.</p>
+                                <p><strong class="text-gray-900">Filosofi:</strong> Didasarkan pada <strong class="text-blue-700">Hipotesis Pasar Efisien (EMH)</strong>. Teori ini berpendapat bahwa harga aset telah mencerminkan semua informasi, sehingga upaya "mengalahkan pasar" adalah sia-sia dalam jangka panjang.</p>
+                                <p class="text-sm text-gray-500 italic mt-4">Keberhasilan bergantung pada disiplin "beli dan tahan" (buy and hold).</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="tradeoffs" class="mb-16 sm:mb-24 fade-in" style="animation-delay: 0.4s;">
+                    <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">Trade-Offs: Kelebihan & Kekurangan</h2>
+                    <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                        Setiap strategi memiliki konsekuensi yang jelas. Bagian ini membandingkan kelebihan dan kekurangan utama yang harus dipertimbangkan investor, mulai dari biaya hingga potensi risiko dan imbal hasil.
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                        <article class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:border-emerald-300 h-full">
+                            <h3 class="text-2xl font-bold text-emerald-600 mb-5 pb-3 border-b border-gray-100">Aktif: Karakteristik</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-lg">Kelebihan</h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-0.5">📈</span>
+                                            <span class="text-gray-700 leading-relaxed"><strong>Potensi Imbal Hasil Superior:</strong> Peluang untuk menciptakan 'alpha' dan mengungguli pasar.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-0.5">🔄</span>
+                                            <span class="text-gray-700 leading-relaxed"><strong>Manajemen Risiko Proaktif:</strong> Fleksibilitas untuk menjual aset atau beralih ke kas saat pasar turun.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-lg">Kekurangan</h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-0.5">⚠️</span>
+                                            <span class="text-gray-700 leading-relaxed"><strong>Biaya yang Lebih Tinggi:</strong> Biaya manajemen, riset, dan transaksi yang signifikan menggerus imbal hasil.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-0.5">📉</span>
+                                            <span class="text-gray-700 leading-relaxed"><strong>Risiko Kinerja Buruk:</strong> Terdapat risiko signifikan bahwa manajer gagal mengalahkan pasar (underperform).</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-0.5">👤</span>
+                                            <span class="text-gray-700 leading-relaxed"><strong>Risiko Manajer:</strong> Kinerja sangat bergantung pada keahlian satu individu atau tim.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:border-blue-300 h-full">
+                            <h3 class="text-2xl font-bold text-blue-600 mb-5 pb-3 border-b border-gray-100">Pasif: Karakteristik</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-lg">Kelebihan</h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-0.5">💰</span>
+                                            <span class="text-gray-700 leading-relaxed"><strong>Efisiensi Biaya (Jauh Lebih Rendah):</strong> Keunggulan terbesar karena minim riset dan transaksi.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-0.5">🌐</span>
+                                            <span class="text-gray-700 leading-relaxed"><strong>Diversifikasi Otomatis dan Luas:</strong> Membeli "sekeranjang" saham sekaligus mengurangi risiko.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-0.5">🧘</span>
+                                            <span class="text-gray-700 leading-relaxed"><strong>Menghilangkan Emosi:</strong> Disiplin "beli dan tahan" menghindari keputusan panik atau serakah.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900 mb-3 text-lg">Kekurangan</h4>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-0.5">⚖️</span>
+                                            <span class="text-gray-700 leading-relaxed"><strong>Potensi Imbal Hasil Terbatas:</strong> Berdasarkan desain, tidak akan pernah bisa mengungguli pasar.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3">
+                                            <span class="text-xl mt-0.5">🔒</span>
+                                            <span class="text-gray-700 leading-relaxed"><strong>Kurang Fleksibel:</strong> Tidak bisa beralih ke kas atau menjual aset saat pasar turun tajam.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-200">
+                        <h3 class="text-2xl font-bold text-center text-gray-900 mb-6">Perbandingan Visual Trade-Offs</h3>
+                        <div class="chart-container">
+                            <canvas id="tradeOffsChart"></canvas>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="analisis-syariah" class="mb-16 sm:mb-24 fade-in" style="animation-delay: 0.6s;">
+                    <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">Analisis Kritis dalam Konteks Syariah</h2>
+                    <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                        Ini adalah inti dari analisis. Bagaimana kerangka kepatuhan syariah mengubah dikotomi standar "aktif vs pasif"? Jawabannya penuh nuansa dan mengungkapkan wawasan penting.
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <article class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border-l-4 border-emerald-500 transition-all duration-300 hover:shadow-xl h-full flex flex-col">
+                            <h3 class="text-2xl font-bold text-emerald-700 mb-5 pb-3 border-b border-gray-100 flex items-center gap-3">
+                                <span class="text-3xl">🔑</span>
+                                Wawasan Aktif: Sifat Inheren
+                            </h3>
+                            <div class="space-y-4 text-gray-700 leading-relaxed flex-grow">
+                                <p class="text-lg">Investasi syariah <strong class="text-emerald-700">secara fundamental memiliki sifat yang inheren aktif</strong> karena dua alasan:</p>
+                                <ol class="list-decimal list-outside space-y-3 pl-6 mt-4">
+                                    <li>
+                                        <strong class="text-gray-900">Penyaringan Syariah adalah Filter Aktif</strong>
+                                        <p class="text-gray-600">Proses penyaringan (screening) untuk membuang industri haram (alkohol, riba, dll.) adalah sebuah <strong class="text-gray-900">tindakan seleksi aktif</strong>. Strategi pasif murni (membeli seluruh pasar) secara fundamental tidak mungkin dilakukan.</p>
+                                    </li>
+                                    <li>
+                                        <strong class="text-gray-900">Sifat Kontrak Mendorong Keterlibatan Aktif</strong>
+                                        <p class="text-gray-600">Kontrak inti seperti <em>Musharakah</em> & <em>Mudarabah</em> adalah kemitraan bagi hasil, bukan pinjaman pasif. Ini <strong class="text-gray-900">memaksa bank menjadi mitra investasi aktif</strong> yang melakukan uji tuntas (due diligence) pada bisnis.</p>
+                                    </li>
+                                </ol>
+                                <p class="text-sm text-emerald-800 bg-emerald-50 p-3 rounded-md border border-emerald-200 mt-4">
+                                    <strong class="font-semibold">Kesimpulan:</strong> Dalam konteks syariah, tidak ada investasi yang benar-benar "pasif". Yang ada hanyalah berbagai tingkat manajemen aktif.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border-l-4 border-blue-500 transition-all duration-300 hover:shadow-xl h-full flex flex-col">
+                            <h3 class="text-2xl font-bold text-blue-700 mb-5 pb-3 border-b border-gray-100 flex items-center gap-3">
+                                <span class="text-3xl">💡</span>
+                                Wawasan Pasif: Keunggulan Struktural
+                            </h3>
+                            <div class="space-y-4 text-gray-700 leading-relaxed flex-grow">
+                                <p class="text-lg">Meskipun secara filosofis aktif, strategi pasif (pelacakan indeks) menawarkan <strong class="text-blue-700">keunggulan struktural yang signifikan</strong> untuk manajemen risiko kepatuhan.</p>
+                                <div class="space-y-3 mt-4">
+                                    <div>
+                                        <strong class="text-gray-900">1. Efisiensi Proses Penyaringan</strong>
+                                        <p class="text-gray-600">Proses screening yang rumit dan padat karya <strong class="text-gray-900">telah dilakukan oleh penyedia indeks</strong> (OJK, BEI, DSN-MUI). Manajer investasi (MI) dari dana pasif hanya perlu mereplikasi indeks tersebut.</p>
+                                    </div>
+                                    <div>
+                                        <strong class="text-gray-900">2. Penyederhanaan Kepatuhan</strong>
+                                        <p class="text-gray-600">Ini secara drastis <strong class="text-gray-900">mengurangi <em>compliance burden</em> (beban kepatuhan)</strong> MI, tidak seperti MI aktif yang harus memantau setiap transaksi secara individual.</p>
+                                    </div>
+                                    <div>
+                                        <strong class="text-gray-900">3. Menghindari Spekulasi (Maysir)</strong>
+                                        <p class="text-gray-600">Sifat "beli dan tahan" secara inheren <strong class="text-gray-900">menjauhkan investor dari aktivitas spekulatif</strong> frekuensi tinggi yang dilarang.</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-blue-800 bg-blue-50 p-3 rounded-md border border-blue-200 mt-4">
+                                    <strong class="font-semibold">Kesimpulan:</strong> Strategi pasif mengurangi titik potensi kegagalan kepatuhan dan memiliki efisiensi yang lebih tinggi.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="penerapan" class="mb-16 sm:mb-24 fade-in" style="animation-delay: 0.8s;">
+                    <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">Penerapan & Tantangan di Indonesia</h2>
+                    <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                        Bagaimana kedua strategi ini diwujudkan dalam produk nyata di pasar modal syariah Indonesia, dan apa tantangan serta peluang unik yang mereka hadapi?
+                    </p>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                        <article class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:border-emerald-300 h-full">
+                            <h3 class="text-2xl font-bold text-emerald-600 mb-5 pb-3 border-b border-gray-100">Aktif: Reksadana & Tantangannya</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4"><strong class="text-gray-900">Implementasi:</strong> Diwujudkan melalui <strong class="text-emerald-700">Reksadana Saham Syariah</strong>. Manajer Investasi (MI) secara aktif memilih saham dari Daftar Efek Syariah (DES) untuk mengungguli benchmark (spt. JII70, ISSI).</p>
+                            
+                            <h4 class="font-semibold text-gray-900 mt-6 mb-3 text-lg">Tantangan Kepatuhan & Kinerja:</h4>
+                            <ul class="list-disc list-outside space-y-2 text-gray-700 leading-relaxed pl-5">
+                                <li><strong>Beban Kepatuhan:</strong> Frekuensi transaksi tinggi menuntut pemantauan syariah yang ketat dan berkelanjutan untuk setiap transaksi.</li>
+                                <li><strong>Alam Semesta Investasi Terbatas:</strong> Proses screening mengurangi jumlah saham yang tersedia, sehingga lebih sulit mencari peluang "alpha".</li>
+                                <li><strong>Risiko Konsentrasi Sektor:</strong> Pengecualian sektor besar (misal: keuangan konvensional) dapat mengurangi diversifikasi.</li>
+                                <li><strong>Tantangan Kinerja:</strong> Studi menunjukkan Reksadana Saham Syariah aktif sering kesulitan untuk konsisten mengungguli benchmark-nya.</li>
+                            </ul>
+
+                            <div class="mt-6 bg-gray-100 p-4 rounded-lg border-gray-200">
+                                <h5 class="font-bold text-gray-900">Peluang Unik: "Alpha Kepatuhan"</h5>
+                                <p class="text-gray-700 text-sm leading-relaxed mt-1">
+                                    Keunggulan MI syariah tidak hanya mencari untung, tetapi juga keahlian mengidentifikasi perusahaan dengan "kualitas syariah" terbaik (misal: rasio utang jauh di bawah batas 45%) yang paling kecil kemungkinannya untuk dikeluarkan dari DES.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover:shadow-xl hover:border-blue-300 h-full">
+                            <h3 class="text-2xl font-bold text-blue-600 mb-5 pb-3 border-b border-gray-100">Pasif: ETF & Efisiensinya</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4"><strong class="text-gray-900">Implementasi:</strong> Dieksekusi terutama melalui dua produk:</p>
+                            <ol class="list-decimal list-outside space-y-3 text-gray-700 leading-relaxed pl-6">
+                                <li>
+                                    <strong class="text-blue-700">Reksa Dana Indeks Syariah:</strong>
+                                    <p class="text-gray-600">Produk reksa dana tradisional yang dirancang untuk melacak kinerja indeks syariah tertentu.</p>
+                                </li>
+                                <li>
+                                    <strong class="text-blue-700">Exchange-Traded Fund (ETF) Syariah:</strong>
+                                    <p class="text-gray-600">Seperti reksa dana, tetapi diperdagangkan di bursa efek seperti saham, menawarkan fleksibilitas perdagangan intraday.</p>
+                                </li>
+                            </ol>
+                            <p class="text-gray-700 leading-relaxed mt-6">
+                                Meskipun pangsa pasarnya masih baru (nascent), OJK secara eksplisit mengakui keberadaan ETF syariah pasif, yang memiliki potensi besar untuk tumbuh karena keunggulan struktural dalam hal biaya dan efisiensi kepatuhan.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-lg border border-gray-200">
+                        <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">Diagram Alur Kerja Kepatuhan (Penyederhanaan)</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="border border-emerald-200 rounded-lg p-4 bg-emerald-50/50">
+                                <h4 class="text-lg font-bold text-emerald-700 text-center mb-4">Alur Kerja AKTIF</h4>
+                                <div class="space-y-3 text-center">
+                                    <div class="p-3 bg-white border border-gray-200 rounded-md shadow-sm">
+                                        <span class="font-semibold text-gray-800">Manajer Investasi (MI)</span>
+                                        <p class="text-xs text-gray-500">Mencari peluang "alpha"</p>
+                                    </div>
+                                    <span class="text-2xl font-light text-emerald-500">&darr;</span>
+                                    <div class="p-3 bg-white border border-emerald-300 rounded-md shadow-sm ring-2 ring-emerald-100">
+                                        <span class="font-semibold text-emerald-700">Screening Per Transaksi</span>
+                                        <p class="text-xs text-gray-500">Kepatuhan DES dipantau per beli/jual</p>
+                                    </div>
+                                    <span class="text-2xl font-light text-emerald-500">&darr;</span>
+                                    <div class="p-3 bg-white border border-gray-200 rounded-md shadow-sm">
+                                        <span class="font-semibold text-gray-800">Eksekusi Transaksi</span>
+                                        <p class="text-xs text-red-500 font-medium">Beban Kepatuhan Tinggi</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border border-blue-200 rounded-lg p-4 bg-blue-50/50">
+                                <h4 class="text-lg font-bold text-blue-700 text-center mb-4">Alur Kerja PASIF</h4>
+                                <div class="space-y-3 text-center">
+                                    <div class="p-3 bg-white border border-gray-200 rounded-md shadow-sm">
+                                        <span class="font-semibold text-gray-800">OJK / BEI / DSN-MUI</span>
+                                        <p class="text-xs text-gray-500">Menetapkan standar</p>
+                                    </div>
+                                    <span class="text-2xl font-light text-blue-500">&darr;</span>
+                                    <div class="p-3 bg-white border border-blue-300 rounded-md shadow-sm ring-2 ring-blue-100">
+                                        <span class="font-semibold text-blue-700">Screening Level Indeks</span>
+                                        <p class="text-xs text-gray-500">DES diterbitkan, Indeks Syariah dibuat</p>
+                                    </div>
+                                    <span class="text-2xl font-light text-blue-500">&darr;</span>
+                                    <div class="p-3 bg-white border border-gray-200 rounded-md shadow-sm">
+                                        <span class="font-semibold text-gray-800">Manajer Investasi (MI)</span>
+                                        <p class="text-xs text-green-600 font-medium">Hanya Mereplikasi Indeks</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </section> <div id="strategi-kurikulum-slot"></div>
+            </main>
+
+            <footer class="text-center p-8 border-t border-gray-200">
+                <p class="text-gray-500 text-sm">
+                    Modul interaktif ini dibuat berdasarkan konten dari \`analisis_investasi.md\`.
+                </p>
+            </footer>
+        `;
+
+        // 5. Append div konten utama ke 'this.section'
+        this.section.appendChild(contentDiv);
+
+        // 6. Panggil inisialisasi untuk SEMUA elemen interaktif
+        try {
+            // (BARU) Inisialisasi navigasi <select> mobile
+            this._initSubNav();
+
+            // Inisialisasi bagan
+            this._initTradeOffsChart();
+        } catch (e) {
+            console.error("Gagal menginisialisasi komponen interaktif. Apakah Chart.js sudah dimuat?", e);
+            const chartArea = document.getElementById('tradeOffsChart');
+            if (chartArea) {
+                chartArea.parentElement.innerHTML = '<p class="text-center text-red-500">Gagal memuat bagan. Pastikan Chart.js telah dimuat di halaman utama.</p>';
+            }
+        }
+    }
+
+    /**
+     * (BARU) Metode privat untuk menginisialisasi sub-navigasi mobile
+     */
+    _initSubNav() {
+        const selectEl = document.getElementById('strategi-subnav-select');
+        if (selectEl) {
+            selectEl.addEventListener('change', (e) => {
+                // Gunakan hash untuk menavigasi, sama seperti link <a>
+                // Ini akan memicu scroll-smooth dari tag <html>
+                window.location.hash = e.target.value;
+            });
+        }
+    }
+
+    /**
+     * Metode privat untuk menginisialisasi Chart.js
+     * (Tidak berubah)
+     */
+    _initTradeOffsChart() {
+        if (typeof Chart === 'undefined') {
+            throw new Error("Chart.js tidak ditemukan di global scope.");
+        }
+
+        const ctx = document.getElementById('tradeOffsChart').getContext('2d');
+
+        const data = {
+            labels: ['Biaya', 'Potensi Imbal Hasil', 'Risiko Manajer/Fleksibilitas'],
+            datasets: [
+                {
+                    label: 'Investasi Aktif',
+                    data: [8, 9, 8],
+                    backgroundColor: 'rgba(16, 185, 129, 0.7)',
+                    borderColor: 'rgba(16, 185, 129, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: 'Investasi Pasif',
+                    data: [2, 6, 2],
+                    backgroundColor: 'rgba(59, 130, 246, 0.7)',
+                    borderColor: 'rgba(59, 130, 246, 1)',
+                    borderWidth: 1
+                }
+            ]
+        };
+
+        const options = {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 10,
+                    title: {
+                        display: true,
+                        text: 'Level Relatif (0 = Rendah, 10 = Tinggi)'
+                    },
+                    ticks: {
+                        color: '#4B5563' // Warna teks sumbu
+                    },
+                    grid: {
+                        color: '#E5E7EB' // Warna garis grid
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#4B5563' // Warna teks sumbu
+                    },
+                    grid: {
+                        display: false // Sembunyikan grid vertikal
+                    }
+                }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Perbandingan Relatif Strategi Investasi',
+                    font: {
+                        size: 16
+                    },
+                    color: '#1F2937' // Warna judul
+                },
+                tooltip: {
+                    mode: 'index',
+                    intersect: false,
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.dataset.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            let value = context.parsed.y;
+                            if (context.label === 'Biaya') {
+                                label += (value > 5 ? 'Tinggi' : 'Rendah');
+                            } else if (context.label === 'Potensi Imbal Hasil') {
+                                label += (value > 7 ? 'Superior' : 'Terbatas/Sesuai Pasar');
+                            } else if (context.label === 'Risiko Manajer/Fleksibilitas') {
+                                label += (value > 5 ? 'Tinggi (Risiko Manajer)' : 'Rendah (Kurang Fleksibel)');
+                            } else {
+                                label += value;
+                            }
+                            return label + ` (${value})`;
+                        }
+                    }
+                },
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        color: '#374151' // Warna legenda
+                    }
+                }
+            },
+            color: '#374151' // Warna font default
+        };
+
+        // Buat instance bagan baru
+        new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    }
+}
+

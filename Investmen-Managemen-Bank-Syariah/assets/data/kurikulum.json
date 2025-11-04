@@ -1,0 +1,579 @@
+[
+  {
+    "id": "k001",
+    "tipe": "artikel",
+    "judul": "The Sharia Economic System",
+    "sumber": "Sharia Knowledge Centre",
+    "url": "https://www.shariaknowledgecentre.id/id/news/sistem-ekonomi-syariah/",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k002",
+    "tipe": "artikel",
+    "judul": "Sharia Economics: Definition, Basic Principles, and Objectives",
+    "sumber": "Pegadaian",
+    "url": "https://sahabat.pegadaian.co.id/artikel/keuangan/ekonomi-syariah",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k003",
+    "tipe": "artikel",
+    "judul": "Principles of Sharia Economics and Its Main Objectives",
+    "sumber": "Prudential Syariah",
+    "url": "https://www.prudentialsyariah.co.id/id/pulse/article/prinsip-prinsip-ekonomi-syariah-dan-tujuan-utamanya/",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k004",
+    "tipe": "artikel",
+    "judul": "Basic principles of sharia economy for community economic empowerment",
+    "sumber": "ResearchGate",
+    "url": "https://www.researchgate.net/publication/352759118_Basic_principles_of_sharia_economy_for_community_economic_empowerment_study_of_the_sharia_principles_application_in_Indonesia",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k005",
+    "tipe": "artikel",
+    "judul": "FUNDAMENTALS OF ISLAMIC FINANCE AND BANKING",
+    "sumber": "ResearchGate",
+    "url": "https://www.researchgate.net/publication/380806254_FUNDAMENTALS_OF_ISLAMIC_FINANCE_AND_BANKING_PRINCIPLES_AND_PRACTICE",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k006",
+    "tipe": "artikel",
+    "judul": "The Shari’ah Foundation of Islamic Banking",
+    "sumber": "Dirasah Journal",
+    "url": "https://dirasah.pdtii.org/index.php/i/article/view/24",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k007",
+    "tipe": "artikel",
+    "judul": "Implementation of Sharia Economic Law in the Sharia Banking System in Indonesia",
+    "sumber": "Al-Mikraj Journal",
+    "url": "https://ejournal.insuriponorogo.ac.id/index.php/almikraj/article/download/7013/3887/37619",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k008",
+    "tipe": "artikel",
+    "judul": "Maqashid Syariah in the Sharia Banking System",
+    "sumber": "JIESA Journal",
+    "url": "https://ejournal.areai.or.id/index.php/JIESA/article/download/964/1264/5127",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k009",
+    "tipe": "artikel",
+    "judul": "Fundamental Principles of Islamic Economic System",
+    "sumber": "Formosa Journal of Multidisciplinary Research",
+    "url": "https://npaformosapublisher.org/index.php/fjmr/article/download/271/235",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k010",
+    "tipe": "artikel",
+    "judul": "The Fundamental Principles of Islamic Economics",
+    "sumber": "Dinasti International Journal of Sharia Economic",
+    "url": "https://journal.e-dinasti.org/SHARIA/article/download/24/18",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k011",
+    "tipe": "artikel",
+    "judul": "Investing in Alignment with Shariah Values",
+    "sumber": "Morgan Stanley",
+    "url": "https://www.morganstanley.com/content/dam/msdotcom/what-we-do/wealth-management/gift/investing-in-alignment-with-shariah-values.pdf",
+    "kategori_tab": ["prinsip"]
+  },
+  {
+    "id": "k012",
+    "tipe": "artikel",
+    "judul": "What Is an Islamic Investment Policy?",
+    "sumber": "Investopedia",
+    "url": "https://www.investopedia.com/ask/answers/07/islamic_investments.asp",
+    "kategori_tab": ["prinsip"]
+  },
+  {
+    "id": "k013",
+    "tipe": "artikel",
+    "judul": "Islamic Finance",
+    "sumber": "Corporate Finance Institute",
+    "url": "https://corporatefinanceinstitute.com/resources/career-map/sell-side/capital-markets/islamic-finance/",
+    "kategori_tab": ["prinsip"]
+  },
+  {
+    "id": "k014",
+    "tipe": "artikel",
+    "judul": "A Critical Perspective on the Principles of Islamic Finance",
+    "sumber": "Newjurist",
+    "url": "https://newjurist.com/a-critical-perspective-on-the-principles-of-islamic-finance-focusing-on-sharia-compliance-and-arbitrage/",
+    "kategori_tab": ["prinsip"]
+  },
+  {
+    "id": "k015",
+    "tipe": "artikel",
+    "judul": "Why Islamic finance is different: A Short Review",
+    "sumber": "ResearchGate",
+    "url": "https://www.researchgate.net/publication/342148061_Why_Islamic_finance_is_different_A_Short_Review_of_Islamic_Jurisprudential_Interpretation_about_Usury_Ambiguity_Gharar_Gambling_Maysir_and_Exploitative_Commercial_Arbitrage_Talaqi_alRukban",
+    "kategori_tab": ["prinsip"]
+  },
+  {
+    "id": "k016",
+    "tipe": "artikel",
+    "judul": "Understanding Islamic Finance: Analysis",
+    "sumber": "Eurasia Review",
+    "url": "https://www.eurasiareview.com/03092024-understanding-islamic-finance-analysis/",
+    "kategori_tab": ["prinsip"]
+  },
+  {
+    "id": "k017",
+    "tipe": "artikel",
+    "judul": "An Introduction to Islamic Finance",
+    "sumber": "Addleshaw Goddard",
+    "url": "https://www.addleshawgoddard.com/globalassets/specialisms/finance/islamic-finance/islamic-finance-guide.pdf",
+    "kategori_tab": ["prinsip"]
+  },
+  {
+    "id": "k018",
+    "tipe": "artikel",
+    "judul": "Analisis Penerbitan Sukuk di Indonesia",
+    "sumber": "ResearchGate",
+    "url": "https://www.researchgate.net/publication/385220158_Analisis_Penerbitan_Sukuk_di_Indonesia",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k019",
+    "tipe": "artikel",
+    "judul": "Analisis Peran Sukuk dalam Perkembangan Keuangan Syariah",
+    "sumber": "Al-Mizan Journal",
+    "url": "https://ejournal.an-nadwah.ac.id/index.php/almizan/article/download/109/81",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k020",
+    "tipe": "artikel",
+    "judul": "The Impact of Islamic Finance on Economic Growth in Indonesia",
+    "sumber": "Al-Muzara'ah Journal",
+    "url": "https://journal.ipb.ac.id/jalmuzaraah/article/download/50905/28452",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k021",
+    "tipe": "artikel",
+    "judul": "Performances of Sharia Mutual Funds in Indonesia",
+    "sumber": "European Journal of Islamic Finance",
+    "url": "https://ojs.unito.it/index.php/EJIF/article/view/5896",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k022",
+    "tipe": "artikel",
+    "judul": "Analisis Kinerja Reksa Dana Saham Syariah",
+    "sumber": "Jurnal Ilmiah Ekonomi Islam",
+    "url": "https://jurnal.stie-aas.ac.id/index.php/jei/article/download/12283/5062/40342",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k023",
+    "tipe": "artikel",
+    "judul": "PERKEMBANGAN PASAR SAHAM SYARIAH DI INDONESIA",
+    "sumber": "Al-Bayan Journal",
+    "url": "https://jurnal.uinsyahada.ac.id/index.php/albay/article/view/9688",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k024",
+    "tipe": "artikel",
+    "judul": "Potensi Pasar Modal Syariah di Indonesia",
+    "sumber": "Taswiq Journal",
+    "url": "https.://ejurnal.iainpare.ac.id/index.php/taswiq/article/download/10711/2283/2283/",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k025",
+    "tipe": "artikel",
+    "judul": "ANALISIS PENGARUH PASAR MODAL SYARIAH TERHADAP PERTUMBUHAN EKONOMI",
+    "sumber": "J-ESA Journal",
+    "url": "https://ejournal.iaimbima.ac.id/index.php/jesa/article/download/1437/947",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k026",
+    "tipe": "book",
+    "judul": "Shariah-compliant Portfolio Management: Processes, Methodologies, and Performances",
+    "sumber": "ResearchGate",
+    "url": "https://www.researchgate.net/publication/280622849_Shariah-compliant_Portfolio_Management_Processes_Methodologies_and_Performances",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k027",
+    "tipe": "artikel",
+    "judul": "Building an optimal portfolio of sharia-compliant stocks using the Markowitz Model",
+    "sumber": "Jurnal Ekonomi & Keuangan Islam",
+    "url": "httpshttps://journal.uii.ac.id/JEKI/article/download/37691/18784/149008",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k028",
+    "tipe": "artikel",
+    "judul": "The Analysis of Risk and Return Using Sharia Compliance Assets Pricing Model",
+    "sumber": "Journal of Risk and Financial Management",
+    "url": "https://www.mdpi.com/1911-8074/15/10/421",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k029",
+    "tipe": "artikel",
+    "judul": "Shariah-Compliant Investment Funds: A Study on Investor Preferences and Portfolio Management",
+    "sumber": "ResearchGate",
+    "url": "https://www.researchgate.net/publication/391129146_Shariah-Compliant_Investment_Funds_A_Study_on_Investor_Preferences_and_Portfolio_Management_in_Indonesia",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k030",
+    "tipe": "artikel",
+    "judul": "Harmonisasi Fatwa DSN-MUI dan Regulasi OJK",
+    "sumber": "Causa Journal",
+    "url": "https://ejournal.cahayailmubangsa.institute/index.php/causa/article/download/1762/1534/5065",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k031",
+    "tipe": "artikel",
+    "judul": "Legal Review of the Effect of OJK Regulation Number 11/POJK.03/2016",
+    "sumber": "ResearchGate",
+    "url": "https://www.researchgate.net/publication/388814555_Legal_Review_of_the_Effect_of_OJK_Regulation_Number_11POJK032016_on_the_Implementation_of_Sharia_Banking_Business_Activities_on_the_Sustainability_of_the_Sharia_Financial_Industry_in_Indonesia",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k032",
+    "tipe": "artikel",
+    "judul": "Prinsip dan Konsep Perbankan Syariah",
+    "sumber": "OJK.go.id",
+    "url": "https://ojk.go.id/id/kanal/syariah/tentang-syariah/Pages/Prinsip-dan-Konsep-PB-Syariah.aspx",
+    "kategori_tab": ["strategi", "prinsip"]
+  },
+  {
+    "id": "k033",
+    "tipe": "artikel",
+    "judul": "Kajian Kriteria Daftar Efek Syariah di Indonesia",
+    "sumber": "Bukhori Journal",
+    "url": "https://penerbitgoodwood.com/index.php/Bukhori/article/download/1708/468/8856",
+    "kategori_tab": ["strategi", "instrumen"]
+  },
+  {
+    "id": "k034",
+    "tipe": "artikel",
+    "judul": "Islam and Financial Capitalism: A Case Study in Indonesia",
+    "sumber": "ResearchGate",
+    "url": "https://www.researchgate.net/publication/389733597_Islam_and_Financial_Capitalism_A_Case_Study_in_Indonesia",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k035",
+    "tipe": "artikel",
+    "judul": "Sharia Securities Crowdfunding",
+    "sumber": "Journal of Middle East and Islamic Studies",
+    "url": "https://scholarhub.ui.ac.id/cgi/viewcontent.cgi?article=1090&context=meis",
+    "kategori_tab": ["strategi", "instrumen"]
+  },
+  {
+    "id": "k036",
+    "tipe": "artikel",
+    "judul": "The Role of Sharia Risk Management... in the Development of the Halal Industry",
+    "sumber": "ResearchGate",
+    "url": "https://www.researchgate.net/publication/379865377_The_Role_of_Sharia_Risk_Management_Islamic_Investment_Ethics_and_Riba-Free_Financing_in_the_Development_of_the_Halal_Industry_in_Indonesia",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k037",
+    "tipe": "artikel",
+    "judul": "The Interconnected Relationship between the Halal Economy and Islamic Financial Mechanisms",
+    "sumber": "Journal of Islamic Economic and Industry",
+    "url": "https://journal.privietlab.org/index.php/JIEI/article/download/289/209",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k038",
+    "tipe": "book",
+    "judul": "Introduction to Islamic Banking & Finance: Principles and Practice",
+    "sumber": "M. K. Hassan, R. N. Kayed, & U. A. Oseni",
+    "url": "https.://www.pearson.com/en-gb/subject-catalog/p/introduction-to-islamic-banking--finance-principles-and-practice/P200000004416/9780273737315",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k039",
+    "tipe": "book",
+    "judul": "Fundamentals of Islamic Finance and Banking",
+    "sumber": "Syeda Fahmida Habib",
+    "url": "https.://www.wiley.com/en-us/Fundamentals+of+Islamic+Finance+and+Banking-p-9781119371038",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k040",
+    "tipe": "book",
+    "judul": "Financial Transactions in Islamic Jurisprudence",
+    "sumber": "Wahbah al-Zuhayli",
+    "url": "https.://www.islamicbookstore.com/b12232.html",
+    "kategori_tab": ["prinsip"]
+  },
+  {
+    "id": "k041",
+    "tipe": "book",
+    "judul": "Islamic Capital Markets: A Comparative Approach (2nd Edition)",
+    "sumber": "Obiyathulla Ismath Bacha & Abbas Mirakhor",
+    "url": "https.://www.worldscientific.com/worldscibooks/10.1142/11109",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k042",
+    "tipe": "book",
+    "judul": "Islamic Financial Products - Principles, Instruments and Structures",
+    "sumber": "Mohd Ma'Sum Billah",
+    "url": "https.://www.barnesandnoble.com/w/islamic-financial-products-mohd-masum-billah/1133089400",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k043",
+    "tipe": "book",
+    "judul": "A Guide to Islamic Asset Management: Portfolio Investing with Sharia",
+    "sumber": "John A. Sandwick, M. Kabir Hassan, & Pablo Collazzo",
+    "url": "https.://www.e-elgar.com/shop/usd/a-guide-to-islamic-asset-management-9781800378391.html",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k044",
+    "tipe": "book",
+    "judul": "Shari'ah Non-compliance Risk Management and Legal Documentations in Islamic Finance",
+    "sumber": "Ahcene Lahsasna",
+    "url": "https.://www.wiley.com/en-us/Shari%27ah+Non-compliance+Risk+Management+and+Legal+Documentations+in+Islamic+Finance-p-x000686332",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k045",
+    "tipe": "book",
+    "judul": "The Future of Islamic Banking and Finance in Indonesia: Performance, Risk, and Regulation",
+    "sumber": "Romi Adetio Setiawan",
+    "url": "https.://www.routledge.com/The-Future-of-Islamic-Banking-and-Finance-in-Indonesia-Performance-Risk-and-Regulation/AdetioSetiawan/p/book/9781032494777",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k046",
+    "tipe": "artikel",
+    "judul": "Indonesian Islamic Financial Development Report (LPKSI) 2023",
+    "sumber": "OJK",
+    "url": "https.://www.ojk.go.id/en/berita-dan-kegiatan/info-terkini/Documents/Pages/Indonesian-Islamic-Financial-Development-Report-LPKSI-2023/Indonesian%20Islamic%20Financial%20Development%20Report%202023_.pdf",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k047",
+    "tipe": "artikel",
+    "judul": "Harmonisation Between DSN-MUI Fatwas and OJK Regulations",
+    "sumber": "ResearchGate",
+    "url": "https.://www.researchgate.net/publication/392870756_Harmonisation_Between_DSN-MUI_Fatwas_and_OJK_Regulations_Towards_an_Innovative_and_Inclusive_Sharia-Compliant_Fintech_Ecosystem_in_Indonesia",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k048",
+    "tipe": "artikel",
+    "judul": "The Role of DSN-MUI Fatwa in Indonesian Sharia Banking Development",
+    "sumber": "ResearchGate",
+    "url": "https.://www.researchgate.net/publication/390974033_The_Role_of_DSN-MUI_Fatwa_in_Indonesian_Sharia_Banking_Development_Flows_in_the_Industrial_Revolution_40",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k049",
+    "tipe": "book",
+    "judul": "The Islamic Finance Handbook: A Practitioner's Guide to the Global Markets",
+    "sumber": "REDmoney (Editor)",
+    "url": "https.://www.wiley.com/en-sg/The+Islamic+Finance+Handbook%3A+A+Practitioner's+Guide+to+the+Global+Markets-p-9781118814437",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k050",
+    "tipe": "book",
+    "judul": "Bank Syariah: Dari Teori ke Praktik",
+    "sumber": "Muhammad Syafi'i Antonio",
+    "url": "https.://catalogue.nla.gov.au/catalog/2477363",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k051",
+    "tipe": "book",
+    "judul": "Memahami Bisnis Bank Syariah",
+    "sumber": "Ikatan Bankir Indonesia",
+    "url": "https.://www.goodreads.com/book/show/20759801-memahami-bisnis-bank",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k052",
+    "tipe": "artikel",
+    "judul": "Guide to Sharia Deposits from Bank Muamalat",
+    "sumber": "Bank Muamalat",
+    "url": "https://www.bankmuamalat.co.id/index.php/en/article/sharia-deposits-explained-the-halal-way-to-invest-and-grow-your-wealth1",
+    "kategori_tab": ["strategi", "instrumen"]
+  },
+  {
+    "id": "k053",
+    "tipe": "video",
+    "judul": "Apa itu ekonomi syariah?",
+    "sumber": "Bank Indonesia Channel",
+    "url": "https://www.youtube.com/watch?v=lAZyMoa4oIs",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k054",
+    "tipe": "video",
+    "judul": "Dasar-dasar Ekonomi Islam",
+    "sumber": "FEBI TV",
+    "url": "https.://www.youtube.com/watch?v=kob1MRIUs-U",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k055",
+    "tipe": "video",
+    "judul": "Maysir Gharar Riba | Pengertian & Peran Lembaga Keuangan Syariah",
+    "sumber": "UIN Walisongo Semarang",
+    "url": "https://www.youtube.com/watch?v=vA9tCVO0zlI",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k056",
+    "tipe": "video",
+    "judul": "Pengertian Maysir, Gharar Dan Riba Dalam Investasi",
+    "sumber": "Finansialku.com",
+    "url": "https://www.youtube.com/watch?v=V2CpaTJ6Cms",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k057",
+    "tipe": "video",
+    "judul": "Perbedaan Bank Syariah & Bank Konvensional",
+    "sumber": "Leon Hartono",
+    "url": "https://www.youtube.com/watch?v=61-MaxN_d-E",
+    "kategori_tab": ["beranda", "prinsip"]
+  },
+  {
+    "id": "k058",
+    "tipe": "video",
+    "judul": "JANGAN ASAL HALAL! INI CARA SCREENING SAHAM SYARIAH YANG BENAR",
+    "sumber": "IDX Islamic",
+    "url": "https.://www.youtube.com/watch?v=t-VaJPJbSi0",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k059",
+    "tipe": "video",
+    "judul": "IDX Islamic YouTube channel",
+    "sumber": "IDX Islamic",
+    "url": "https://www.youtube.com/@IDXISLAMIC-OFFICIAL",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k060",
+    "tipe": "video",
+    "judul": "SUKUK RITEL SR021, INVESTASI SYARIAH PALING STABIL 100% AMAN DIJAMIN NEGARA",
+    "sumber": "tanamduit",
+    "url": "https.://www.youtube.com/watch?v=v9sAKRiFCWs",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k061",
+    "tipe": "video",
+    "judul": "Apa itu Sukuk? -- Muamalat Talk Ep. 21",
+    "sumber": "Bank Muamalat",
+    "url": "https.://www.youtube.com/watch?v=YgfQ1TPjCWU",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k062",
+    "tipe": "video",
+    "judul": "Mengenal Lebih Dekat Reksa Dana Syariah",
+    "sumber": "Otoritas Jasa Keuangan",
+    "url": "https.://www.youtube.com/watch?v=uDPuNDyFlp8",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k063",
+    "tipe": "video",
+    "judul": "Ini Cara Kerja Reksadana Syariah yang Wajib Kamu Tahu",
+    "sumber": "Bibit",
+    "url": "https.://www.youtube.com/watch?v=p_tx-u1u7Jg",
+    "kategori_tab": ["instrumen"]
+  },
+  {
+    "id": "k064",
+    "tipe": "video",
+    "judul": "Risiko Investasi di Pasar Modal Syariah Indonesia",
+    "sumber": "IDX Islamic",
+    "url": "https://www.youtube.com/watch?v=M-SVXPNb_Wo",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k065",
+    "tipe": "video",
+    "judul": "BONGKAR RAHASIA MITIGASI RISIKO INVESTASI SYARIAH",
+    "sumber": "IDX Islamic",
+    "url": "https://www.youtube.com/@IDXISLAMIC-OFFICIAL/podcasts",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k066",
+    "tipe": "video",
+    "judul": "Apa itu diversifikasi investasi?",
+    "sumber": "tanamduit",
+    "url": "https://www.youtube.com/watch?v=a8fE_27xRsg",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k067",
+    "tipe": "video",
+    "judul": "2 CARA SUSUN PORTOFOLIO, KONSENTRASI VS DIVERSIFIKASI INVESTASI",
+    "sumber": "Felicia Putri Tjiasaka",
+    "url": "https://www.youtube.com/watch?v=a8fE_27xRsg",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k068",
+    "tipe": "video",
+    "judul": "IDX Islamic Tutorial Series: Cara Membuka Rekening Saham Syariah",
+    "sumber": "IDX Islamic",
+    "url": "https.://www.youtube.com/watch?v=fI0-IQWdYsk",
+    "kategori_tab": ["strategi"]
+  },
+  {
+    "id": "k069",
+    "tipe": "video",
+    "judul": "CARA BELI SUKUK TABUNGAN ST009 DI APLIKASI BIBIT",
+    "sumber": "Doddy Bicara Investasi",
+    "url": "https://www.youtube.com/watch?v=crjOZ8FPU5U",
+    "kategori_tab": ["strategi", "instrumen"]
+  },
+  {
+    "id": "k070",
+    "tipe": "video",
+    "judul": "CARA ORDER SUKRI | CARA PESAN SUKUK",
+    "sumber": "YULI CHANEL",
+    "url": "https://www.youtube.com/watch?v=IpsNsbudr48",
+    "kategori_tab": ["strategi", "instrumen"]
+  },
+  {
+    "id": "k071",
+    "tipe": "video",
+    "judul": "Tutorial Pemesanan Obligasi & Sukuk",
+    "sumber": "MNC Sekuritas",
+    "url": "https.://www.youtube.com/watch?v=oU-Q0RJT684",
+    "kategori_tab": ["strategi", "instrumen"]
+  },
+  {
+    "id": "k072",
+    "tipe": "video",
+    "judul": "Cerdas Investasi Bersama BSI | Boleh Gak Sih, Kita FOMO Investasi?",
+    "sumber": "Bank Syariah Indonesia",
+    "url": "https.://www.youtube.com/watch?v=IirdeJwrCAY",
+    "kategori_tab": ["strategi"]
+  }
+
+]
