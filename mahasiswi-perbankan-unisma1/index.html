@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mahasiswi Perbankan Syariah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e', // Islamic Green feel
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom scrollbar for a smoother look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in forwards;
+            opacity: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-primary-200 selection:text-primary-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-xl font-bold text-primary-700 tracking-tight">Nurul<span class="text-gray-800">.Portfolio</span></a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Beranda</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Tentang</a>
+                    <a href="#skills" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Keahlian</a>
+                    <a href="#resume" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Pendidikan</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary-600 transition-colors font-medium">Kontak</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-primary-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg absolute w-full left-0 top-16">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50">Beranda</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50">Tentang</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50">Keahlian</a>
+                <a href="#resume" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50">Pendidikan</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden relative">
+        <!-- Decorative background elements -->
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-primary-100 opacity-50 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-primary-50 opacity-50 blur-3xl"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                
+                <!-- Text Content -->
+                <div class="w-full md:w-1/2 text-center md:text-left fade-in">
+                    <span class="inline-block py-1 px-3 rounded-full bg-primary-100 text-primary-700 text-sm font-semibold mb-4 border border-primary-200">
+                        Mahasiswi Perbankan Syariah
+                    </span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4">
+                        Halo, Saya <br/>
+                        <span class="text-primary-600">Nurul Hidayah</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+                        Mahasiswi tingkat akhir di Universitas Islam Malang (UNISMA) yang bersemangat tentang ekonomi Islam, manajemen risiko, dan inovasi keuangan syariah.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#contact" class="px-8 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
+                            Hubungi Saya
+                        </a>
+                        <a href="#resume" class="px-8 py-3 bg-white hover:bg-gray-50 text-gray-700 font-medium rounded-lg shadow-sm border border-gray-200 hover:border-gray-300 transition-all">
+                            Lihat Profil
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Profile Image -->
+                <div class="w-full md:w-1/2 flex justify-center fade-in" style="animation-delay: 0.2s;">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80">
+                        <!-- Background decoration -->
+                        <div class="absolute inset-0 bg-primary-200 rounded-full transform translate-x-4 translate-y-4"></div>
+                        <!-- Profile picture placeholder -->
+                        <div class="absolute inset-0 bg-white rounded-full border-4 border-white shadow-xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Nurul Hidayah" class="w-full h-full object-cover">
+                        </div>
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-4 -left-4 bg-white p-3 rounded-lg shadow-lg border border-gray-100 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500">IPK</p>
+                                <p class="font-bold text-gray-800">3.85</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Tentang Saya</h2>
+                <div class="w-16 h-1 bg-primary-500 mx-auto rounded"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="w-full lg:w-5/12 fade-in" style="animation-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="UNISMA Campus" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                
+                <div class="w-full lg:w-7/12 fade-in" style="animation-delay: 0.3s;">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Membangun Masa Depan Melalui Keuangan Syariah</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Assalamualaikum! Saya Nurul, mahasiswi program studi Perbankan Syariah di Universitas Islam Malang (UNISMA) angkatan 2023. Saya memiliki ketertarikan yang mendalam terhadap bagaimana sistem keuangan berlandaskan prinsip Islam dapat memberikan solusi untuk ekonomi yang lebih adil dan berkelanjutan.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Selama perkuliahan, saya aktif dalam berbagai diskusi mengenai produk perbankan syariah, manajemen risiko, dan fintech syariah. Tujuan karir saya adalah menjadi profesional di industri keuangan syariah yang berkontribusi pada literasi dan inklusi keuangan umat.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                        <div>
+                            <p class="text-sm text-gray-500 mb-1">Universitas</p>
+                            <p class="font-semibold text-gray-800">UNISMA Malang</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 mb-1">Fakultas</p>
+                            <p class="font-semibold text-gray-800">Agama Islam (FAI)</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 mb-1">Status</p>
+                            <p class="font-semibold text-gray-800">Mahasiswi Aktif</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 mb-1">Domisili</p>
+                            <p class="font-semibold text-gray-800">Malang, Jawa Timur</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500 mb-1">Email</p>
+                            <p class="font-semibold text-gray-800 text-sm sm:text-base">nurul.h@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Keahlian & Minat</h2>
+                <div class="w-16 h-1 bg-primary-500 mx-auto rounded"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Kompetensi inti yang saya kembangkan selama studi di bidang perbankan dan keuangan syariah.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 fade-in">
+                    <div class="w-12 h-12 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Akuntansi Syariah</h3>
+                    <p class="text-gray-600">Pemahaman mendalam tentang standar akuntansi syariah (PSAK 100-an) dan penyusunan laporan keuangan lembaga syariah.</p>
+                </div>
+                
+                <!-- Skill Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 fade-in" style="animation-delay: 0.1s;">
+                    <div class="w-12 h-12 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Produk Perbankan Syariah</h3>
+                    <p class="text-gray-600">Menguasai akad-akad transaksi syariah (Murabahah, Mudharabah, Musyarakah, dll) dan aplikasinya pada produk bank.</p>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 fade-in" style="animation-delay: 0.2s;">
+                    <div class="w-12 h-12 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Manajemen Risiko</h3>
+                    <p class="text-gray-600">Analisis risiko pembiayaan dan operasional dalam konteks perbankan syariah sesuai regulasi OJK.</p>
+                </div>
+
+                <!-- Skill Card 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 fade-in" style="animation-delay: 0.3s;">
+                    <div class="w-12 h-12 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Analisis Keuangan</h3>
+                    <p class="text-gray-600">Kemampuan menganalisis kelayakan nasabah pembiayaan menggunakan prinsip 5C dan rasio keuangan.</p>
+                </div>
+
+                <!-- Skill Card 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 fade-in" style="animation-delay: 0.4s;">
+                    <div class="w-12 h-12 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Fintech Syariah</h3>
+                    <p class="text-gray-600">Minat besar pada perkembangan teknologi finansial yang sesuai dengan prinsip syariah dan dampaknya terhadap inklusi.</p>
+                </div>
+
+                <!-- Skill Card 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 fade-in" style="animation-delay: 0.5s;">
+                    <div class="w-12 h-12 bg-primary-100 text-primary-600 rounded-lg flex items-center justify-center text-xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Komunikasi & Pelayanan</h3>
+                    <p class="text-gray-600">Keterampilan komunikasi interpersonal untuk memberikan pelayanan prima (Service Excellence) kepada nasabah.</p>
+                </div>
+            </div>
+            
+            <!-- Soft Skills / Tools Tags -->
+            <div class="mt-12 text-center fade-in" style="animation-delay: 0.6s;">
+                <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Tools & Soft Skills</h4>
+                <div class="flex flex-wrap justify-center gap-2">
+                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-gray-700 text-sm shadow-sm">Microsoft Office</span>
+                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-gray-700 text-sm shadow-sm">SPSS</span>
+                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-gray-700 text-sm shadow-sm">Public Speaking</span>
+                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-gray-700 text-sm shadow-sm">Kerja Tim</span>
+                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-gray-700 text-sm shadow-sm">Problem Solving</span>
+                    <span class="px-4 py-2 bg-white border border-gray-200 rounded-full text-gray-700 text-sm shadow-sm">Bahasa Inggris (Pasif)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Riwayat Pendidikan & Pengalaman</h2>
+                <div class="w-16 h-1 bg-primary-500 mx-auto rounded"></div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative border-l-2 border-primary-200 ml-3 md:ml-6 space-y-12">
+                
+                <!-- Item 1: Education -->
+                <div class="relative pl-8 md:pl-10 fade-in">
+                    <!-- Dot -->
+                    <div class="absolute w-6 h-6 bg-primary-500 rounded-full -left-[13px] border-4 border-white shadow-sm"></div>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block py-1 px-3 rounded-md bg-primary-100 text-primary-700 text-xs font-semibold mb-3">2023 - Sekarang</span>
+                        <h3 class="text-xl font-bold text-gray-800">S1 Perbankan Syariah</h3>
+                        <p class="text-gray-500 font-medium mb-3">Universitas Islam Malang (UNISMA)</p>
+                        <p class="text-gray-600">
+                            Aktif mengikuti perkuliahan dengan fokus pada analisis keuangan syariah. Saat ini sedang menyusun proposal skripsi terkait pengaruh Fintech Syariah terhadap profitabilitas UMKM di Malang.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2: Experience / Organization -->
+                <div class="relative pl-8 md:pl-10 fade-in" style="animation-delay: 0.1s;">
+                    <div class="absolute w-6 h-6 bg-primary-500 rounded-full -left-[13px] border-4 border-white shadow-sm"></div>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block py-1 px-3 rounded-md bg-gray-200 text-gray-700 text-xs font-semibold mb-3">2024 - 2025</span>
+                        <h3 class="text-xl font-bold text-gray-800">Pengurus Himpunan Mahasiswa Jurusan (HMJ)</h3>
+                        <p class="text-gray-500 font-medium mb-3">Divisi Keilmuan - HMJ Perbankan Syariah UNISMA</p>
+                        <p class="text-gray-600">
+                            Bertanggung jawab menyelenggarakan kajian rutin ekonomi Islam, seminar nasional terkait perbankan, dan kelas pelatihan software statistik untuk mahasiswa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3: Internship / Training -->
+                <div class="relative pl-8 md:pl-10 fade-in" style="animation-delay: 0.2s;">
+                    <div class="absolute w-6 h-6 bg-primary-500 rounded-full -left-[13px] border-4 border-white shadow-sm"></div>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+                        <span class="inline-block py-1 px-3 rounded-md bg-gray-200 text-gray-700 text-xs font-semibold mb-3">Juli 2025 - Agustus 2025</span>
+                        <h3 class="text-xl font-bold text-gray-800">Magang Mini Bank Syariah</h3>
+                        <p class="text-gray-500 font-medium mb-3">Laboratorium Fakultas Agama Islam UNISMA</p>
+                        <p class="text-gray-600">
+                            Praktik langsung operasional front office (Customer Service & Teller) dan back office (Pembiayaan) menggunakan simulasi sistem perbankan syariah inti (Core Banking System).
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Download CV Button -->
+            <div class="mt-12 text-center fade-in" style="animation-delay: 0.3s;">
+                <button onclick="showMessage()" class="inline-flex items-center gap-2 px-6 py-3 bg-gray-800 hover:bg-gray-900 text-white font-medium rounded-lg shadow-md transition-colors">
+                    <i class="fas fa-download"></i> Unduh CV Lengkap
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-primary-900 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <svg class="h-full w-full" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="islamic-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                        <path d="M0 20 L20 0 L40 20 L20 40 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#islamic-pattern)" />
+            </svg>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row gap-12">
+                
+                <!-- Contact Info -->
+                <div class="w-full lg:w-5/12 fade-in">
+                    <h2 class="text-3xl font-bold mb-6">Mari Berdiskusi</h2>
+                    <p class="text-primary-100 mb-8">
+                        Tertarik untuk mendiskusikan peluang magang, proyek penelitian, atau topik seputar ekonomi syariah? Jangan ragu untuk menghubungi saya.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary-800 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Lokasi</h4>
+                                <p class="text-primary-200">Kawasan Dinoyo, Malang<br/>Jawa Timur, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary-800 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Email</h4>
+                                <p class="text-primary-200">nurul.perbankansyariah@unisma.ac.id</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-full bg-primary-800 flex items-center justify-center flex-shrink-0">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">LinkedIn</h4>
+                                <a href="#" class="text-primary-200 hover:text-white transition-colors">linkedin.com/in/nurulhidayah</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="w-full lg:w-7/12 fade-in" style="animation-delay: 0.2s;">
+                    <div class="bg-white rounded-xl p-8 shadow-xl">
+                        <form id="contactForm" class="space-y-6 text-gray-800">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all" placeholder="Nama Anda" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all" placeholder="email@contoh.com" required>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subjek</label>
+                                <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all" placeholder="Tujuan pesan" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all resize-none" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            </div>
+                            <button type="button" onclick="submitForm()" class="w-full py-3 px-6 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg shadow-md transition-colors focus:ring-4 focus:ring-primary-200">
+                                Kirim Pesan <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>&copy; <span id="year"></span> Nurul Hidayah. Mahasiswi Perbankan Syariah UNISMA.</p>
+            <p class="text-sm mt-2 text-gray-500">Dibuat untuk keperluan demonstrasi portofolio akademik.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Alert/Message Box Overlay -->
+    <div id="messageBox" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[100] hidden flex items-center justify-center opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-xl shadow-2xl p-6 max-w-sm w-full mx-4 transform scale-95 transition-transform duration-300">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
+                    <i id="messageIcon" class="fas fa-check"></i>
+                </div>
+                <h3 id="messageTitle" class="text-xl font-bold text-gray-900 mb-2">Berhasil!</h3>
+                <p id="messageText" class="text-gray-600 mb-6">Tindakan telah diselesaikan.</p>
+                <button onclick="closeMessage()" class="w-full py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-colors">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for functionality -->
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Navbar background opacity on scroll
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
+                navbar.classList.remove('bg-white/90');
+                navbar.classList.add('bg-white');
+            } else {
+                navbar.classList.remove('shadow-md');
+                navbar.classList.remove('bg-white');
+                navbar.classList.add('bg-white/90');
+            }
+        });
+
+        // Simple Message Box logic to replace alert()
+        const msgBox = document.getElementById('messageBox');
+        const msgBoxContent = msgBox.querySelector('div');
+        
+        function showMessage(title = "Fitur Belum Tersedia", text = "Maaf, fitur pengunduhan CV saat ini sedang dalam pengembangan.", icon = "fa-info-circle", colorClass = "text-blue-500 bg-blue-100") {
+            document.getElementById('messageTitle').textContent = title;
+            document.getElementById('messageText').textContent = text;
+            
+            const iconEl = document.getElementById('messageIcon');
+            iconEl.className = `fas ${icon}`;
+            iconEl.parentElement.className = `w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl ${colorClass}`;
+
+            msgBox.classList.remove('hidden');
+            // Small delay to allow display:block to apply before animating opacity
+            setTimeout(() => {
+                msgBox.classList.remove('opacity-0');
+                msgBoxContent.classList.remove('scale-95');
+                msgBoxContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeMessage() {
+            msgBox.classList.add('opacity-0');
+            msgBoxContent.classList.remove('scale-100');
+            msgBoxContent.classList.add('scale-95');
+            setTimeout(() => {
+                msgBox.classList.add('hidden');
+            }, 300); // Wait for transition
+        }
+
+        // Handle form submission
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if(!name || !email || !message) {
+                showMessage("Peringatan", "Mohon isi semua field yang diwajibkan sebelum mengirim pesan.", "fa-exclamation-triangle", "text-yellow-500 bg-yellow-100");
+                return;
+            }
+
+            // Simulate form sending
+            showMessage("Pesan Terkirim!", `Terima kasih ${name}, pesan Anda telah berhasil dikirim. Saya akan segera membalas ke ${email}.`, "fa-check", "text-green-500 bg-green-100");
+            document.getElementById('contactForm').reset();
+        }
+
+        // Intersection Observer for fade-in animations on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Pause animations initially, then observe
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => {
+                el.style.animationPlayState = 'paused';
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
