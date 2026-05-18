@@ -139,7 +139,7 @@ export default function App() {
 
           <div className="relative border-l-2 border-unisma-green/20 ml-4 pl-8 pb-8 space-y-12">
             <div className="relative">
-              <span className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-unisma-green ring-4 ring-white"></span>
+              <span className="absolute -left-[43px] top-1 w-5 h-5 rounded-full bg-unisma-green ring-4 ring-white"></span>
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                 <span className="text-sm font-medium text-unisma-gold bg-unisma-gold/10 px-3 py-1 rounded-full mb-3 inline-block">2021 - Sekarang</span>
                 <h3 className="text-xl font-bold text-gray-900">S1 Perbankan</h3>
@@ -206,7 +206,7 @@ export default function App() {
             <a href="mailto:hello@example.com" className="flex items-center justify-center px-6 py-3 bg-unisma-green hover:bg-unisma-green/90 text-white rounded-lg transition-colors font-medium">
               <Mail className="w-5 h-5 mr-2" /> Email Saya
             </a>
-            <a href="#" className="flex items-center justify-center px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors font-medium">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-lg transition-colors font-medium">
               <Linkedin className="w-5 h-5 mr-2" /> LinkedIn Profile
             </a>
           </div>
